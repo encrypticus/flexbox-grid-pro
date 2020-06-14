@@ -1,0 +1,407 @@
+body
+  include ../components/page-header/page-header
+  div.container
+    main.page-main.row
+
+      +title(texts.intro.title, 'intro')(class='col-12')
+      +text(texts.intro.text)(class='col-12')
+      +code-snippets(0)
+      +text(texts.intro.text2)(class='col-12')
+        +text-list(texts.intro.list)
+      +text(texts.intro.text3)(class='col-12')
+      .col-12
+        .example.row
+          .example__col.col col
+          .example__col.col col
+          .example__col.col col
+        .example.row
+          .example__col.col col
+          .example__col.col col
+          .example__col.col col
+        .example.row.no-children-v-gutters
+          .example__col.col col
+          .example__col.col col
+          .example__col.col col
+      +code-snippets(1)
+
+
+
+      +title(texts.differentWidthCols.title, 'different-width-cols')(class='col-12')
+      +text(texts.differentWidthCols.text)(class='col')
+      .col-12
+        .example.row
+          .example__col.col col-12
+        - for(let i = 1, j = 11; i < 12; i++, j--) {
+            .example.row
+              .example__col(class=`col-${i}`) col-#{i}
+              .example__col(class=`col-${j}`) col-#{j}
+        - }
+      +code-snippets(2)
+
+
+
+      +title(texts.alignment.title, 'alignment')(class='col-12')
+      +text(texts.alignment.text)(class='col-12')
+      +subtitle(texts.alignment.subtitle1, 'alignment-horizontal')(class='col-12')
+      .col-12
+        .example.example_colored.row.justify-content-start.no-children-v-gutters
+          .example__col.col-2 col-2
+          .example__col.col-2 col-2
+        .example.example_colored.row.justify-content-center.no-children-v-gutters
+          .example__col.col-2 col-2
+          .example__col.col-2 col-2
+        .example.example_colored.row.justify-content-end.no-children-v-gutters
+          .example__col.col-2 col-2
+          .example__col.col-2 col-2
+        .example.example_colored.row.justify-content-space-between.no-children-v-gutters
+          .example__col.col-2 col-2
+          .example__col.col-2 col-2
+          .example__col.col-2 col-2
+        .example.example_colored.row.justify-content-space-around.no-children-v-gutters
+          .example__col.col-2 col-2
+          .example__col.col-2 col-2
+          .example__col.col-2 col-2
+      +code-snippets(3)
+
+
+
+      +subtitle(texts.alignment.subtitle2, 'alignment-vertical')(class='col-12')
+      .col-12
+        .example.example_colored.row.example_fixed-size.no-children-v-gutters.align-items-start
+          .example__col.col-4 col-4
+          .example__col.col-4 col-4
+          .example__col.col-4 col-4
+        .example.example_colored.row.example_fixed-size.no-children-v-gutters.align-items-center
+          .example__col.col-4 col-4
+          .example__col.col-4 col-4
+          .example__col.col-4 col-4
+        .example.example_colored.row.example_fixed-size.no-children-v-gutters.align-items-end
+          .example__col.col-4 col-4
+          .example__col.col-4 col-4
+          .example__col.col-4 col-4
+        .example.example_colored.row.example_fixed-size.no-children-v-gutters.align-items-stretch
+          .example__col.col-4 col-4
+          .example__col.col-4 col-4
+          .example__col.col-4 col-4
+        .example.example_colored.row.example_fixed-size.no-children-v-gutters
+          .example__col.col-4.align-self-start col-4
+          .example__col.col-4.align-self-center col-4
+          .example__col.col-4.align-self-end col-4
+      +code-snippets(4)
+
+
+
+      +title(texts.direction.title, 'axis-direction')(class='col-12')
+      +text(texts.direction.text)(class='col-12')
+      .col-12
+        .example.row
+          .example__col.col-3 1
+          .example__col.col-3 2
+          .example__col.col-3 3
+          .example__col.col-3 4
+        .example.row.direction-row-reverse
+          .example__col.col-3 1
+          .example__col.col-3 2
+          .example__col.col-3 3
+          .example__col.col-3 4
+        .example.row.direction-column.example_colored
+          .example__col.col-3 1
+          .example__col.col-3 2
+          .example__col.col-3 3
+          .example__col.col-3.no-v-gutters 4
+        .example.row.direction-column-reverse.example_colored
+          .example__col.col-3.no-v-gutters 1
+          .example__col.col-3 2
+          .example__col.col-3 3
+          .example__col.col-3 4
+      +code-snippets(5)
+
+
+
+      +title(texts.ordering.title, 'column-order')(class='col-12')
+      +text(texts.ordering.text)(class='col-12')
+      .col-12
+        .example.row
+          .example__col.col-2.order-2 1
+          .example__col.col-2.order-1 2
+          .example__col.col-2.order-4 3
+          .example__col.col-2.order-3 4
+          .example__col.col-2.order-6 5
+          .example__col.col-2.order-5 6
+      +code-snippets(6)
+
+
+
+      +title(texts.offset.title, 'column-offset')(class='col-12')
+      +text(texts.offset.text)(class='col-12')
+      .col-12
+        - for (let i = 1; i < 12; i++) {
+            .example.row.example_colored
+              .example__col.col-1.no-v-gutters(class=`offset-right-${i}`) of-#{i}
+        - }
+      +code-snippets(7)
+
+
+
+      +title(texts.show_hide.title, 'hide-and-show')(class='col-12')
+      +subtitle(texts.show_hide.subtitle1, 'hide')(class='col-12')
+      +text(texts.show_hide.text)(class='col-12')
+      .col-12
+        .example.row
+          .example__col.col 1
+          .example__col.col.hide-laptop-md 2
+          .example__col.col 3
+          .example__col.col.hide-laptop-md 4
+      +code-snippets(8)
+
+
+
+      +subtitle(texts.show_hide.subtitle2, 'display')(class='col-12')
+      +text(texts.show_hide.text2)(class='col-12')
+      .col-12
+        .example.row
+          .example__col.col 1
+          .example__col.col.hide-laptop-md.show-tablet-landscape 2
+          .example__col.col 3
+          .example__col.col.hide-laptop-md.show-tablet-landscape 4
+      +code-snippets(9)
+
+
+      +title(texts.resetMargins.title, 'zeroing')(class='col-12')
+      +text(texts.resetMargins.text)(class='col-12')
+      .col-12
+        .example.example_colored.row.no-v-gutters
+          .example__col.col col
+          .example__col.col col
+          .example__col.col col
+          .example__col.col col
+        .example.example_colored.row.no-v-gutters
+          .example__col.col col
+          .example__col.col col
+          .example__col.col col
+          .example__col.col col
+        .example.example_colored.row
+          .example__col.col col
+          .example__col.col col
+          .example__col.col col
+          .example__col.col col
+      +code-snippets(10)
+      +text(texts.resetMargins.text2)(class='col-12')
+      .col-12
+        .example.example_colored.row
+          .example__col.col col
+          .example__col.col col
+          .example__col.col col
+          .example__col.col col
+        .example.example_colored.row.no-children-v-gutters
+          .example__col.col col
+          .example__col.col col
+          .example__col.col col
+          .example__col.col col
+      +code-snippets(11)
+      +text(texts.resetMargins.text3)(class='col-12')
+      .col-12
+        .example.example_colored.row
+          .example__col.col col
+          .example__col.col col
+          .example__col.col col
+          .example__col.col col
+        .example.example_colored.row.no-children-h-gutters
+          .example__col.col col
+          .example__col.col col
+          .example__col.col col
+          .example__col.col col
+      +code-snippets(12)
+      +text(texts.resetMargins.text4)(class='col-12')
+      .col-12
+        .example.example_colored.row
+          .example__col.col.no-v-gutters col
+          .example__col.col col
+          .example__col.col col
+          .example__col.col col
+      +code-snippets(13)
+      +text(texts.resetMargins.text5)(class='col-12')
+      .col-12
+        .example.example_colored.row
+          .example__col.col.no-h-gutters col
+          .example__col.col col
+          .example__col.col col
+          .example__col.col col
+      +code-snippets(14)
+      +text(texts.resetMargins.text6)(class='col-12')
+      .col-12
+        .example.example_colored.row.no-children-gutters
+          .example__col.col col
+          .example__col.col col
+          .example__col.col col
+          .example__col.col col
+      +code-snippets(15)
+
+
+      +title(texts.columnClasses.title, 'column-classes')(class='col-12')
+      +text(texts.columnClasses.text)(class='col-12')
+        ul.class-list
+          - for (let i = 1; i < 13; i++) {
+              li.class-list__item
+                span.inline-snippet col-#{i}
+          - }
+
+
+      +title(texts.breakpoints.title, 'breakpoints')(class='col-12')
+      +text(texts.breakpoints.text)(class='col-12')
+      .col-12
+        table
+          tr
+            each title in texts.breakpoints.table.titles
+              th= title
+            each row in texts.breakpoints.table.rows
+              tr
+                each column in row
+                  td= column
+
+      +title(texts.responsiveColumnClasses.title, 'responsive-column-classes')(class='col-12')
+      +text(texts.responsiveColumnClasses.text)(class='col-12')
+        ul.class-list
+          each breakpoint in texts.responsiveColumnClasses.breakpoints
+            li.class-list__item
+              span.inline-snippet col-#{breakpoint}-1 - col-#{breakpoint}-12
+
+
+      +title(texts.customization.title, 'grid-customization')(class='col-12')
+      +text(texts.customization.text)(class='col-12')
+      +subtitle(texts.customization.subtitle, 'grid-customization-vars')(class='col-12')
+      +text(texts.customization.text2)(class='col-12')
+      +subtitle(texts.customization.subtitle2, 'grid-customization-mixins')(class='col-12')
+      +text(texts.customization.text3)(class='col-12')
+
+
+      +title(texts.sources.title, 'sass-source-files')(class='col-12')
+      +subtitle(texts.sources.subtitle, 'sass-source-files-grid')(class='col-12')
+      +text(texts.sources.text)(class='col-12')
+      +code-snippet({ code: snippets.sass[snippets.sass.length - 1], title: 'Sass ( Scss syntax )', classes: 'scss' })(class='col')
+      +text(texts.sources.text2)(class='col-12')
+      +code-snippet({ code: snippets.sass[snippets.sass.length - 2], title: 'Sass ( Scss syntax )', classes: 'scss' })(class='col')
+      .text.col-12
+        ul.class-list
+          each variable in texts.sources.variables
+            li.class-list__item!= variable
+
+      +subtitle(texts.sources.subtitle2, 'sass-source-files-responsive-classes')(class='col-12')
+      +text(texts.sources.text3)(class='col-12')
+      .text.col-12
+        +responsive-list
+          +responsive-list-item(texts.sources.responsiveList[0])
+            .example.row
+              .example__col.col-2.col-laptop-3.col-laptop-md-4.col-tablet-landscape-6.col-phone-landscape-12 1
+              .example__col.col-2.col-laptop-3.col-laptop-md-4.col-tablet-landscape-6.col-phone-landscape-12 2
+              .example__col.col-2.col-laptop-3.col-laptop-md-4.col-tablet-landscape-6.col-phone-landscape-12 3
+              .example__col.col-2.col-laptop-3.col-laptop-md-4.col-tablet-landscape-6.col-phone-landscape-12 4
+              .example__col.col-2.col-laptop-3.col-laptop-md-4.col-tablet-landscape-6.col-phone-landscape-12 5
+              .example__col.col-2.col-laptop-3.col-laptop-md-4.col-tablet-landscape-6.col-phone-landscape-12 6
+            .row
+              +code-snippets(16)
+
+          +responsive-list-item(texts.sources.responsiveList[1])
+            .example.example_colored.row.justify-content-laptop-center.justify-content-laptop-md-end.justify-content-tablet-landscape-between.justify-content-phone-landscape-around
+              .example__col.col-2 1
+              .example__col.col-2 2
+            .row
+              +code-snippets(17)
+
+          +responsive-list-item(texts.sources.responsiveList[2])
+            .example.example_colored.example_fixed-size.row.no-children-v-gutters.align-items-start.align-items-laptop-center.align-items-laptop-md-end.align-items-tablet-landscape-stretch.align-items-phone-landscape-baseline
+              .example__col.col 1
+              .example__col.col 2
+              .example__col.col 3
+            .row
+              +code-snippets(18)
+
+          +responsive-list-item(texts.sources.responsiveList[3])
+            .example.example_colored.example_fixed-size.row.no-children-v-gutters.align-items-start
+              .example__col.col.align-self-laptop-center.align-self-laptop-md-end.align-self-tablet-landscape-stretch.align-self-phone-landscape-baseline 1
+              .example__col.col 2
+              .example__col.col 3
+            .row
+              +code-snippets(19)
+
+
+          +responsive-list-item(texts.sources.responsiveList[4])
+            .example.example_colored.row.align-items-start.align-items-laptop-md-stretch.direction-laptop-row-reverse.direction-laptop-md-column.direction-tablet-landscape-column-reverse
+              .example__col.col 1
+              .example__col.col 2
+              .example__col.col 3
+            .row
+              +code-snippets(20)
+
+          +responsive-list-item(texts.sources.responsiveList[5])
+            .example.example_colored.row.no-children-v-gutters
+              .example__col.col-2.offset-laptop-right-2.offset-laptop-md-right-4.offset-tablet-landscape-right-6.offset-phone-landscape-right-auto 1
+            .example.example_colored.row.no-children-v-gutters
+              .example__col.col-2.offset-laptop-md-right-auto 2
+            .example.example_colored.row.no-children-v-gutters
+              .example__col.col-2.offset-right-auto.offset-desktop-left-auto 3
+            .row
+              +code-snippets(21)
+
+          +responsive-list-item(texts.sources.responsiveList[6])
+            .example.row
+              .example__col.col.order-laptop-2 1
+              .example__col.col.order-laptop-1 2
+              .example__col.col.order-laptop-4 3
+              .example__col.col.order-laptop-3 4
+            .example.row
+              .example__col.col.order-laptop-last 1
+              .example__col.col 2
+              .example__col.col 3
+              .example__col.col.order-laptop-first 4
+            .row
+              +code-snippets(22)
+
+
+            +responsive-list-item(texts.sources.responsiveList[7])
+              .example.row
+                .example__col.col.hide-laptop 1
+                .example__col.col 2
+              .example.row
+                .example__col.col 3
+                .example__col.col.hide.show-laptop 4
+              .row
+                +code-snippets(23)
+
+            +responsive-list-item(texts.sources.responsiveList[8])
+              +code-snippet({ code: snippets.sass[snippets.sass.length - 3], title: 'Sass ( Scss syntax )', classes: 'scss' })(class='col')
+            +text(texts.sources.text4)(class='col-12')
+
+
+      +title(texts.sources.title2, 'partials')(class='col-12')
+      +text(texts.sources.text5)(class='col-12')
+      +code-snippet({ code: snippets.sass[snippets.sass.length - 4], title: 'Sass ( Scss syntax )', classes: 'scss' })(class='col')
+      +text(texts.sources.text6)(class='col-12')
+
+      +subtitle(texts.sources.subtitle3, 'partials-alignment')(class='col-12')
+      +text(texts.sources.text7)(class='col-12')
+      +subtitle(texts.sources.subtitle4, 'partials-direction')(class='col-12')
+      +text(texts.sources.text8)(class='col-12')
+      +subtitle(texts.sources.subtitle5, 'partials-order')(class='col-12')
+      +text(texts.sources.text9)(class='col-12')
+      +subtitle(texts.sources.subtitle6, 'partials-offset')(class='col-12')
+      +text(texts.sources.text10)(class='col-12')
+      +subtitle(texts.sources.subtitle7, 'partials-hide')(class='col-12')
+      +text(texts.sources.text11)(class='col-12')
+      +subtitle(texts.sources.subtitle8, 'partials-display')(class='col-12')
+      +text(texts.sources.text12)(class='col-12')
+      +subtitle(texts.sources.subtitle9, 'partials-margins-reset')(class='col-12')
+      +text(texts.sources.text13)(class='col-12')
+      +subtitle(texts.sources.subtitle10, 'grid-basic-init')(class='col-12')
+      +text(texts.sources.text14)(class='col-12')
+
+      +title(texts.compilation.title, 'compiling-sass-files')(class='col-12')
+      +text(texts.compilation.text)(class='col-12')
+
+      +title(texts.referenceTable, 'reference-table')(class='col-12')
+      include ../blocks/class-table/class-table
+
+  +sidebar-wrapper
+    +lang-widget
+    +burger
+    +main-nav

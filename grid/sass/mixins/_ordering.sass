@@ -1,0 +1,26 @@
+=order($order: 0, $breakpoint: null)
+  @if $order > $columns
+    $order: $columns
+
+  @if $order < 0
+    $order: 0
+
+  @if map_has_key($grid-breakpoints, $breakpoint)
+    @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint))
+      order: $order
+  @else
+    order: $order
+
+=order-first($breakpoint: null)
+  @if map_has_key($grid-breakpoints, $breakpoint)
+    @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint))
+      order: -1
+  @else
+    order: -1
+
+=order-last($breakpoint: null)
+  @if map_has_key($grid-breakpoints, $breakpoint)
+    @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint))
+      order: $columns + 1
+  @else
+    order: $columns + 1

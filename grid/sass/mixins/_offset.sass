@@ -1,0 +1,46 @@
+=offset($direction: right, $offset: auto, $breakpoint: null)
+  @if map_has_key($grid-breakpoints, $breakpoint)
+    @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint))
+      @if $offset == auto
+        @if $direction == right
+          margin-left: auto !important
+          margin-right: ($h-gutter / 2) !important
+        @else if $direction == left
+          margin-right: auto !important
+          margin-left: ($h-gutter / 2) !important
+        @else
+          margin-left: auto !important
+          margin-right: ($h-gutter / 2) !important
+      @else if type_of($offset) == number
+        @if $offset > $columns
+          $offset: $columns
+
+        @if $offset < 1
+          $offset: 1
+
+        @if $direction == right
+          margin-left: calc(100% / #{$columns} * #{$offset} + #{$h-gutter} / 2) !important
+        @else if $direction == left
+          margin-right: calc(100% / #{$columns} * #{$offset} + #{$h-gutter} / 2) !important
+  @else
+    @if $offset == auto
+      @if $direction == right
+        margin-left: auto !important
+        margin-right: ($h-gutter / 2) !important
+      @else if $direction == left
+        margin-right: auto !important
+        margin-left: ($h-gutter / 2) !important
+      @else
+        margin-left: auto !important
+        margin-right: ($h-gutter / 2) !important
+    @else if type_of($offset == number)
+      @if $offset > $columns
+        $offset: $columns
+
+      @if $offset < 1
+        $offset: 1
+
+      @if $direction == right
+        margin-left: calc(100% / #{$columns} * #{$offset} + #{$h-gutter} / 2) !important
+      @else if $direction == left
+        margin-right: calc(100% / #{$columns} * #{$offset} + #{$h-gutter} / 2) !important

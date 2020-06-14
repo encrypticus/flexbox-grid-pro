@@ -1,0 +1,13 @@
+.title,
+.subtitle {
+  margin-bottom: pxToRem(10) !important;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: pxToRem(30);
+}
+
+.subtitle {
+  font-size: pxToRem(25);
+}

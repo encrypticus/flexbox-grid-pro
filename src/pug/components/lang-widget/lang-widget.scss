@@ -1,0 +1,30 @@
+.lang-widget {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
+  background-color: #fff;
+
+  &__link {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 7px 20px;
+    background-color: #007fff;
+    color: #fff;
+    text-decoration: none;
+    transition: .2s;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: lighten(#007fff, 10%);
+    }
+
+    &:first-child {
+      border-right: 1px solid rgba(0, 0, 0, 0.29);
+      border-radius: 5px 0 0 5px;
+    }
+
+    &:last-child {
+      border-radius: 0 5px 5px 0;
+    }
+  }
+}

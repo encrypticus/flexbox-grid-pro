@@ -1,0 +1,37 @@
+@if (type_of($partials) == list and index($partials, direction)) or (type_of($partials) == string and index($partials, direction)) {
+
+  .direction-row {
+    @include direction(row);
+  }
+
+  .direction-row-reverse {
+    @include direction(row-reverse);
+  }
+
+  .direction-column {
+    @include direction(column);
+  }
+
+  .direction-column-reverse {
+    @include direction(column-reverse);
+  }
+
+  // генерация "направляющих" классов в медиазапросах согласно заданным брейкпойнтам $grid-breakpoints
+  @each $breakpoint-name, $breakpoint-value in $grid-breakpoints {
+    .direction-#{$breakpoint-name}-row {
+      @include direction(row, $breakpoint-name);
+    }
+
+    .direction-#{$breakpoint-name}-row-reverse {
+      @include direction(row-reverse, $breakpoint-name);
+    }
+
+    .direction-#{$breakpoint-name}-column {
+      @include direction(column, $breakpoint-name);
+    }
+
+    .direction-#{$breakpoint-name}-column-reverse {
+      @include direction(column-reverse, $breakpoint-name);
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@if (type_of($partials) == list and index($partials, alignment)) or (type_of($partials) == string and index($partials, alignment)) {
+
+  .justify-content-start {
+    @include justify-content(flex-start);
+  }
+
+  .justify-content-center {
+    @include justify-content(center);
+  }
+
+  .justify-content-end {
+    @include justify-content(flex-end);
+  }
+
+  .justify-content-space-between {
+    @include justify-content(space-between);
+  }
+
+  .justify-content-space-around {
+    @include justify-content(space-around);
+  }
+
+  .align-items-start {
+    @include align-items(flex-start);
+  }
+
+  .align-items-center {
+    @include align-items(center);
+  }
+
+  .align-items-end {
+    @include align-items(flex-end);
+  }
+
+  .align-items-stretch {
+    @include align-items(stretch);
+  }
+
+  .align-items-baseline {
+    @include align-items(baseline);
+  }
+
+  .align-self-start {
+    @include align-self(flex-start);
+  }
+
+  .align-self-center {
+    @include align-self(center);
+  }
+
+  .align-self-end {
+    @include align-self(flex-end);
+  }
+
+  .align-self-stretch {
+    @include align-self(stretch);
+  }
+
+  .align-self-baseline {
+    @include align-self(baseline);
+  }
+
+  // генерирация классов горизонтального выравнивания ячеек сетки в строке в медиазапросах
+  @include generate-h-alignment-breakpoints();
+  // генерация классов вертикального выравнивания ячеек сетки в столбце в медиазапросах
+  @include generate-v-alignment-breakpoints();
+  // генерация классов вертикального выравнивания отдельно взятой ячейки сетки в столбце в медиазапросах
+  @include generate-self-alignment-breakpoints();
+}

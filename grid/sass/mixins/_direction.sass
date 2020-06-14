@@ -1,0 +1,28 @@
+=direction($direction: row, $breakpoint: "false")
+  @if map_has_key($grid-breakpoints, $breakpoint)
+    @if $direction == row
+      @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint))
+        flex-direction: row
+    @else if $direction == row-reverse
+      @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint))
+        flex-direction: row-reverse
+    @else if $direction == column
+      @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint))
+        flex-direction: column
+    @else if $direction == column-reverse
+      @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint))
+        flex-direction: column-reverse
+    @else
+      @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint))
+        flex-direction: row
+  @else
+    @if $direction == row
+      flex-direction: row
+    @else if $direction == row-reverse
+      flex-direction: row-reverse
+    @else if $direction == column
+      flex-direction: column
+    @else if $direction == column-reverse
+      flex-direction: column-reverse
+    @else
+      flex-direction: row

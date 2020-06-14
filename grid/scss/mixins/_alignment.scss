@@ -1,0 +1,117 @@
+/* Выравнивание ячеек внутри строки вдоль горизонтальной и вертикальной осей */
+
+$h-alignment-classes: (
+  start: flex-start,
+  center: center,
+  end: flex-end,
+  between: space-between,
+  around: space-around,
+);
+
+$v-alignment-classes: (
+  start: flex-start,
+  center: center,
+  end: flex-end,
+  stretch: stretch,
+  baseline: baseline
+);
+
+/* ГОРИЗОНТАЛЬНОЕ ВЫРАВНИВАНИЕ */
+
+/*
+  Выкладывает ячейки сетки в строке согласно параметру $align, который должен принимать одно из следующих значений:
+  flex-start, flex-end, center, space-between, space-around.
+  Применяется к элементам строки ($row) сетки.
+  Если передан аргумент $breakpoint, выравнивание сработает в медиазапросе согласно значению этого аргумента.
+  Значением аргумента должно быть одно из имен ключей глобального объекта $grid-breakpoints.
+*/
+@mixin justify-content($align: flex-start, $breakpoint: null) {
+  @if (map_has_key($grid-breakpoints, $breakpoint)) {
+    @media screen and(#{$media-query}-width: map_get($grid-breakpoints, $breakpoint)) {
+      justify-content: $align;
+    }
+  } @else {
+    justify-content: $align;
+  }
+}
+
+/* ВЕРТИКАЛЬНОЕ ВЫРАВНИВАНИЕ */
+
+/*
+  Выкладывает ячейки сетки в столбце согласно параметру $align, который должен принимать одно из следующих значений:
+  flex-start, flex-end, center, stretch, baseline.
+  Применяется к элементам строки ($row) сетки.
+  Если передан аргумент $breakpoint, выравнивание сработает в медиазапросе согласно значению этого аргумента.
+  Значением аргумента должно быть одно из имен ключей глобального объекта $grid-breakpoints.
+*/
+@mixin align-items($align: flex-start, $breakpoint: null) {
+  @if (map_has_key($grid-breakpoints, $breakpoint)) {
+    @media screen and(#{$media-query}-width: map_get($grid-breakpoints, $breakpoint)) {
+      align-items: $align;
+    }
+  } @else {
+    align-items: $align;
+  }
+}
+
+/*
+  Выкладывает ячейку сетки в столбце согласно параметру $align, который должен принимать одно из следующих значений:
+  flex-start, flex-end, center, stretch, baseline.
+  Применяется к элементу отдельно взятой ячейки ($col).
+  Если передан аргумент $breakpoint, выравнивание сработает в медиазапросе согласно значению этого аргумента.
+  Значением аргумента должно быть одно из имен ключей глобального объекта $grid-breakpoints.
+*/
+@mixin align-self($align: flex-start, $breakpoint: null) {
+  @if (map_has_key($grid-breakpoints, $breakpoint)) {
+    @media screen and(#{$media-query}-width: map_get($grid-breakpoints, $breakpoint)) {
+      align-self: $align;
+    }
+  } @else {
+    align-self: $align;
+  }
+}
+
+/*
+  Генерирует классы горизонтального выравнивания ячеек сетки в строке в медиазапросах. Например: .justify-content-desktop-start,
+  .justify-content-laptop-center и т.д. Применяется к элементам строки ($row).
+  Для формирования классов и брейкпоинтов в медиазапросах использует объекты $h-alignment-classes и $grid-breakpoints.
+*/
+@mixin generate-h-alignment-breakpoints() {
+  @each $breakpoint-name, $breakpoint-value in $grid-breakpoints {
+    @each $className, $value in $h-alignment-classes {
+      .justify-content-#{$breakpoint-name}-#{$className} {
+        @include justify-content($value, $breakpoint-name);
+      }
+    }
+  }
+}
+
+/*
+  Генерирует классы вертикального выравнивания ячеек сетки в столбце в медиазапросах. Например: .align-items-desktop-start,
+  .align-items-laptop-center и т.д. Применяется к элементам строки ($row).
+  Для формирования классов и брейкпойнтов в медиазапросах использует объекты $v-alignment-classes и $grid-breakpoints.
+*/
+@mixin generate-v-alignment-breakpoints() {
+  @each $breakpoint-name, $breakpoint-value in $grid-breakpoints {
+    @each $className, $value in $v-alignment-classes {
+      .align-items-#{$breakpoint-name}-#{$className} {
+        @include align-items($value, $breakpoint-name);
+      }
+    }
+  }
+}
+
+/*
+  Генерирует классы вертикального выравнивания отдельно взятой ячейки сетки в столбце в медиазапросах. Например: .align-self-desktop-start,
+  .align-self-laptop-center и т.д. Применяется к элементам колонки ($col).
+  Для формирования классов и брейкпойнтов в медиазапросах использует объекты $v-alignment-classes и $grid-breakpoints.
+*/
+@mixin generate-self-alignment-breakpoints() {
+  @each $breakpoint-name, $breakpoint-value in $grid-breakpoints {
+    @each $className, $value in $v-alignment-classes {
+      .align-self-#{$breakpoint-name}-#{$className} {
+        @include align-self($value, $breakpoint-name);
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@if (type_of($partials) == list and index($partials, hide)) or (type_of($partials) == string and index($partials, hide)) {
+
+  .hide {
+    @include hide();
+  }
+
+  /*
+    Генерация "скрывающих" классов в медиазапросах исходя из глобального объекта со значениями для медиазапросов
+    $grid-breakpoints
+  */
+  @each $breakpoint-name, $breakpoint-value in $grid-breakpoints {
+    .hide-#{$breakpoint-name} {
+      @include hide($breakpoint-name);
+    }
+  }
+}

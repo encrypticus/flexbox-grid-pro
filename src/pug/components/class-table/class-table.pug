@@ -1,0 +1,30 @@
+mixin class-table(table)
+  .class-table-wrapper.col-12
+    table.class-table
+      tbody
+        tr
+          each title in classTable.titles
+            th!= title
+        each row in table
+          tr
+            td.class-table__name
+              each name in row.className
+                div!= name
+            td
+              .class-table__mixin-name!= row.mixin.name
+              .class-table__mixin-description!= row.mixin.description
+              table
+                tbody
+                  tr
+                    each subtitle in classTable.subtitles
+                      th!= subtitle
+                    each option in row.mixin.options
+                      tr
+                        td!= option.name
+                        td!= option.type
+                        td.class-table__available
+                          each avilable in option.available
+                            div!= avilable
+                        td.class-table__default!= option.default
+                        td!= option.description
+              td.class-table__description!= row.description

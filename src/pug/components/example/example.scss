@@ -1,0 +1,25 @@
+.example {
+  color: #fff;
+  text-align: center;
+
+  &_colored {
+    margin: pxToRem(10) 0;
+    background-color: rgba(0, 49, 255, 0.15);
+    padding: {
+      top: pxToRem(10);
+      bottom: pxToRem(10);
+    }
+  }
+
+  &_fixed-size {
+    height: 200px;
+  }
+
+  &__col {
+    padding: pxToRem(10);
+    font-size: 80%;
+    background-color: #007fff;
+    border-radius: 5px;
+    letter-spacing: 1px;
+  }
+}

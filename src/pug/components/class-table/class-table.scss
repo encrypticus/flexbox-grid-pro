@@ -1,0 +1,33 @@
+.class-table {
+  line-height: 1.7;
+  background-color: #fff;
+
+  &__mixin-name,
+  &__mixin-description {
+    margin-bottom: pxToRem(10);
+  }
+
+  &__mixin-name {
+    font-weight: bold;
+  }
+
+  &__name {
+    font-weight: bold;
+    min-width: 220px;
+  }
+
+  &__description {
+    min-width: 250px;
+    max-width: 250px;
+  }
+
+  &__available,
+  &__default {
+    min-width: 150px;
+  }
+}
+
+.class-table-wrapper {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+  overflow-x: auto;
+}

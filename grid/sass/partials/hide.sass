@@ -1,0 +1,7 @@
+@if type_of($partials) == list and index($partials, hide) or type_of($partials) == string and index($partials, hide)
+  .hide
+    +hide
+
+  @each $breakpoint-name, $breakpoint-value in $grid-breakpoints
+    .hide-#{$breakpoint-name}
+      +hide($breakpoint-name)

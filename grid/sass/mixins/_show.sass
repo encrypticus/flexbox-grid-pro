@@ -1,0 +1,9 @@
+=show($display: initial, $breakpoint: null)
+  @if $display == none
+    $display: initial
+
+  @if map_has_key($grid-breakpoints, $breakpoint)
+    @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint))
+      display: $display
+  @else
+    display: $display

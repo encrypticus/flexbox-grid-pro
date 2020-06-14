@@ -1,0 +1,23 @@
+@if type_of($partials) == list and index($partials, ordering) or type_of($partials) == string and index($partials, ordering)
+  @for $i from 0 through $columns
+    .order-#{$i}
+      order: #{$i}
+
+  @each $breakpoint-name, $breakpoint-value in $grid-breakpoints
+    @for $i from 0 through $columns
+      .order-#{$breakpoint-name}-#{$i}
+        +order($i, $breakpoint-name)
+
+  @each $breakpoint-name, $breakpoint-value in $grid-breakpoints
+    .order-#{$breakpoint-name}-first
+      +order-first($breakpoint-name)
+
+  @each $breakpoint-name, $breakpoint-value in $grid-breakpoints
+    .order-#{$breakpoint-name}-last
+      +order-last($breakpoint-name)
+
+  .order-first
+    +order-first
+
+  .order-last
+    +order-last

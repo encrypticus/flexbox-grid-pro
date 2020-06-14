@@ -1,0 +1,1778 @@
+{
+  "ru": {
+    "subtitle": "Богатая модульная сеточная система, основанная на css-свойстве flexbox",
+    "texts": {
+      "intro": {
+        "title": "Введение",
+        "text": "Flexbox Grid Pro - это богатая модульная сеточная система для создания адаптивных, отзывчивых макетов. Сетка доступна в двух вариантах - как набор предопределенных css-классов и как набор sass-миксинов. То есть вы можете либо в html-разметке проставить нужным элементам небходимые классы, либо же в вашем sass-коде в селекторах подключить необходимые миксины, как показано ниже. Оба варианта равнозначны и дают аналогичные результаты. Каким из них воспользоваться - лишь вопрос ваших предпочтений:",
+        "text2": "Библиотека содержит следующие разделы наборов css-классов и соответствующих sass-миксинов:",
+        "list": [
+          "Выравнивание",
+          "Направление располжения ячеек в сетке",
+          "Смещение колонок",
+          "Упорядочивание ячеек",
+          "Скрытие и отображение элементов"
+        ],
+        "text3": "Для того чтобы создать адаптивную сетку, нужно в разметку добавить элемент контейнера <span class='inline-snippet'>container</span>, содержащий элементы строк с необходимым количеством столбцов внутри. В примере ниже представлена сетка, состоящая из трёх строк <span class='inline-snippet'>row</span>, каждая из которых в свою очередь содержит по три колонки <span class='inline-snippet'>col</span> одинаковой ширины:"
+      },
+      "differentWidthCols": {
+        "title": "Колонки заданной ширины",
+        "text": "По умолчанию сетка состоит из двенадцати колонок. Просто задайте элементу необходимый класс или подключите в селекторе нужный миксин:"
+      },
+      "alignment": {
+        "title": "Выравнивание",
+        "subtitle1": "Горизонтальное",
+        "subtitle2": "Вертикальное",
+        "text": "Для горизонтального и вертикального выравнивания колонок воспользуйтесь необходимыми классами или миксинами."
+      },
+      "direction": {
+        "title": "Направление расположения главной оси",
+        "text": "Чтобы задать направление расположения столбцов в строке, воспользуйтесь необходимыми классами или миксинами:"
+      },
+      "ordering": {
+        "title": "Порядок расположения колонок",
+        "text": "Для указания порядка расположения столбцов в строке воспользуйтесь нужными классами или миксинами:"
+      },
+      "offset": {
+        "title": "Смещение колонок",
+        "text": "Для смещения колонок используйте нужные классы или миксины:"
+      },
+      "show_hide": {
+        "title": "Скрытие и отображение элементов",
+        "subtitle1": "Скрытие",
+        "subtitle2": "Отображение",
+        "text": "Для скрытия элементов используйте нужные классы или миксины. В примере ниже вторая и четвертая колонки будут скрыты при ширине вьюпорта 960px и меньше:",
+        "text2": "Для отображения элементов используйте нужные классы или миксины. В примере ниже вторая и четвертая колонки будут скрыты при ширине вьюпорта 960px и меньше, но снова отобразятся при ширине вьюпорта 768px:"
+      },
+      "resetMargins": {
+        "title": "Обнуление внешних отступов у элементов строк и колонок",
+        "text": "Чтобы обнулить внешние отступы у элементов строк и колонок, воспользуйтесь предназначенными для этого классами или миксинами. В примере ниже сброшены вертикальные внешние отступы у первых двух элементов строк:",
+        "text2": "В следующем примере вертикальные внешние отступы сброшены у колонок во второй строке:",
+        "text3": "В следующем примере у колонок во второй строке сброшены горизонтальные внешние отступы:",
+        "text4": "В следующем примере у первой колонки сброшены вертикальные внешние отступы:",
+        "text5": "В следующем примере у первой колонки сброшены горизонтальные внешние отступы:",
+        "text6": "В следующем примере у колонок сброшены как горизонтальные, так и вертикальные внешние отступы:"
+      },
+      "columnClasses": {
+        "title": "Колоночные классы",
+        "text": "По умолчанию сетка состоит из двенадцати колонок и соответственно содержит двенадцать \"колоночных\" классов:"
+      },
+      "breakpoints": {
+        "title": "Контрольные точки ( breakpointns )",
+        "text": "По умолчанию система использует восемь предопределенных контрольных точек в стиле desktop-first:",
+        "table": {
+          "titles": [
+            "Контрольная точка",
+            "Размер вьюпорта"
+          ],
+          "rows": [
+            ["desktop", "1280px"],
+            ["laptop", "1024px"],
+            ["laptop-md", "960px"],
+            ["tablet-landscape", "768px"],
+            ["phone-landscape", "640px"],
+            ["phone", "480px"],
+            ["phone-md", "360px"],
+            ["phone-sm", "320px"]
+          ]
+        }
+      },
+      "responsiveColumnClasses": {
+        "title": "\"Отзывчивые\" колоночные классы",
+        "text": "Исходя из предопределенного числа используемых в сетке столбцов и названий контрольных точек ( по умолчанию ) система включает набор \"отзывчивых\" колоночных классов:",
+        "breakpoints": [
+          "desktop",
+          "laptop",
+          "laptop-md",
+          "tablet-landscape",
+          "phone-landscape",
+          "phone",
+          "phone-md",
+          "phone-sm"
+        ]
+      },
+      "customization": {
+        "title": "Кастомизация сетки",
+        "text" : "Наряду с готовым css-файлом библиотека доступна в виде исходных файлов Sass. При этом доступен как sass-, так и scss-синтаксис. При использовании Sass у вас есть возможность использовать набор готовых переменных и миксинов для кастомизации сетки и её гибкой настройки. Все предопределённые классы сетки используют те же переменные и миксины для предоставления целого набора готовых к использованию класоов для быстрого создания адаптивных макетов.",
+        "subtitle": "Переменные",
+        "text2": "Переменные и карты определяют ширину контейнера сетки и его внутренние горизонтальные отступы, количество столбцов и расстояние между ними по горизонтали и вертикали, контрольные точки для медиазапросов, а также части библиотеки, которые будут включены в сформированный css-файл. Они используются для генерации заданных классов сетки, а также для миксинов, использованных в примерах выше.",
+        "subtitle2": "Миксины",
+        "text3": "В директории <span class='inline-snippet'>grid/mixins/</span> содержатся миксины, которые используются вместе с переменными сетки для генерации css. Все генерируемые классы библиотеки используют эти же миксины."
+      },
+      "sources": {
+        "title": "Исходные файлы Sass",
+        "subtitle": "Сетка",
+        "text": "В файле <span class='inline-snippet'>grid/grid.scss</span> содержатся все переменные и настройки сетки, которые вы можете переопределить:",
+        "text2": "Для того чтобы переопределить переменные по умолчанию, задайте им свои значения перед импортом основного файла библиотеки <span class='inline-snippet'>grid/grid.scss</span>:",
+        "variables": [
+          "<span class='inline-snippet'>container-width</span>   - ширина контейнера",
+          "<span class='inline-snippet'>container-padding</span> - внутренние отступы контейнера",
+          "<span class='inline-snippet'>h-gutter</span>          - расстояние между колонками сетки по горизонтали",
+          "<span class='inline-snippet'>v-gutter</span>          - расстояние между колонками сетки по вертикали",
+          "<span class='inline-snippet'>columns</span>           - количество колонок сетки",
+          "<span class='inline-snippet'>mobile-first</span>      - булев флаг, указывающий, какой подход будет использован при формировании медиазапросов - mobile first или desktop first",
+          "<span class='inline-snippet'>media-query</span>       - переменная принимает одно из двух значений - min или max. Какое значение примет переменная, зависит от значения переменной mobile-first. Эта переменная служит для определения того, по какому принципу будут сформированы медиазапросы сетки - mobile first или desktop first.",
+          "<span class='inline-snippet'>grid-breakpoints</span>  - карта контрольных точек ( breakpoints ) сетки. По умолчанию доступно восемь контрольных точек. Карта используется миксинами системы, а также частями библиотеки <span class='inline-snippet'>grid/partials</span>, отвечающими за генерацию \"отзывчивых\" колоночных и иных классов. Например, исходя из имен ключей карты и их значений в собранном конечном css-файле библиотеки будут сгенерированы классы и медиазапросы для них, как показано ниже.",
+          "<span class='inline-snippet'>partials</span>  - список частей библиотеки, отвечающих за генерацию определенных разделов html-классов. Чтобы уменьшить размер конечного css-файла библиотеки, вы можете присвоить этой переменной значение false перед импортом основного файла библиотеки. Это предотвратит генерацию большого количества предопределенных классов."
+        ],
+        "subtitle2": "\"Отзывчивые\" классы на основе карты контрольных точек",
+        "text3": "Ниже представлены классы сетки, сгенерированные на основе карты контрольных точек <span class='inline-snippet'>$grid-breakpoints</span> и срабатывающие при заданной ширине вьюпорта. Имена классов генерируются на основе имён ключей карты <span class='inline-snippet'>$grid-breakpoints</span>, значения же ширины вьюпорта в медиазапросах для этих классов генерируются на основе значений соответствующих ключей. Если вы хотите назначить свои имена для классов и свои значения для ширин вьюпорта, просто переопределите переменную <span class='inline-snippet'>$grid-breakpoints</span> перед импортом основного файла библиотеки <span class='inline-snippet'>grid.scss</span>. Чтобы увидеть, как будет перестраиваться сетка при различной ширине вьюпорта, просто поизменяйте размер окна браузера.",
+        "responsiveList": [
+          "Количество колонок в строке при различной ширине вьюпорта - <span class='inline-snippet'>col-desktop-5</span>, <span class='inline-snippet'>col-laptop-2</span>, <span class='inline-snippet'>col-tablet-landscape-3</span>, <span class='inline-snippet'>col-phone-md-12</span> и т.д.:",
+          "Горизонтальное выравнивание колонок в строке при различной ширине вьюпорта: <span class='inline-snippet'>justify-content-desktop-start</span>, <span class='inline-snippet'>justify-content-desktop-center</span>, <span class='inline-snippet'>justify-content-laptop-end</span> и т.д.:",
+          "Вертикальное выравнивание колонок в строке при различной ширине вьюпорта: <span class='inline-snippet'>align-items-desktop-start</span>, <span class='inline-snippet'>align-items-desktop-center</span>, <span class='inline-snippet'>align-items-laptop-end</span>, <span class='inline-snippet'>align-items-tablet-landscape-stretch</span>, <span class='inline-snippet'>align-items-phone-baseline</span> и т.д.:",
+          "Вертикальное выравнивание отдельно взятой колонки в строке при различной ширине вьюпорта: <span class='inline-snippet'>align-self-desktop-start</span>, <span class='inline-snippet'>align-self-desktop-center</span>, <span class='inline-snippet'>align-self-laptop-end</span>, <span class='inline-snippet'>align-self-tablet-landscape-stretch</span>, <span class='inline-snippet'>align-self-phone-baseline</span> и т.д.:",
+          "Направление расположения колонок в строке при различной ширине вьюпорта: <span class='inline-snippet'>direction-desktop-column</span>, <span class='inline-snippet'>direction-desktop-row-reverse</span>, <span class='inline-snippet'>direction-laptop-column</span>, <span class='inline-snippet'>direction-laptop-row-reverse</span> и т.д.:",
+          "Смещение колонок в строке при различной ширине вьюпорта: <span class='inline-snippet'>offset-desktop-right-2</span>, <span class='inline-snippet'>offset-laptop-left-4</span>, <span class='inline-snippet'>offset-tablet-landscape-left-9</span>, <span class='inline-snippet'>offset-phone-left-11</span> и т.д.:",
+          "Изменение порядка колонок в строке: <span class='inline-snippet'>order-desktop-1</span>, <span class='inline-snippet'>order-laptop-3</span>, <span class='inline-snippet'>order-laptop-md-5</span>, <span class='inline-snippet'>order-phone-first</span>, <span class='inline-snippet'>order-phone-sm-last</span> и т.д.:",
+          "Скрытие и отображение элементов сетки при различной ширине вьюпорта: <span class='inline-snippet'>hide-desktop</span>, <span class='inline-snippet'>hide-laptop</span>, <span class='inline-snippet'>hide-tablet-landscape</span>, <span class='inline-snippet'>hide-phone-sm</span>, <span class='inline-snippet'>show-desktop</span>, <span class='inline-snippet'>show-laptop</span>, <span class='inline-snippet'>show-tablet-landscape</span> и т.д.:",
+          "Также, как и другие переменные по умолчанию, вы можете переопределить значение переменной <span class='inline-snippet'>$grid-breakpoints</span>, задав для контрольных точек более традиционные названия и размеры вьюпорта:"
+        ],
+        "text4" :"Это сгенерирует классы вида <span class='inline-snippet'>col-lg-12</span>, <span class='inline-snippet'>col-md-4</span>, <span class='inline-snippet'>justify-content-sm-center</span>, <span class='inline-snippet'>offset-xs-2</span>, <span class='inline-snippet'>order-lg-9</span>, <span class='inline-snippet'>direction-sm-column</span>, <span class='inline-snippet'>hide-sm</span>, <span class='inline-snippet'>show-xs</span> и т.д.",
+        "title2": "Части",
+        "text5": "Директория <span class='inline-snippet'>partials</span> содержит список частей библиотеки, отвечающих за генерацию категорий классов и медиазапросов. С целью уменьшения сформированного css-файла библиотеки вы можете переопределить список, оставив лишь те элементы, названия которых соответствуют тем частям библиотеки, классы которых вы будете использовать. Ниже ещё будет сказано, какие части за что отвечают. Либо же, если вместо расстановки классов на элементах в разметке для построения сетки вы предпочитаете использовать Sass и предопределенные миксины, вы можете присвоить переменной <span class='inline-snippet'>partials</span> значение <span class='inline-script'>false</span> ( не <span class='inline-script'>null</span> ) или любое другое \"не null\" значение.",
+        "text6": "Это предотвратит генерацию большого количества готовых классов, что позволит значительно уменьшить размер конечного css-файла библиотеки.",
+        "subtitle3": "Выравнивание",
+        "text7": "Файл <span class='inline-snippet'>grid/partials/alignment.scss</span> содержит код, генерирующий классы, отвечающие за выравнивание колонок внутри строки.",
+        "subtitle4": "Направление расположения колонок в строке",
+        "text8": "Файл <span class='inline-snippet'>grid/partials/direction.scss</span> содержит код, генерирующий классы, отвечающие за направление главной оси, вдоль которой выстраиваются столбцы внутри строки.",
+        "subtitle5": "Упорядочивание колонок",
+        "text9": "Файл <span class='inline-snippet'>grid/partials/ordering.scss</span> содержит код, генерирующий классы, отвечающие за порядок расположения колонок внутри строки.",
+        "subtitle6": "Смещение колонок",
+        "text10": "Файл <span class='inline-snippet'>grid/partials/offset.scss</span> содержит код, генерирующий классы, отвечающие за смещение колонок внутри строки.",
+        "subtitle7": "Скрытие элементов",
+        "text11": "Файл <span class='inline-snippet'>grid/partials/hide.scss</span> содержит код, генерирующий классы, отвечающие за скрытие элементов.",
+        "subtitle8": "Отображение элементов",
+        "text12": "Файл <span class='inline-snippet'>grid/partials/visible.scss</span> содержит код, генерирующий классы, отвечающие за отображение элементов.",
+        "subtitle9": "Обнуление внешних отступов у элементов строк и колонок",
+        "text13": "Файл <span class='inline-snippet'>grid/partials/gutters.scss</span> содержит код, генерирующий классы, отвечающие за обнуление внешних отступов у элементов строк и колонок.",
+        "subtitle10": "Базовая инициализация сетки",
+        "text14": "Файл <span class='inline-snippet'>grid/base.scss</span> содержит код, генерирующий базовые классы сетки."
+      },
+      "compilation": {
+        "title": "Компиляция исходных sass-файлов",
+        "text": "При использовании библиотеки flexbox-grid-pro в виде sass-файлов, настоятельно рекомендуется использовать минификаторы <a href='https://github.com/Se7enSky/group-css-media-queries'>group-css-media-queries</a> и <a href='https://github.com/css/csso'>csso</a>. Это значительно сократит объём собранного css-файла библиотеки."
+      },
+      "referenceTable": "Справочная таблица по классам и миксинам"
+    },
+    "classTable": {
+      "titles": [
+        "Классы",
+        "Соответствующий миксин",
+        "Описание"
+      ],
+      "subtitles": [
+        "Параметр",
+        "Тип",
+        "Доступные значения",
+        "Значение по умолчанию",
+        "Описание"
+      ],
+      "alignment": [
+        {
+          "title": "Выравнивание",
+          "className": [
+            "justify-content-start,",
+            "justify-content-center,",
+            "justify-content-end,",
+            "justify-content-space-between,",
+            "justify-content-space-around"
+          ],
+          "mixin": {
+            "name": "justify-content( $align, $breakpoint )",
+            "description": "Выравнивает столбцы в строке согласно параметру <span class='inline-snippet'>$align</span>, который должен принимать одно из следующих значений: <span class='inline-snippet'>flex-start</span>, <span class='inline-snippet'>flex-end</span>, <span class='inline-snippet'>center</span>, <span class='inline-snippet'>space-between</span>, <span class='inline-snippet'>space-around</span>. Применяется к элементам строки ( <span class='inline-snippet'>row</span> ) сетки. Если передан аргумент <span class='inline-snippet'>$breakpoint</span>, выравнивание сработает в медиазапросе согласно значению этого аргумента. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.",
+            "options": [
+              {
+                "name": "align",
+                "type": "String",
+                "available": [
+                  "flex-start,",
+                  "center,",
+                  "flex-end,",
+                  "space-between,",
+                  "space-around,"
+                ],
+                "default": "flex-start",
+                "description": "Задаёт способ выравнивания столбцов"
+              },
+              {
+                "name": "breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone-sm"
+                ],
+                "default": "null",
+                "description": "Необязательный параметр. Если для него передано значение, выравнивание сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>."
+              }
+            ]
+          },
+          "description": "Выравнивают столбцы в строке в соответствии со свойствами flex-контейнера: flex-start, center, flex-end, space-between, space-around. Применяются к элементу строки."
+        },
+        {
+          "className": [
+            "align-items-start,",
+            "align-items-center,",
+            "align-items-end,",
+            "align-items-stretch,",
+            "align-items-baseline"
+          ],
+          "mixin": {
+            "name": "align-items( $align, $breakpoint )",
+            "description": "Выравнивает столбцы в строке согласно параметру <span class='inline-snippet'>$align</span>, который должен принимать одно из следующих значений: <span class='inline-snippet'>flex-start</span>, <span class='inline-snippet'>flex-end</span>, <span class='inline-snippet'>center</span>, <span class='inline-snippet'>stretch</span>, <span class='inline-snippet'>baseline</span>. Применяется к элементам строки ( <span class='inline-snippet'>row</span> ) сетки. Если передан аргумент <span class='inline-snippet'>$breakpoint</span>, выравнивание сработает в медиазапросе согласно значению этого аргумента. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.",
+            "options": [
+              {
+                "name": "align",
+                "type": "String",
+                "available": [
+                  "flex-start,",
+                  "center,",
+                  "flex-end,",
+                  "stretch,",
+                  "baseline"
+                ],
+                "default": "flex-start",
+                "description": "Задаёт способ выравнивания столбцов"
+              },
+              {
+                "name": "breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone-sm"
+                ],
+                "default": "null",
+                "description": "Необязательный параметр. Если для него передано значение, выравнивание сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>."
+              }
+            ]
+          },
+          "description": "Выравнивают столбцы в строке в соответствии со свойствами flex-контейнера: flex-start, center, flex-end, stretch, baseline. Применяются к элементу строки."
+        },
+        {
+          "className": [
+            "align-self-start,",
+            "align-self-center,",
+            "align-self-end,",
+            "align-self-stretch,",
+            "align-self-baseline"
+          ],
+          "mixin": {
+            "name": "align-self( $align, $breakpoint )",
+            "description": "Выравнивает отдельно взятый столбец в строке согласно параметру <span class='inline-snippet'>$align</span>, который должен принимать одно из следующих значений: <span class='inline-snippet'>flex-start</span>, <span class='inline-snippet'>flex-end</span>, <span class='inline-snippet'>center</span>, <span class='inline-snippet'>stretch</span>, <span class='inline-snippet'>baseline</span>. Применяется к элементам столбца ( <span class='inline-snippet'>col</span> ) сетки. Если передан аргумент <span class='inline-snippet'>$breakpoint</span>, выравнивание сработает в медиазапросе согласно значению этого аргумента. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.",
+            "options": [
+              {
+                "name": "align",
+                "type": "String",
+                "available": [
+                  "flex-start,",
+                  "center,",
+                  "flex-end,",
+                  "stretch,",
+                  "baseline,"
+                ],
+                "default": "flex-start",
+                "description": "Задаёт способ выравнивания отдельно взятого столбца в строке."
+              },
+              {
+                "name": "breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone-sm"
+                ],
+                "default": "null",
+                "description": "Необязательный параметр. Если для него передано значение, выравнивание сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>."
+              }
+            ]
+          },
+          "description": "Выравнивают отдельно взятый столбец в строке в соответствии со свойствами flex-контейнера: flex-start, center, flex-end, stretch, baseline. Применяются к элементу столбца."
+        }
+      ],
+      "direction": [
+        {
+          "title": "Направление расположения главной оси",
+          "className": [
+            "direction-row,",
+            "direction-row-reverse,",
+            "direction-column,",
+            "direction-column-reverse"
+          ],
+          "mixin": {
+            "name": "direction( $direction, $breakpoint )",
+            "description": "Задает направление главной оси, вдоль которой выстраиваются колонки в строке. В качестве аргумента для первого параметра <span class='inline-snippet'>$direction</span> должно быть передано одно из следующиех значений: <span class='inline-snippet'>row</span>, <span class='inline-snippet'>row-reverse</span>, <span class='inline-snippet'>column</span>, <span class='inline-snippet'>column-reverse</span>. Если вторым аргументом передано значение, соответствующее одному из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>, правило будет применено в медиазапросе.",
+            "options": [
+              {
+                "name": "direction",
+                "type": "String",
+                "available": [
+                  "row,",
+                  "row-reverse,",
+                  "column,",
+                  "column-reverse"
+                ],
+                "default": "row",
+                "description": "Задаёт направление главной оси, вдоль которой выстраиваются колонки в строке."
+              },
+              {
+                "name": "breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone-sm"
+                ],
+                "default": "null",
+                "description": "Необязательный параметр. Если для него передано значение, установка направления главной оси сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>."
+              }
+            ]
+          },
+          "description": "Задают направление главной оси, вдоль которой выстраиваются колонки в стрке, в соответствии со свойствами flex-контейнера: row, row-reverse, column, column-reverse. Применяются к элементу строки <span class='inline-snippet'>row</span>."
+        }
+      ],
+      "offset": [
+        {
+          "title": "Смещение колонок",
+          "className": [
+            "offset-left-1 - offset-left-12,",
+            "offset-right-1 - offset-right-12,",
+            "offset-left-auto,",
+            "offset-right-auto"
+          ],
+          "mixin": {
+            "name": "offset( $direction, $offset, $breakpoint )",
+            "description": "Смещает колонку в строке на <span class='inline-snippet'>$offset</span> - целое число колонок, вправо - <span class='inline-snippet'>$direction</span>: right или влево - <span class='inline-snippet'>$direction</span>: left. Если в качестве второго аргумента передано значение auto, колонка смещается на свободное пространство в ту или иную сторону. Если значение аргумента <span class='inline-snippet'>$breakpoint</span> соответствует одному из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>, правила применяются в соответствующем медиазапросе.",
+            "options": [
+              {
+                "name": "direction",
+                "type": "String",
+                "available": [
+                  "left,",
+                  "right"
+                ],
+                "default": "right",
+                "description": "От этого параметра зависит, в какую сторону будет происходить смещение колонок - вправо или влево."
+              },
+              {
+                "name": "offset",
+                "type": "Number|String",
+                "available": [
+                  "целое число колонок,",
+                  "auto"
+                ],
+                "default": "auto",
+                "description": "Число колонок, на которое будет смещена колонка. Если передано значение <span class='inline-snippet'>auto</span>, колонка сместится вправо/влево ( зависит от второго параметра <span class='inline-snippet'>direction</span> ) на всё доступное свободное пространство."
+              },
+              {
+                "name": "breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone-sm"
+                ],
+                "default": "null",
+                "description": "Необязательный параметр. Если для него передано значение, смещение для колонки сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>."
+              }
+            ]
+          },
+          "description": "Смещают колонки в строке на определённое число колонок вправо или влево."
+        }
+      ],
+      "ordering": [
+        {
+          "title": "Порядок расположения колонок",
+          "className": [
+            "order-0 - order-12,",
+            "order-first,",
+            "order-last,"
+          ],
+          "mixin": {
+            "name": "order( $order, $breakpoint )",
+            "description": "Упорядочивает колонки в строке согласно параметру <span class='inline-snippet'>$order</span> - целому числу, определяющему порядок следования колонок - чем меньше число, тем ближе к началу строки будет расположена колонка. Если при вызове миксина ему будет передан второй аргумент <span class='inline-snippet'>$breakpoint</span>, и при этом его значение будет соответствовать одному из имён ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>, то правило упорядочивания будет срабатывать лишь в соответствующем медиазапросе. Применяется к элементу строки <span class='inline-snippet'>row</span>",
+            "options": [
+              {
+                "name": "order",
+                "type": "Number|String",
+                "available": [
+                  "0 - общее число колонок,",
+                  "first,",
+                  "last"
+                ],
+                "default": "0",
+                "description": "Целое число или строка, определяющие визуальное положение колонки в строке сетки. Чем меньше число, тем ближе к началу строки будет расположена колонка."
+              },
+              {
+                "name": "breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone-sm"
+                ],
+                "default": "null",
+                "description": "Необязательный параметр. Если для него передано значение, сещение для колонки сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>."
+              }
+            ]
+          },
+          "description": "Задают порядок визуального расположения колонок в строке. Применяются к элементу строки <span class='inline-snippet'>row</span>."
+        }
+      ],
+      "gutters": [
+        {
+          "title": "Сброс внешних отступов ( margins )",
+          "className": [
+            "no-gutters"
+          ],
+          "mixin": {
+            "name": "no-gutters( $breakpoint )",
+            "description": "Обнуляет внешние отступы элемента. Применяется к любому элементу сетки.",
+            "options": [
+              {
+                "name": "$breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone-sm"
+                ],
+                "default": "null",
+                "description": "Необязательный параметр. Если для него передано значение, сброс отступов для элемента сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>."
+              }
+            ]
+          },
+          "description": "Обнуляют все внешние отступы у элемента. Применяются как к элементу строки, так и к элементу сетки."
+        },
+        {
+          "className": [
+            "no-h-gutters"
+          ],
+          "mixin": {
+            "name": "no-h-gutters( $breakpoint )",
+            "description": "Обнуляет внешние горизонтальные отступы элемента. Применяется как к элементу строки, так и к элементу колонки.",
+            "options": [
+              {
+                "name": "breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone-sm"
+                ],
+                "default": "null",
+                "description": "Необязательный параметр. Если для него передано значение, сброс отступов для элемента сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>."
+              }
+            ]
+          },
+          "description": "Обнуляют внешние горизонтальные отступы элемента. Применяются как к элементу строки, так и к элементу колонки."
+        },
+        {
+          "className": [
+            "no-v-gutters"
+          ],
+          "mixin": {
+            "name": "no-v-gutters( $breakpoint )",
+            "description": "Обнуляет внешние вертикальные отступы элемента. Применяется как к элементу строки, так и к элементу колонки.",
+            "options": [
+              {
+                "name": "breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone-sm"
+                ],
+                "default": "null",
+                "description": "Необязательный параметр. Если для него передано значение, сброс отступов для элемента сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>."
+              }
+            ]
+          },
+          "description": "Обнуляют внешние вертикальные отступы элемента. Применяются как к элементу строки, так и к элементу колонки."
+        },
+        {
+          "className": [
+            "no-children-gutters"
+          ],
+          "mixin": {
+            "name": "no-children-gutters( $breakpoint )",
+            "description": "Обнуляет внешние отступы элементов колонок в строке. Применяется к элементу строки.",
+            "options": [
+              {
+                "name": "breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone-sm"
+                ],
+                "default": "null",
+                "description": "Необязательный параметр. Если для него передано значение, сброс отступов для элемента сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>."
+              }
+            ]
+          },
+          "description": "Обнуляют внешние отступы элементов колонок в строке. Применяются к элементу строки."
+        },
+        {
+          "className": [
+            "no-children-h-gutters"
+          ],
+          "mixin": {
+            "name": "no-children-h-gutters( $breakpoint )",
+            "description": "Обнуляет внешние горизонтальные отступы элементов колонок в строке. Применяется к элементу строки.",
+            "options": [
+              {
+                "name": "breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone-sm"
+                ],
+                "default": "null",
+                "description": "Необязательный параметр. Если для него передано значение, сброс отступов для элемента сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>."
+              }
+            ]
+          },
+          "description": "Обнуляют внешние горизонтальные отступы элементов колонок в строке. Применяется к элементу строки."
+        },
+        {
+          "className": [
+            "no-children-v-gutters"
+          ],
+          "mixin": {
+            "name": "no-children-v-gutters( $breakpoint )",
+            "description": "Обнуляет внешние вертикальные отступы элементов колонок в строке. Применяется к элементу строки.",
+            "options": [
+              {
+                "name": "breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone-sm"
+                ],
+                "default": "null",
+                "description": "Необязательный параметр. Если для него передано значение, сброс отступов для элемента сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>."
+              }
+            ]
+          },
+          "description": "Обнуляют внешние горизонтальные отступы элементов колонок в строке. Применяются к элементу строки."
+        }
+      ],
+      "hide": [
+        {
+          "title": "Скрытие элементов",
+          "className": [
+            "hide"
+          ],
+          "mixin": {
+            "name": "hide( $breakpoint )",
+            "description": "Скрывает элемент, устанавливая его свойство display в none. Если значение аргумента <span class='inline-snippet'>$breakpoint</span> соответствует одному из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>, правило будет применено в соответствующем медиазапросе. Применяется к любому элементу сетки.",
+            "options": [
+              {
+                "name": "breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone-sm"
+                ],
+                "default": "null",
+                "description": "Необязательный параметр. Если для него передано значение, скрытие для элемента сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>."
+              }
+            ]
+          },
+          "description": "Скрывает элемент, устанавливая его свойство display в none. Применяется к любому элементу сетки."
+        }
+      ],
+      "show": [
+        {
+          "title": "Отображение скрытых элементов",
+          "className": [
+            "show"
+          ],
+          "mixin": {
+            "name": "show( $display, $breakpoint )",
+            "description": "Отображает скрытые элементы, устанавливая его свойство display в любое доступное для этого свойства значение, отличное от none. Применяется к любому элементу сетки.",
+            "options": [
+              {
+                "name": "display",
+                "type": "String",
+                "available": [
+                  "Любое доступное для css-свойства <span class='inline-snippet'>display</span> значение, кроме <span class='inline-snippet'>none</span>."
+                ],
+                "default": "initial",
+                "description": "Устанавливает свойство display элемента в указанное значение."
+              }
+            ]
+          },
+          "description": "Отображает скрытые элементы, устанавливая его свойство display в любое доступное для этого свойства значение, отличное от none. Применяется к любому элементу сетки."
+        }
+      ]
+    },
+    "mainMenu": [
+      {
+        "level": 1,
+        "name": "Введение",
+        "url": "#intro"
+      },
+      {
+        "level": 1,
+        "name": "Колонки заданной ширины",
+        "url": "#different-width-cols"
+      },
+      {
+        "level": 1,
+        "name": "Выравнивание",
+        "url": "#alignment",
+        "children": [
+          {
+            "level": 2,
+            "name": "Горизонтальное",
+            "url": "#alignment-horizontal"
+          },
+          {
+            "level": 2,
+            "name": "Вертикальное",
+            "url": "#alignment-vertical"
+          }
+        ]
+      },
+      {
+        "level": 1,
+        "name": "Направление расположения главной оси",
+        "url": "#axis-direction"
+      },
+      {
+        "level": 1,
+        "name": "Порядок расположения колонок",
+        "url": "#column-order"
+      },
+      {
+        "level": 1,
+        "name": "Смещение колонок",
+        "url": "#column-offset"
+      },
+      {
+        "level": 1,
+        "name": "Скрытие и отображение элементов",
+        "url": "#hide-and-show",
+        "children": [
+          {
+            "level": 2,
+            "name": "Скрытие",
+            "url": "#hide"
+          },
+          {
+            "level": 2,
+            "name": "Отображение",
+            "url": "#display"
+          }
+        ]
+      },
+      {
+        "level": 1,
+        "name": "Обнуление внешних отступов у элементов строк и колонок",
+        "url": "#zeroing"
+      },
+      {
+        "level": 1,
+        "name": "Колоночные классы",
+        "url": "#column-classes"
+      },
+      {
+        "level": 1,
+        "name": "Контрольные точки",
+        "url": "#breakpoints"
+      },
+      {
+        "level": 1,
+        "name": "\"Отзывчивые\" колоночные классы",
+        "url": "#responsive-column-classes"
+      },
+      {
+        "level": 1,
+        "name": "Кастомизация сетки",
+        "url": "#grid-customization",
+        "children": [
+          {
+            "level": 2,
+            "name": "Переменные",
+            "url": "#grid-customization-vars"
+          },
+          {
+            "level": 2,
+            "name": "Миксины",
+            "url": "#grid-customization-mixins"
+          }
+        ]
+      },
+      {
+        "level": 1,
+        "name": "Исходные файлы Sass",
+        "url": "#sass-source-files",
+        "children": [
+          {
+            "level": 2,
+            "name": "Сетка",
+            "url": "#sass-source-files-grid"
+          },
+          {
+            "level": 2,
+            "name": "\"Отзывчивые\" классы на основе карты контрольных точек",
+            "url": "#sass-source-files-responsive-classes"
+          },
+          {
+            "level": 2,
+            "name": "Части",
+            "url": "#partials",
+            "children": [
+              {
+                "level": 3,
+                "name": "Выравнивание",
+                "url": "#partials-alignment"
+              },
+              {
+                "level": 3,
+                "name": "Направление расположения колонок в строке",
+                "url": "#partials-direction"
+              },
+              {
+                "level": 3,
+                "name": "Упорядочивание колонок",
+                "url": "#partials-order"
+              },
+              {
+                "level": 3,
+                "name": "Смещение колонок",
+                "url": "#partials-offset"
+              },
+              {
+                "level": 3,
+                "name": "Скрытие элементов",
+                "url": "#partials-hide"
+              },
+              {
+                "level": 3,
+                "name": "Отображение элементов",
+                "url": "#partials-display"
+              },
+              {
+                "level": 3,
+                "name": "Обнуление внешних отступов у элементов строк и колонок",
+                "url": "#partials-margins-reset"
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "name": "Базовая инициализация сетки",
+            "url": "#grid-basic-init"
+          },
+          {
+            "level": 2,
+            "name": "Компиляция исходных sass-файлов",
+            "url": "#compiling-sass-files"
+          }
+        ]
+      },
+      {
+        "level": 1,
+        "name": "Справочная таблица по классам и миксинам",
+        "url": "#reference-table",
+        "children": [
+          {
+            "level": 2,
+            "name": "Выравнивание",
+            "url": "#ref-table-alignment"
+          },
+          {
+            "level": 2,
+            "name": "Направление расположения главной оси",
+            "url": "#ref-table-direction"
+          },
+          {
+            "level": 2,
+            "name": "Смещение колонок",
+            "url": "#ref-table-offset"
+          },
+          {
+            "level": 2,
+            "name": "Порядок расположения колонок",
+            "url": "#ref-table-order"
+          },
+          {
+            "level": 2,
+            "name": "Сброс внешних отступов",
+            "url": "#ref-table-reset"
+          },
+          {
+            "level": 2,
+            "name": "Скрытие элементов",
+            "url": "#ref-table-hide"
+          },
+          {
+            "level": 2,
+            "name": "Отображение скрытых элементов",
+            "url": "#ref-table-display"
+          }
+        ]
+      }
+    ]
+  },
+  "en": {
+    "subtitle": "Rich modular grid system based on flexbox css property",
+    "texts": {
+      "intro": {
+        "title": "Introduction",
+        "text": "Flexbox Grid Pro is a rich modular grid system for creating adaptive, responsive layouts. The grid is available in two versions - as a set of predefined css classes and as a set of sass mixins. That is, you can either put necessary classes in the html markup to the necessary elements or connect the necessary mixins in your sass code in the selectors, as shown below. Both options are equivalent and give similar results. Which one to use is just a matter of your preference:",
+        "text2": "The library contains the following sections of sets of css classes and corresponding sass mixins:",
+        "list": [
+          "Alignment",
+          "Direction of the arrangement of cells in the grid",
+          "Column offset",
+          "Arranging cells",
+          "Hiding and displaying elements"
+        ],
+        "text3": "In order to create an adaptive grid, you need to add a container element <span class='inline-snippet'>container</span> to the markup that contains row elements with the required number of columns inside. The example below shows a grid consisting of three rows <span class='inline-snippet'>row</span>, each of which in turn contains three columns <span class='inline-snippet'>col</span> uniform width:"
+      },
+      "differentWidthCols": {
+        "title": "Columns of the specified width",
+        "text": "By default, the grid consists of twelve columns. Just set the element to the required class or connect the desired mixin in the selector:"
+      },
+      "alignment": {
+        "title": "Alignment",
+        "subtitle1": "Horizontal",
+        "subtitle2": "Vertical",
+        "text": "For horizontal and vertical alignment of columns use the necessary classes or mixins."
+      },
+      "direction": {
+        "title": "Direction of the main axis",
+        "text": "To specify the direction of the columns in the row, use the necessary classes or mixins:"
+      },
+      "ordering": {
+        "title": "Column order",
+        "text": "To specify the order of the columns in the row, use the necessary classes or mixins:"
+      },
+      "offset": {
+        "title": "Column offset",
+        "text": "Use column classes or mixins to offset columns:"
+      },
+      "show_hide": {
+        "title": "Hide and show items",
+        "subtitle1": "Hide",
+        "subtitle2": "Display",
+        "text": "To hide the elements, use the necessary classes or mixins. In the example below, the second and fourth columns will be hidden with a viewport width of 960px or less:",
+        "text2": "To display the elements, use the necessary classes or mixins. In the example below, the second and fourth columns will be hidden with a viewport width of 960px or less, but will be displayed again with a viewport width of 768px:"
+      },
+      "resetMargins": {
+        "title": "Zeroing indentation of row and column elements",
+        "text": "To nullify the indentation of row and column elements, use the classes or mixins intended for this. In the example below, the vertical indentation of the first two elements of the lines is reset:",
+        "text2": "In the following example, the vertical outer margins are reset for the columns in the second row:",
+        "text3": "In the following example, the columns in the second line reset the horizontal outer margins:",
+        "text4": "In the following example, the vertical margins of the first column is reset:",
+        "text5": "In the following example, the first column has reset the horizontal outer margins:",
+        "text6": "In the following example, both horizontal and vertical outer margins are reset for the columns:"
+      },
+      "columnClasses": {
+        "title": "Column classes",
+        "text": "By default, the grid consists of twelve columns and accordingly contains twelve \"column\" classes:"
+      },
+      "breakpoints": {
+        "title": "Breakpointns",
+        "text": "By default, the system uses eight predefined desktop-first style control points:",
+        "table": {
+          "titles": [
+            "Breakpoint",
+            "Viewport Size"
+          ],
+          "rows": [
+            ["desktop", "1280px"],
+            ["laptop", "1024px"],
+            ["laptop-md", "960px"],
+            ["tablet-landscape", "768px"],
+            ["phone-landscape", "640px"],
+            ["phone", "480px"],
+            ["phone-md", "360px"],
+            ["phone-sm", "320px"]
+          ]
+        }
+      },
+      "responsiveColumnClasses": {
+        "title": "Responsive column classes",
+        "text": "Based on a predetermined number of columns and control point names used in the grid (by default), the system includes a set of responsive column classes:",
+        "breakpoints": [
+          "desktop",
+          "laptop",
+          "laptop-md",
+          "tablet-landscape",
+          "phone-landscape",
+          "phone",
+          "phone-md",
+          "phone-sm"
+        ]
+      },
+      "customization": {
+        "title": "Customizing the grid",
+        "text": "Along with the finished css file, the library is available as Sass source files. Both sass and scss syntax are available. When using Sass, you can use a set of ready-made variables and mixins to customize the grid and its flexible settings. All predefined grid classes use the same variables and mixins to provide a whole set of ready-to-use classes for quickly creating adaptive layouts. ",
+        "subtitle": "Variables",
+        "text2": "Variables and maps determine the width of the grid container and its internal horizontal indents, the number of columns and the horizontal and vertical distance between them, control points for media queries, as well as parts of the library that will be included in the generated css file. They are used to generate the specified grid classes, as well as for the mixins used in the examples above. ",
+        "subtitle2": "Mixins",
+        "text3": "The directory <span class = 'inline-snippet'> grid/mixins/ </span> contains mixins that are used with mesh variables to generate css. All generated library classes use the same mixins."
+      },
+      "sources": {
+        "title": "Sass source files",
+        "subtitle": "Grid",
+        "text": "The file <span class = 'inline-snippet'> grid/grid.scss</span> contains all the variables and grid settings that you can override:",
+        "text2": "In order to override the default variables, give them your values before importing the main library file <span class = 'inline-snippet'>grid/grid.scss</span>:",
+        "variables": [
+          "<span class = 'inline-snippet'>container-width</span> - the width of the container",
+          "<span class = 'inline-snippet'>container-padding</span> - inner padding of the container",
+          "<span class = 'inline-snippet'>h-gutter</span> - horizontal distance between the grid columns",
+          "<span class = 'inline-snippet'>v-gutter</span> - the vertical distance between the grid columns",
+          "<span class = 'inline-snippet'>columns</span> - the number of grid columns",
+          "<span class = 'inline-snippet'>mobile-first</span> - a Boolean flag indicating which approach will be used when generating media queries - mobile first or desktop first",
+          "<span class = 'inline-snippet'>media-query</span> - the variable takes one of two values ​​- min or max. Which value the variable will take depends on the value of the variable mobile-first. This variable is used to determine by what principle will the grid’s media queries be formed - mobile first or desktop first. ",
+          "<span class = 'inline-snippet'>grid-breakpoints</span> - grid breakpoints map. By default, eight control points are available. The map is used by system mixins, as well as parts of the <span class='inline-snippet'> grid/partials</span>, which are responsible for generating responsive column and other classes. For example, based on the names of the map keys and their values in the collected final css-file of the library, classes and media queries for them will be generated, as shown below.",
+          "<span class = 'inline-snippet'>partials</span> - a list of library parts responsible for generating certain sections of html classes. To reduce the size of the final css file of the library, you can set this variable to false before importing main library file. This will prevent the generation of a large number of predefined classes."
+        ],
+        "subtitle2": "Responsive classes based on the breakpoint map",
+        "text3": "Below are the grid classes generated on the basis of the <span class = 'inline-snippet'> $grid-breakpoints </span> breakpoint map and that work for a given viewport width. Class names are generated based on the map key names <span class = 'inline-snippet'> $grid-breakpoints </span>, the viewport width values in media queries for these classes are generated based on the values of the corresponding keys. If you want to assign your names for classes and your values for viewport widths, just override the <span class = 'inline-snippet'> $grid-breakpoints </span> variable before importing the main library file <span class ='inline-snippet'> grid.scss </span>. To see how the grid will be rebuilt at different viewport widths, just resize the browser window.",
+        "responsiveList": [
+          "The number of columns in a row with different viewport widths: <span class = 'inline-snippet'> col-desktop-5 </span>, <span class = 'inline-snippet'> col-laptop-2 </span>, <span class = 'inline-snippet'> col-tablet-landscape-3 </span>, <span class = 'inline-snippet'> col-phone-md-12 </span>, etc. : ",
+          "Horizontal alignment of columns in a row with different viewport widths: <span class = 'inline-snippet'> justify-content-desktop-start </span>, <span class = 'inline-snippet'> justify-content-desktop-center </span>, <span class = 'inline-snippet'> justify-content-laptop-end </span> etc.:",
+          "Vertical alignment of columns in a row with different viewport widths: <span class = 'inline-snippet'> align-items-desktop-start </span>, <span class = 'inline-snippet'> align-items-desktop-center </span>, <span class = 'inline-snippet'> align-items-laptop-end </span>, <span class = 'inline-snippet'> align-items-tablet-landscape-stretch </span> , <span class = 'inline-snippet'> align-items-phone-baseline </span>, etc .:",
+          "Vertical alignment of a single column in a row with different viewport widths: <span class = 'inline-snippet'>align-self-desktop-start</span>, <span class = 'inline-snippet'>align-self-desktop-center</span>, <span class = 'inline-snippet'>align-self-laptop-end</span>, <span class = 'inline-snippet'>align-self-tablet-landscape-stretch</span>, <span class = 'inline-snippet'>align-self-phone-baseline</span>, etc .: ",
+          "The direction of the arrangement of the columns in the row at different viewport widths: <span class = 'inline-snippet'>direction-desktop-column</span>, <span class = 'inline-snippet'>direction-desktop-row-reverse</ span>, <span class = 'inline-snippet'>direction-laptop-column</span>, <span class = 'inline-snippet'>direction-laptop-row-reverse</span>, etc.:",
+          "The offset of the columns in the row for different viewport widths: <span class = 'inline-snippet'>offset-desktop-right-2</span>, <span class = 'inline-snippet'>offset-laptop-left-4</span>, <span class = 'inline-snippet'>offset-tablet-landscape-left-9 </span>, <span class = 'inline-snippet'>offset-phone-left-11</span> and etc .:",
+          "Changing the order of columns in a row: <span class = 'inline-snippet'> order-desktop-1 </span>, <span class = 'inline-snippet'> order-laptop-3 </span>, <span class = 'inline-snippet'>order-laptop-md-5</span>, <span class = 'inline-snippet'>order-phone-first</span>, <span class = 'inline-snippet'>order-phone-sm-last</span> etc .:",
+          "Hiding and displaying grid elements at different viewport widths: <span class = 'inline-snippet'> hide-desktop </span>, <span class = 'inline-snippet'> hide-laptop </span>, <span class = ' inline-snippet '> hide-tablet-landscape </span>, <span class ='inline-snippet'> hide-phone-sm </span>, <span class='inline-snippet'>show-desktop</span>, <span class='inline-snippet'>show-laptop</span>, <span class='inline-snippet'>show-tablet-landscape</span> etc.:",
+          "Like other default variables, you can override the value of the <span class = 'inline-snippet'> $grid-breakpoints </span> variable by setting more traditional viewport names and sizes for control points:"
+        ],
+        "text4": "This will generate the following classes: <span class='inline-snippet'>col-lg-12</span>, <span class='inline-snippet'>col-md-4</span>, <span class='inline-snippet'>justify-content-sm-center</span>, <span class='inline-snippet'>offset-xs-2</span>, <span class='inline-snippet'>order-lg-9</span>, <span class='inline-snippet'>direction-sm-column</span>, <span class='inline-snippet'>hide-sm</span>, <span class='inline-snippet'>show-xs</span> etc.",
+        "title2": "Parts",
+        "text5": "The <span class = 'inline-snippet'> partials </span> directory contains a list of library parts responsible for generating class categories and media queries. In order to reduce the generated css file of the library, you can redefine the list, leaving only those elements whose names correspond to those parts of the library whose classes you will use. Below we will also say which parts are responsible for what. Or, if instead of arranging classes on the elements in the markup for building the grid, you prefer to use Sass and predefined mixins set the variable <span class = 'inline-snippet'> partials </span> to the value <span class = 'inline-script'> false </span> ( not <span class = 'inline-script'> null </span> ) or any other not null value. ",
+        "text6": "This will prevent the generation of a large number of ready-made classes, which will significantly reduce the size of the final css file of the library.",
+        "subtitle3": "Alignment",
+        "text7": "The file <span class = 'inline-snippet'> grid/partials/alignment.scss </span> contains code that generates classes that are responsible for aligning columns within a row.",
+        "subtitle4": "Direction of the arrangement of columns in a row",
+        "text8": "The file <span class = 'inline-snippet'> grid/partials/direction.scss </span> contains code that generates classes that are responsible for the direction of the main axis along which the columns within the row are aligned.",
+        "subtitle5": "Column ordering",
+        "text9": "The file <span class = 'inline-snippet'> grid/partials/ordering.scss </span> contains code that generates classes that are responsible for the order of the columns inside the row.",
+        "subtitle6": "Column offset",
+        "text10": "The file <span class = 'inline-snippet'> grid/partials/offset.scss </span> contains code that generates classes that are responsible for offsetting columns within a row.",
+        "subtitle7": "Hide elements",
+        "text11": "The file <span class = 'inline-snippet'> grid/partials/hide.scss </span> contains code that generates classes that are responsible for hiding elements.",
+        "subtitle8": "Display elements",
+        "text12": "The file <span class = 'inline-snippet'> grid/partials/visible.scss </span> contains code that generates classes that are responsible for displaying elements.",
+        "subtitle9": "Zeroing the outer indentation of row and column elements",
+        "text13": "The file <span class = 'inline-snippet'> grid/partials/gutters.scss </span> contains code that generates classes that are responsible for nulling the outer indents of row and column elements.",
+        "subtitle10": "Basic grid initialization",
+        "text14": "The file <span class = 'inline-snippet'> grid/base.scss </span> contains code that generates the base mesh classes."
+      },
+      "compilation": {
+        "title": "Compilation of source sass files",
+        "text": "When using the flexbox-grid-pro library as sass files, it is strongly recommended that you use the minifiers<a href='https://github.com/Se7enSky/group-css-media-queries'> group-css-media-queries </a> and <a href='https://github.com/css/csso'> csso </a>. This will significantly reduce the amount of library css-file collected."
+      },
+      "referenceTable": "Reference table for classes and mixins"
+    },
+    "classTable": {
+      "titles": [
+        "Class",
+        "Corresponding Mixin",
+        "Description"
+      ],
+      "subtitles": [
+        "Parameter",
+        "Type",
+        "Available Values",
+        "Default Value",
+        "Description"
+      ],
+      "alignment": [
+        {
+          "title": "Alignment",
+          "className": [
+            "justify-content-start,",
+            "justify-content-center,",
+            "justify-content-end,",
+            "justify-content-space-between,",
+            "justify-content-space-around"
+          ],
+          "mixin": {
+            "name": "justify-content( $align, $breakpoint )",
+            "description": "Aligns the columns in a row according to the <span class = 'inline-snippet'> $align </span> parameter, which must take one of the following values: <span class = 'inline-snippet'> flex-start </span>, <span class='inline-snippet'>flex-end</span>, <span class = 'inline-snippet'> center </span>, <span class = 'inline-snippet'> space-between </span> , <span class = 'inline-snippet'> space-around </span>. Applies to row elements (<span class = 'inline-snippet'> row </span>) of the grid. If the argument <span class = 'inline-snippet'> $breakpoint </span> is passed, alignment will work in the media query according to the value of this argument. The argument value must be one of the key names of the global object <span class='inline-snippet'>$grid-breakpoints</span>.",
+            "options": [
+              {
+                "name": "align",
+                "type": "String",
+                "available": [
+                  "flex-start,",
+                  "center,",
+                  "flex-end,",
+                  "space-between,",
+                  "space-around,"
+                ],
+                "default": "flex-start",
+                "description": "Specifies the direction in which the columns in the row are laid out."
+              },
+              {
+                "name": "breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone-sm"
+                ],
+                "default": "null",
+                "description": "Optional parameter. If a value is passed for it, the alignment will work in the media query according to this value. The argument value must be one of the key names of the global object <span class='inline-snippet'>$grid-breakpoints</span> ."
+              }
+            ]
+          },
+          "description": "Align the columns in the row according to the properties of the flex container: flex-start, center, flex-end, space-between, space-around. Applies to a line item."
+        },
+        {
+          "className": [
+            "align-items-start,",
+            "align-items-center,",
+            "align-items-end,",
+            "align-items-stretch,",
+            "align-items-baseline"
+          ],
+          "mixin": {
+            "name": "align-items( $align, $breakpoint )",
+            "description": "Aligns the columns in a row according to the <span class = 'inline-snippet'> $align </span> parameter, which must take one of the following values: <span class = 'inline-snippet'> flex-start </span>, <span class = 'inline-snippet'> flex-end </span>, <span class = 'inline-snippet'> center </span>, <span class = 'inline-snippet'> stretch </span>, <span class = 'inline-snippet'> baseline </span>. Applies to row elements (<span class = 'inline-snippet'> row </span>) of the grid. If the argument <span class = 'inline-snippet'> $breakpoint </span> is passed, alignment will work in the media query according to the value of this argument. The argument value must be one of the key names of the global object <span class = 'inline-snippet'> $grid-breakpoints </span>.",
+            "options": [
+              {
+                "name": "align",
+                "type": "String",
+                "available": [
+                  "flex-start,",
+                  "center,",
+                  "flex-end,",
+                  "stretch,",
+                  "baseline"
+                ],
+                "default": "flex-start",
+                "description": "Specifies how columns are aligned."
+              },
+              {
+                "name": "breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone-sm"
+                ],
+                "default": "null",
+                "description": "Optional parameter. If a value is passed for it, the alignment will work in the media query according to this value. The argument value must be one of the key names of the global object <span class='inline-snippet'>$grid-breakpoints</span>."
+              }
+            ]
+          },
+          "description": "Align the columns in a row according to the properties of the flex container: flex-start, center, flex-end, stretch, baseline. Applies to a line item."
+        },
+        {
+          "className": [
+            "align-self-start,",
+            "align-self-center,",
+            "align-self-end,",
+            "align-self-stretch,",
+            "align-self-baseline"
+          ],
+          "mixin": {
+            "name": "align-self( $align, $breakpoint )",
+            "description": "Aligns a single column in a row according to the <span class = 'inline-snippet'> $align </span> parameter, which must take one of the following values: <span class = 'inline-snippet'> flex-start </span> , <span class = 'inline-snippet'> flex-end </span>, <span class = 'inline-snippet'> center </span>, <span class = 'inline-snippet'> stretch </span> , <span class = 'inline-snippet'> baseline </span>. Applies to column elements (<span class = 'inline-snippet'> col </span>) of the grid. If the argument <span class = 'inline-snippet'> $breakpoint </span> is passed, alignment will work in the media query according to the value of this argument. The argument value must be one of the key names of the global object <span class = 'inline-snippet'> $grid-breakpoints </span>.",
+            "options": [
+              {
+                "name": "align",
+                "type": "String",
+                "available": [
+                  "flex-start,",
+                  "center,",
+                  "flex-end,",
+                  "stretch,",
+                  "baseline,"
+                ],
+                "default": "flex-start",
+                "description": "Specifies how to align a single column in a row."
+              },
+              {
+                "name": "breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone-sm"
+                ],
+                "default": "null",
+                "description": "Optional parameter. If a value is passed for it, the alignment will work in the media query according to this value. The argument value must be one of the key names of the global object <span class = 'inline-snippet'> $grid-breakpoints </span>."
+              }
+            ]
+          },
+          "description": "Align a single column in a row according to the properties of the flex container: flex-start, center, flex-end, stretch, baseline. Apply to a column element."
+        }
+      ],
+      "direction": [
+        {
+          "title": "The direction of the main axis",
+          "className": [
+            "direction-row,",
+            "direction-row-reverse,",
+            "direction-column,",
+            "direction-column-reverse"
+          ],
+          "mixin": {
+            "name": "direction ($direction, $breakpoint)",
+            "description": "Specifies the direction of the main axis along which the columns in the row are aligned. One of the following values ​​should be passed as an argument to the first parameter <span class='inline-snippet'>$direction</span>: <span class='inline-snippet'>row</span>, <span class='inline-snippet'>row-reverse</span>, <span class='inline-snippet'>column</span>, <span class='inline-snippet'>column-reverse</span>. If the second argument is passed the value corresponding to one of the key names of the global object <span class='inline-snippet'>$grid-breakpoints</span>, the rule will be applied in the media query. ",
+            "options": [
+              {
+                "name": "direction",
+                "type": "String",
+                "available": [
+                  "row,",
+                  "row-reverse,",
+                  "column,",
+                  "column-reverse"
+                ],
+                "default": "row",
+                "description": "Specifies the direction of the main axis along which the columns in the row line up."
+              },
+              {
+                "name": "breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone -sm "
+                ],
+                "default": "null",
+                "description": "Optional parameter. If a value is passed for it, setting the direction of the main axis will work in the media query according to this value. The argument value must be one of the key names of the global object <span class = 'inline-snippet'>$grid-breakpoints</span>. "
+              }
+            ]
+          },
+          "description": "Set the direction of the main axis along which the columns in the row are aligned, according to the properties of the flex container: row, row-reverse, column, column-reverse. Applied to the row element <span class = 'inline-snippet' > row </span>. "
+        }
+      ],
+      "offset": [
+        {
+          "title": "Column offset",
+          "className": [
+            "offset-left-1 - offset-left-12,",
+            "offset-right-1 - offset-right-12,",
+            "offset-left-auto,",
+            "offset-right-auto"
+          ],
+          "mixin": {
+            "name": "offset ( $direction, $offset, $breakpoint )",
+            "description": "Shifts a column in a row by <span class = 'inline-snippet'> $offset </span> - an integer number of columns, to the right - <span class = 'inline-snippet'> $direction </span>: right or left - <span class = 'inline-snippet'> $direction </span>: left. If auto is used as the second argument, the column is shifted to free space in one direction or another. If the argument value is <span class = 'inline-snippet'> $breakpoint </span> corresponds to one of the key names of the global object <span class = 'inline-snippet'> $grid-breakpoints </span>, the rules are applied in the corresponding media query. ",
+            "options": [
+              {
+                "name": "direction",
+                "type": "String",
+                "available": [
+                  "left,",
+                  "right"
+                ],
+                "default": "right",
+                "description": "Depends on this parameter in which direction the columns will shift - to the right or left."
+              },
+              {
+                "name": "offset",
+                "type": "Number | String",
+                "available": [
+                  "integer number of columns,",
+                  "auto"
+                ],
+                "default": "auto",
+                "description": "The number of columns by which the column will be shifted. If the value <span class = 'inline-snippet'> auto </span> is passed, the column will shift left/right (depends on the second parameter <span class = 'inline- snippet '> direction </span>) to all available free space. "
+              },
+              {
+                "name": "breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone-sm"
+                ],
+                "default": "null",
+                "description": "Optional parameter. If a value is passed for it, the column call will trigger in the media query according to this value. The argument value must be one of the key names of the global object <span class = 'inline-snippet'> $grid-breakpoints </ span>. "
+              }
+            ]
+          },
+          "description": "Shift the columns in the row by a certain number of columns to the right or left."
+        }
+      ],
+      "ordering": [
+        {
+          "title": "Column layout",
+          "className": [
+            "order-0 - order-12,",
+            "order-first,",
+            "order-last,"
+          ],
+          "mixin": {
+            "name": "order ($order,$ breakpoint)",
+            "description": "Sorts the columns in a row according to the parameter <span class = 'inline-snippet'> $order </span> - an integer that determines the order of columns - the smaller the number, the closer the column will be to the beginning of the line. If when the mixin is called, it will be given the second argument <span class = 'inline-snippet'> $breakpoint </span>, and its value will correspond to one of the key names of the global object <span class = 'inline-snippet'> $grid -breakpoints </span>, then the sequencing rule will only work in the corresponding media request. Applies to row element <span class = 'inline-snippet'>row</span>",
+            "options": [
+              {
+                "name": "order",
+                "type": "Number | String",
+                "available": [
+                  "0 is the total number of columns,",
+                  "first,",
+                  "last"
+                ],
+                "default": "0",
+                "description": "An integer or line that defines the visual position of the column in the grid line. The smaller the number, the closer the column will be to the beginning of the line."
+              },
+              {
+                "name": "breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone-sm"
+                ],
+                "default": "null",
+                "description": "Optional parameter. If a value is passed for it, the column call will trigger in the media query according to this value. The argument value must be one of the key names of the global object <span class = 'inline-snippet'> $grid-breakpoints </ span>. "
+              }
+            ]
+          },
+          "description": "Set the order of the visual arrangement of the columns in the row. Applies to row element <span class = 'inline-snippet'>row</span>"
+        }
+      ],
+      "gutters": [
+        {
+          "title": "Reset margins",
+          "className": [
+            "no-gutters"
+          ],
+          "mixin": {
+            "name": "no-gutters ( $breakpoint )",
+            "description": "Zeros the outer margins of the element. Applies to any grid element.",
+            "options": [
+              {
+                "name": "$breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone-sm"
+                ],
+                "default": "null",
+                "description": "Optional parameter. If a value is passed for it, resetting the indentation for the element will trigger in the media query according to this value. The argument value must be one of the key names of the global object <span class = 'inline-snippet'> $grid-breakpoints </span>. "
+              }
+            ]
+          },
+          "description": "Zero out all indentation of the element. Apply to both the line element and the grid element."
+        },
+        {
+          "className": [
+            "no-h-gutters"
+          ],
+          "mixin": {
+            "name": "no-h-gutters ( $breakpoint )",
+            "description": "Zeroes out the horizontal indents of the element. Applies to both the row element and the column element.",
+            "options": [
+              {
+                "name": "breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone-sm"
+                ],
+                "default": "null",
+                "description": "Optional parameter. If a value is passed for it, resetting the indentation for the element will trigger in the media query according to this value. The argument value must be one of the key names of the global object <span class = 'inline-snippet'> $grid-breakpoints </span>. "
+              }
+            ]
+          },
+          "description": "Zero out the horizontal horizontal padding of the element. Applies to both the row element and the column element."
+        },
+        {
+          "className": [
+            "no-v-gutters"
+          ],
+          "mixin": {
+            "name": "no-v-gutters ( $breakpoint )",
+            "description": "Zeros the outer vertical indents of the element. Applies to both the row element and the column element.",
+            "options": [
+              {
+                "name": "breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone-sm"
+                ],
+                "default": "null",
+                "description": "Optional parameter. If a value is passed for it, resetting the indentation for the element will trigger in the media query according to this value. The argument value must be one of the key names of the global object <span class = 'inline-snippet'> $grid-breakpoints </span>. "
+              }
+            ]
+          },
+          "description": "Zero the outer vertical padding of the element. Applies to both the row element and the column element."
+        },
+        {
+          "className": [
+            "no-children-gutters"
+          ],
+          "mixin": {
+            "name": "no-children-gutters( $breakpoint )",
+            "description": "Zero out the indentation of the column elements in the row. Applies to the row element.",
+            "options": [
+              {
+                "name": "breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone-sm"
+                ],
+                "default": "null",
+                "description": "Optional parameter. If a value is passed for it, resetting the indentation for the element will trigger in the media query according to this value. The argument value must be one of the key names of the global object <span class = 'inline-snippet'> $grid-breakpoints </span>. "
+              }
+            ]
+          },
+          "description": "Zero the outer margins of the column elements in the row. Apply to the row element."
+        },
+        {
+          "className": [
+            "no-children-h-gutters"
+          ],
+          "mixin": {
+            "name": "no-children-h-gutters( $breakpoint )",
+            "description": "Zeroes the outer horizontal indentation of the column elements in the row. Applies to the row element.",
+            "options": [
+              {
+                "name": "breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone-sm"
+                ],
+                "default": "null",
+                "description": "Optional parameter. If a value is passed for it, resetting the indentation for the element will trigger in the media query according to this value. The argument value must be one of the key names of the global object <span class = 'inline-snippet'> $grid-breakpoints </span>. "
+              }
+            ]
+          },
+          "description": "Zero the outer horizontal indentation of the column elements in the row. Applies to the row element."
+        },
+        {
+          "className": [
+            "no-children-v-gutters"
+          ],
+          "mixin": {
+            "name": "no-children-v-gutters( $breakpoint )",
+            "description": "Zero out the outer vertical indentation of the column elements in the row. Applies to the row element.",
+            "options": [
+              {
+                "name": "breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone-sm"
+                ],
+                "default": "null",
+                "description": "Optional parameter. If a value is passed for it, resetting the indentation for the element will trigger in the media query according to this value. The argument value must be one of the key names of the global object <span class = 'inline-snippet'> $grid-breakpoints </span>. "
+              }
+            ]
+          },
+          "description": "Zero the outer vertical indentation of the column elements in the row. Applies to the row element."
+        }
+      ],
+      "hide": [
+        {
+          "title": "Hide items",
+          "className": [
+            "hide"
+          ],
+          "mixin": {
+            "name": "hide ($ breakpoint)",
+            "description": "Hides the element by setting its display property to none. If the value of the argument <span class = 'inline-snippet'>$breakpoint</span> matches one of the key names of the global object <span class = 'inline-snippet' > $grid-breakpoints </span>, the rule will be applied in the corresponding media request. Applies to any grid item.",
+            "options": [
+              {
+                "name": "breakpoint",
+                "type": "String",
+                "available": [
+                  "desktop,",
+                  "laptop,",
+                  "laptop-md,",
+                  "tablet-landscape,",
+                  "phone-landscape,",
+                  "phone,",
+                  "phone-md,",
+                  "phone-sm"
+                ],
+                "default": "null",
+                "description": "Optional parameter. If a value is passed for it, hiding for the element will trigger in the media query according to this value. The argument value must be one of the key names of the global object <span class = 'inline-snippet'> $grid-breakpoints </span>. "
+              }
+            ]
+          },
+          "description": "Hides the element by setting its display property to none. Applies to any grid item."
+        }
+      ],
+      "show": [
+        {
+          "title": "Show hidden items",
+          "className": [
+            "show"
+          ],
+          "mixin": {
+            "name": "show ($display, $breakpoint)",
+            "description": "Displays hidden elements by setting its display property to any value available for this property other than none. Applies to any element of the grid.",
+            "options": [
+              {
+                "name": "display",
+                "type": "String",
+                "available": [
+                  "Any value available for the css property <span class = 'inline-snippet'> display </span>, except for <span class = 'inline-snippet'> none </span>."
+                ],
+                "default": "initial",
+                "description": "Sets the display property of the element to the specified value."
+              }
+            ]
+          },
+          "description": "Displays hidden elements by setting its display property to any value available for this property other than none. Applies to any grid element."
+        }
+      ]
+    },
+    "mainMenu": [
+      {
+        "level": 1,
+        "name": "Introduction",
+        "url": "#intro"
+      },
+      {
+        "level": 1,
+        "name": "Columns of the specified width",
+        "url": "#different-width-cols"
+      },
+      {
+        "level": 1,
+        "name": "Alignment",
+        "url": "#alignment",
+        "children": [
+          {
+            "level": 2,
+            "name": "Horizontal",
+            "url": "#alignment-horizontal"
+          },
+          {
+            "level": 2,
+            "name": "Vertical",
+            "url": "#alignment-vertical"
+          }
+        ]
+      },
+      {
+        "level": 1,
+        "name": "The direction of the main axis",
+        "url": "#axis-direction"
+      },
+      {
+        "level": 1,
+        "name": "Column order",
+        "url": "#column-order"
+      },
+      {
+        "level": 1,
+        "name": "Column offset",
+        "url": "#column-offset"
+      },
+      {
+        "level": 1,
+        "name": "Hide and show items",
+        "url": "#hide-and-show",
+        "children": [
+          {
+            "level": 2,
+            "name": "Hide",
+            "url": "#hide"
+          },
+          {
+            "level": 2,
+            "name": "Display",
+            "url": "#display"
+          }
+        ]
+      },
+      {
+        "level": 1,
+        "name": "Zeroing indentation of row and column elements",
+        "url": "#zeroing"
+      },
+      {
+        "level": 1,
+        "name": "Column classes",
+        "url": "#column-classes"
+      },
+      {
+        "level": 1,
+        "name": "Breakpoints",
+        "url": "#breakpoints"
+      },
+      {
+        "level": 1,
+        "name": "Responsive column classes",
+        "url": "#responsive-column-classes"
+      },
+      {
+        "level": 1,
+        "name": "Customizing the grid",
+        "url": "#grid-customization",
+        "children": [
+          {
+            "level": 2,
+            "name": "Variables",
+            "url": "#grid-customization-vars"
+          },
+          {
+            "level": 2,
+            "name": "Mixins",
+            "url": "#grid-customization-mixins"
+          }
+        ]
+      },
+      {
+        "level": 1,
+        "name": "Sass source files",
+        "url": "#sass-source-files",
+        "children": [
+          {
+            "level": 2,
+            "name": "Grid",
+            "urls": "#sass-source-files-grid"
+          },
+          {
+            "level": 2,
+            "name": "Responsive breakpoint map based classes",
+            "url": "#sass-source-files-responsive-classes"
+          },
+          {
+            "level": 2,
+            "name": "Parts",
+            "url": "#partials",
+            "children": [
+              {
+                "level": 3,
+                "name": "Alignment",
+                "url": "#partials-alignment"
+              },
+              {
+                "level": 3,
+                "name": "The direction of the columns in the row",
+                "url": "#partials-direction"
+              },
+              {
+                "level": 3,
+                "name": "Column ordering",
+                "url": "#partials-order"
+              },
+              {
+                "level": 3,
+                "name": "Column offset",
+                "url": "#partials-offset"
+              },
+              {
+                "level": 3,
+                "name": "Hide elements",
+                "url": "#partials-hide"
+              },
+              {
+                "level": 3,
+                "name": "Display elements",
+                "url": "#partials-display"
+              },
+              {
+                "level": 3,
+                "name": "Zeroing indentation of row and column elements",
+                "url": "#partials-margins-reset"
+              }
+            ]
+          },
+          {
+            "level": 2,
+            "name": "Basic grid initialization",
+            "url": "#grid-basic-init"
+          },
+          {
+            "level": 2,
+            "name": "Compiling source sass files",
+            "url": "#compiling-sass-files"
+          }
+        ]
+      },
+      {
+        "level": 1,
+        "name": "Reference table for classes and mixins",
+        "url": "#reference-table",
+        "children": [
+          {
+            "level": 2,
+            "name": "Alignment",
+            "url": "#ref-table-alignment"
+          },
+          {
+            "level": 2,
+            "name": "Direction of the location of the main axis",
+            "url": "#ref-table-direction"
+          },
+          {
+            "level": 2,
+            "name": "Column offset",
+            "url": "#ref-table-offset"
+          },
+          {
+            "level": 2,
+            "name": "Column arrangement",
+            "url": "#ref-table-order"
+          },
+          {
+            "level": 2,
+            "name": "Reset indentation",
+            "url": "#ref-table-reset"
+          },
+          {
+            "level": 2,
+            "name": "Hide elements",
+            "url": "#ref-table-hide"
+          },
+          {
+            "level": 2,
+            "name": "Show hidden elements",
+            "url": "#ref-table-display"
+          }
+        ]
+      }
+    ]
+  }
+}

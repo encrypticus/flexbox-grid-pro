@@ -1,0 +1,141 @@
+-
+  const getVariant = (ru, en) => {
+    if (lang === 'ru') return ru;
+    return en;
+  };
+
+  const subtitle = getVariant(ru.subtitle, en.subtitle);
+  const overview = getVariant(ru.overview, en.overview);
+
+  const texts = {
+    intro: {
+      title: getVariant(ru.texts.intro.title, en.texts.intro.title),
+      text: getVariant(ru.texts.intro.text, en.texts.intro.text),
+      text2: getVariant(ru.texts.intro.text2, en.texts.intro.text2),
+      list: getVariant(ru.texts.intro.list, en.texts.intro.list),
+      text3: getVariant(ru.texts.intro.text3, en.texts.intro.text3)
+    },
+
+    differentWidthCols: {
+      title: getVariant(ru.texts.differentWidthCols.title, en.texts.differentWidthCols.title),
+      text: getVariant(ru.texts.differentWidthCols.text, en.texts.differentWidthCols.text)
+    },
+
+    alignment: {
+      title: getVariant(ru.texts.alignment.title, en.texts.alignment.title),
+      text: getVariant(ru.texts.alignment.text, en.texts.alignment.text),
+      subtitle1: getVariant(ru.texts.alignment.subtitle1, en.texts.alignment.subtitle1),
+      subtitle2: getVariant(ru.texts.alignment.subtitle2, en.texts.alignment.subtitle2)
+    },
+
+    direction: {
+      title: getVariant(ru.texts.direction.title, en.texts.direction.title),
+      text: getVariant(ru.texts.direction.text, en.texts.direction.text)
+    },
+
+    ordering: {
+      title: getVariant(ru.texts.ordering.title, en.texts.ordering.title),
+      text: getVariant(ru.texts.ordering.text, en.texts.ordering.text)
+    },
+
+    offset: {
+      title: getVariant(ru.texts.offset.title, en.texts.offset.title),
+      text: getVariant(ru.texts.offset.text, en.texts.offset.text)
+    },
+
+    show_hide: {
+      title: getVariant(ru.texts.show_hide.title, en.texts.show_hide.title),
+      subtitle1: getVariant(ru.texts.show_hide.subtitle1, en.texts.show_hide.subtitle1),
+      subtitle2: getVariant(ru.texts.show_hide.subtitle2, en.texts.show_hide.subtitle2),
+      text: getVariant(ru.texts.show_hide.text, en.texts.show_hide.text),
+      text2: getVariant(ru.texts.show_hide.text2, en.texts.show_hide.text2)
+    },
+
+    resetMargins: {
+      title: getVariant(ru.texts.resetMargins.title, en.texts.resetMargins.title),
+      text: getVariant(ru.texts.resetMargins.text, en.texts.resetMargins.text),
+      text2: getVariant(ru.texts.resetMargins.text2, en.texts.resetMargins.text2),
+      text3: getVariant(ru.texts.resetMargins.text3, en.texts.resetMargins.text3),
+      text4: getVariant(ru.texts.resetMargins.text4, en.texts.resetMargins.text4),
+      text5: getVariant(ru.texts.resetMargins.text5, en.texts.resetMargins.text5),
+      text6: getVariant(ru.texts.resetMargins.text6, en.texts.resetMargins.text6)
+    },
+
+    columnClasses: {
+      title: getVariant(ru.texts.columnClasses.title, en.texts.columnClasses.title),
+      text: getVariant(ru.texts.columnClasses.text, en.texts.columnClasses.text)
+    },
+
+    breakpoints: {
+      title: getVariant(ru.texts.breakpoints.title, en.texts.breakpoints.title),
+      text: getVariant(ru.texts.breakpoints.text, en.texts.breakpoints.text),
+      table: getVariant(ru.texts.breakpoints.table, en.texts.breakpoints.table)
+    },
+
+    responsiveColumnClasses: {
+      title: getVariant(ru.texts.responsiveColumnClasses.title, en.texts.responsiveColumnClasses.title),
+      text: getVariant(ru.texts.responsiveColumnClasses.text, en.texts.responsiveColumnClasses.text),
+      breakpoints: getVariant(ru.texts.responsiveColumnClasses.breakpoints, en.texts.responsiveColumnClasses.breakpoints)
+    },
+
+    customization: {
+      title: getVariant(ru.texts.customization.title, en.texts.customization.title),
+      text: getVariant(ru.texts.customization.text, en.texts.customization.text),
+      text2: getVariant(ru.texts.customization.text2, en.texts.customization.text2),
+      text3: getVariant(ru.texts.customization.text3, en.texts.customization.text3),
+      subtitle: getVariant(ru.texts.customization.subtitle, en.texts.customization.subtitle),
+      subtitle2: getVariant(ru.texts.customization.subtitle2, en.texts.customization.subtitle2),
+    },
+
+    sources: {
+      title: getVariant(ru.texts.sources.title, en.texts.sources.title),
+      text: getVariant(ru.texts.sources.text, en.texts.sources.text),
+      text2: getVariant(ru.texts.sources.text2, en.texts.sources.text2),
+      subtitle: getVariant(ru.texts.sources.subtitle, en.texts.sources.subtitle),
+      variables: getVariant(ru.texts.sources.variables, en.texts.sources.variables),
+      subtitle2: getVariant(ru.texts.sources.subtitle2, en.texts.sources.subtitle2),
+      text3: getVariant(ru.texts.sources.text3, en.texts.sources.text3),
+      responsiveList: getVariant(ru.texts.sources.responsiveList, en.texts.sources.responsiveList),
+      text4: getVariant(ru.texts.sources.text4, en.texts.sources.text4),
+      title2: getVariant(ru.texts.sources.title2, en.texts.sources.title2),
+      text5: getVariant(ru.texts.sources.text5, en.texts.sources.text5),
+      text6: getVariant(ru.texts.sources.text6, en.texts.sources.text6),
+      text7: getVariant(ru.texts.sources.text7, en.texts.sources.text7),
+      text8: getVariant(ru.texts.sources.text8, en.texts.sources.text8),
+      text9: getVariant(ru.texts.sources.text9, en.texts.sources.text9),
+      text10: getVariant(ru.texts.sources.text10, en.texts.sources.text10),
+      text11: getVariant(ru.texts.sources.text11, en.texts.sources.text11),
+      text12: getVariant(ru.texts.sources.text12, en.texts.sources.text12),
+      text13: getVariant(ru.texts.sources.text13, en.texts.sources.text13),
+      text14: getVariant(ru.texts.sources.text14, en.texts.sources.text14),
+      subtitle3: getVariant(ru.texts.sources.subtitle3, en.texts.sources.subtitle3),
+      subtitle4: getVariant(ru.texts.sources.subtitle4, en.texts.sources.subtitle4),
+      subtitle5: getVariant(ru.texts.sources.subtitle5, en.texts.sources.subtitle5),
+      subtitle6: getVariant(ru.texts.sources.subtitle6, en.texts.sources.subtitle6),
+      subtitle7: getVariant(ru.texts.sources.subtitle7, en.texts.sources.subtitle7),
+      subtitle8: getVariant(ru.texts.sources.subtitle8, en.texts.sources.subtitle8),
+      subtitle9: getVariant(ru.texts.sources.subtitle9, en.texts.sources.subtitle9),
+      subtitle10: getVariant(ru.texts.sources.subtitle10, en.texts.sources.subtitle10)
+    },
+
+    compilation: {
+      title: getVariant(ru.texts.compilation.title, en.texts.compilation.title),
+      text: getVariant(ru.texts.compilation.text, en.texts.compilation.text)
+    },
+
+    referenceTable: getVariant(ru.texts.referenceTable, en.texts.referenceTable)
+  };
+
+  const classTable = {
+    titles: getVariant(ru.classTable.titles, en.classTable.titles),
+    subtitles: getVariant(ru.classTable.subtitles, en.classTable.subtitles),
+    alignment: getVariant(ru.classTable.alignment, en.classTable.alignment),
+    direction: getVariant(ru.classTable.direction, en.classTable.direction),
+    offset: getVariant(ru.classTable.offset, en.classTable.offset),
+    ordering: getVariant(ru.classTable.ordering, en.classTable.ordering),
+    gutters: getVariant(ru.classTable.gutters, en.classTable.gutters),
+    hide: getVariant(ru.classTable.hide, en.classTable.hide),
+    show: getVariant(ru.classTable.show, en.classTable.show)
+  }
+
+  const mainMenu = getVariant(ru.mainMenu, en.mainMenu);

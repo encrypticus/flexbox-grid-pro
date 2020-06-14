@@ -1,0 +1,37 @@
+@if type_of($partials) == list and index($partials, gutters) or type_of($partials) == string and index($partials, gutters)
+  .no-gutters
+    +no-gutters
+
+  .no-h-gutters
+    +no-h-gutters
+
+  .no-v-gutters
+    +no-v-gutters
+
+  .no-children-gutters
+    +no-children-gutters
+
+  .no-children-h-gutters
+    +no-children-h-gutters
+
+  .no-children-v-gutters
+    +no-children-v-gutters
+
+  @each $breakpoint-name, $breakpoint-value in $grid-breakpoints
+    .no-gutters-#{$breakpoint-name}
+      +no-gutters($breakpoint-name)
+
+    .no-h-gutters-#{$breakpoint-name}
+      +no-h-gutters($breakpoint-name)
+
+    .no-v-gutters-#{$breakpoint-name}
+      +no-v-gutters($breakpoint-name)
+
+    .no-children-gutters-#{$breakpoint-name}
+      +no-children-gutters($breakpoint-name)
+
+    .no-children-h-gutters-#{$breakpoint-name}
+      +no-children-h-gutters($breakpoint-name)
+
+    .no-children-v-gutters-#{$breakpoint-name}
+      +no-children-v-gutters($breakpoint-name)

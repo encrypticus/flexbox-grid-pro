@@ -1,0 +1,94 @@
+// превращает элемент в контейнер сетки
+@mixin container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 $container-padding;
+}
+
+// превращает элемент в строку сетки
+@mixin row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -#{$h-gutter / 2};
+}
+
+/*
+  Превращает элемент в ячейку сетки размером в $cols колонок.
+  Если при вызове примеси не передан ни один аргумент, к элементу будут применены правила, согласно которым элемент
+  будет компоноваться как флекс-элемент и будет занимать пространство, равное занимаемому пространству соседними
+  флекс-элментами
+
+  Если при вызове примеси переданы оба аргумента и при этом тип первого аргумента $cols - число, а значение второго
+  аргумента соответвствует одному из имен свойств глобального объекта $grid-breakpoints, то правило применяется только
+  в медиазапросе, значение которого берется из этого второго аргумента. При этом в качестве значения второго аргумента
+  должно использоваться одно из имен ключей глобального объекта $grid-breakpoints
+
+  Если же передан только первый аргумент или значение второго аргумента не соответствует
+  ни одному из имен ключей глобального объекта $grid-breakpoints, то элемент будет просто занимать количество ячеек,
+  равное $cols
+*/
+@mixin col($cols: 'false', $breakpoint: 'false') {
+
+  @if ($breakpoint != 'false' and map_has_key($grid-breakpoints, $breakpoint) and $cols != 'false' and type_of($cols) == number) {
+
+    @media screen and(#{$media-query}-width: map-get($grid-breakpoints, $breakpoint)) {
+      width: calc(100% / #{$columns} * #{$cols} - #{$h-gutter});
+      flex: 0 0 auto;
+      box-sizing: border-box;
+      margin: 0 $h-gutter / 2 $v-gutter;
+    }
+
+  } @else if ($breakpoint == 'false' and $cols != 'false' and type_of($cols) == number) {
+    width: calc(100% / #{$columns} * #{$cols} - #{$h-gutter});
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    margin: 0 $h-gutter / 2 $v-gutter;
+  } @else {
+    flex: 1 0 0%;
+    box-sizing: border-box;
+    margin: 0 $h-gutter / 2 $v-gutter;
+  }
+}
+
+// рассчитывает ширину столбца в зависимости от переданного количества столбцов $cols
+@function col-width($cols: 1) {
+  @return calc(100% / #{$columns} * #{$cols} - #{$h-gutter});
+}
+
+/*
+  Генерирует "колоночные" классы вида .col-1, .col-2, .col-3 и т.д. исходя из глабальной переменной $columns - заданного
+  количества колонок сетки
+*/
+@mixin generate-grid($cols: $columns) {
+  @for $i from 1 through $cols {
+    .col-#{$i} {
+      width: col-width($i);
+    }
+  }
+}
+
+/*
+  Генерирует "колоночный" класс сетки вида .col-tablet-8 и css-правила для него в медиазапросе исходя из $cols - числа
+  столбцов, $screen-width - ширины экрана и $name - названия брейкпойнта, значение которого должно соответсвовать одному
+  из имен ключей глобального объекта $grid-breakpoints
+*/
+@mixin generate-breakpoint($cols, $screen-width, $name) {
+  .col-#{$name}-#{$cols} {
+    @media screen and (#{$media-query}-width: $screen-width) {
+      width: calc(100% / #{$columns} * #{$cols} - #{$h-gutter}) !important;
+      flex: auto 0 0;
+    }
+  }
+}
+
+/*
+  Генерирует "колоночные" классы сетки и css-правила для них в медиазапросе исходя из глобальной переменной
+  $columns - заданного количества колонок сетки и глобальной переменной $grid-breakpoints - объекта с брейкпойнтами
+*/
+@mixin generate-grid-breakpoints($cols: $columns, $breakpoints: $grid-breakpoints) {
+  @for $i from 1 through $cols {
+    @each $name, $value in $breakpoints {
+      @include generate-breakpoint($i, $value, $name);
+    }
+  }
+}

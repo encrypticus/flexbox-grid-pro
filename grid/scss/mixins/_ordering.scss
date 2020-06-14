@@ -1,0 +1,54 @@
+/* Упорядочивание ячеек в строке */
+
+/*
+  Упорядочивает ячейки ($col) внутри строки ($row) согласно параметру $order - целому числу, определяющему порядок следования
+  ячеек: чем меньше число, тем ближе к началу строки будет расположена ячейка.
+  Если при вызове миксина в него будет передан второй аргумент $breakpoint, и при этом его значение будет соотвествовать
+  одному из имен ключей глобального объекта $grid-breakpoints, то правило упорядочивания будет срабытывать лишь в медиазапросе.
+*/
+@mixin order($order: 0, $breakpoint: null) {
+  @if ($order > $columns) {
+    $order: $columns;
+  }
+
+  @if ($order < 0) {
+    $order: 0;
+  }
+
+  @if (map_has_key($grid-breakpoints, $breakpoint)) {
+    @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint)) {
+      order: $order;
+    }
+  } @else {
+    order: $order;
+  }
+}
+
+/*
+  Перемещает ячейку в самое начало строки. Если при вызове передан аргумент $breakpoint и его значение соответствует
+  одному из имен ключей глобального объекта $grid-brakpoints, правило применятся в медиазапросе
+*/
+@mixin order-first($breakpoint: null) {
+  @if (map_has_key($grid-breakpoints, $breakpoint)) {
+    @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint)) {
+      order: -1;
+    }
+  } @else {
+    order: -1;
+  }
+
+}
+
+/*
+  Перемещает ячейку в самый конец строки. Если при вызове передан аргумент $breakpoint и его значение соответствует
+  одному из имен ключей глобального объекта $grid-brakpoints, правило применятся в медиазапросе
+*/
+@mixin order-last($breakpoint: null) {
+  @if (map_has_key($grid-breakpoints, $breakpoint)) {
+    @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint)) {
+      order: $columns + 1;
+    }
+  } @else {
+    order: $columns + 1;
+  }
+}

@@ -1,0 +1,51 @@
+$container-width: 1140px !default; // ширина контейнера
+$container-padding: 15px !default; // внутренние отступы контейнера
+$h-gutter: 30px !default; // расстояние между ячейками сетки по горизонтали
+$v-gutter: $h-gutter !default; // расстояние между ячейками сетки по вертикали
+$columns: 12 !default; // количество колонок сетки
+// флаг, указывающий, какой подход будет использован при формиравнии медиазапросов - mobile first или desktop first
+$mobile-first: false !default;
+
+// возвращает ключевое слово min или max, которое будет использовано при формировании всех медиазапросов библиотеки -
+// min-width или max-width
+@function query-direction() {
+  @if($mobile-first) {
+    @return min;
+  } @else {
+    @return max;
+  }
+}
+
+$media-query: query-direction(); // min или max
+
+$grid-breakpoints: (
+  desktop: 1280px,
+  laptop: 1024px,
+  laptop-md: 960px,
+  tablet-landscape: 768px,
+  phone-landscape: 640px,
+  phone: 480px,
+  phone-md: 360px,
+  phone-sm: 320px
+) !default;
+
+// для уменьшения конечного css-файла можно закомментировать ненужные части ( partials )
+$partials: (
+  alignment,
+  direction,
+  hide,
+  offset,
+  ordering,
+  show,
+  gutters
+) !default;
+
+@import 'mixins/mixins';
+@import 'partials/alignment';
+@import 'partials/ordering';
+@import 'partials/direction';
+@import 'partials/hide';
+@import 'partials/show';
+@import 'partials/offset';
+@import 'partials/gutters.scss';
+@import 'base';

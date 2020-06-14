@@ -1,0 +1,28 @@
+.container {
+  @include container;
+}
+
+.row {
+  @include row;
+}
+
+.col {
+  @include col;
+}
+
+/*
+  Генерация "колоночных" классов и правил для них исходя из глобальной переменной $columns - заданного количества
+  столбцов сетки
+*/
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    margin: 0 $h-gutter / 2 $v-gutter;
+  }
+}
+
+// генерация "колоночных" классов
+@include generate-grid();
+// генерация "колоночных" клоссов с медиазапросами
+@include generate-grid-breakpoints();

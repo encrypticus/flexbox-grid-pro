@@ -1,0 +1,27 @@
+@if type_of($partials) == list and index($partials, offset) or type_of($partials) == string and index($partials, offset)
+  @for $i from 1 through $columns
+    .offset-right-#{$i}
+      +offset(right, $i)
+
+    .offset-left-#{$i}
+      +offset(left, $i)
+
+    @each $breakpoint-name, $breakpoint-value in $grid-breakpoints
+      .offset-#{$breakpoint-name}-right-#{$i}
+        +offset(right, $i, $breakpoint-name)
+
+      .offset-#{$breakpoint-name}-left-#{$i}
+        +offset(left, $i, $breakpoint-name)
+
+  @each $breakpoint-name, $breakpoint-value in $grid-breakpoints
+    .offset-#{$breakpoint-name}-right-auto
+      +offset(right, auto, $breakpoint-name)
+
+    .offset-#{$breakpoint-name}-left-auto
+      +offset(left, auto, $breakpoint-name)
+
+  .offset-right-auto
+    +offset(right)
+
+  .offset-left-auto
+    +offset(left)

@@ -1,0 +1,1242 @@
+-
+  const snippets = {
+  html: [
+  `<div class="wrapper container">
+    <header class="page-header row">
+      <div class="logo col-2"></div>
+      <nav class="main-nav col"></nav>
+    </header>
+
+    <main class="page-main row">
+      <section class="left-sidebar col-3"></section>
+      <section class="page-content col-6"></section>
+      <section class="right-sidebar col-3"></section>
+    </main>
+
+    <footer class="page-footer row">
+      <div class="footer-menu col-4"></div>
+      <div class="license col-8"></div>
+    </footer>
+  </div>`,
+
+  `<div class="container">
+    <div class="row">
+      <div class="col"></div>
+    </div>
+    <div class="row">
+      <div class="col"></div>
+    </div>
+    <div class="row">
+      <div class="col"></div>
+    </div>
+  </div>`,
+
+  `<div class="container">
+    <div class="example row">
+      <div class="example__col col">col-12</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col-1">col-1</div>
+      <div class="example__col col-11">col-11</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col-2">col-2</div>
+      <div class="example__col col-10">col-10</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col-3">col-3</div>
+      <div class="example__col col-9">col-9</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col-4">col-4</div>
+      <div class="example__col col-8">col-8</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col-5">col-5</div>
+      <div class="example__col col-7">col-7</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col-6">col-6</div>
+      <div class="example__col col-6">col-6</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col-7">col-7</div>
+      <div class="example__col col-5">col-5</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col-8">col-8</div>
+      <div class="example__col col-4">col-4</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col-9">col-9</div>
+      <div class="example__col col-3">col-3</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col-10">col-10</div>
+      <div class="example__col col-2">col-2</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col-11">col-11</div>
+      <div class="example__col col-1">col-1</div>
+    </div>
+  </div>`,
+
+  `<div class="container">
+    <div class="example row justify-content-start">
+      <div class="example__col col-2">col-2</div>
+      <div class="example__col col-2">col-2</div>
+    </div>
+
+    <div class="example row justify-content-center">
+      <div class="example__col col-2">col-2</div>
+      <div class="example__col col-2">col-2</div>
+    </div>
+
+    <div class="example row justify-content-end">
+      <div class="example__col col-2">col-2</div>
+      <div class="example__col col-2">col-2</div>
+    </div>
+
+    <div class="example row justify-content-space-between">
+      <div class="example__col col-2">col-2</div>
+      <div class="example__col col-2">col-2</div>
+      <div class="example__col col-2">col-2</div>
+    </div>
+
+    <div class="examplerow justify-content-space-around">
+      <div class="example__col col-2">col-2</div>
+      <div class="example__col col-2">col-2</div>
+      <div class="example__col col-2">col-2</div>
+    </div>
+  </div>`,
+
+  `<div class="container">
+    <div class="example row align-items-start">
+      <div class="example__col col-4">col-4</div>
+      <div class="example__col col-4">col-4</div>
+      <div class="example__col col-4">col-4</div>
+    </div>
+
+    <div class="example row align-items-center">
+      <div class="example__col col-4">col-4</div>
+      <div class="example__col col-4">col-4</div>
+      <div class="example__col col-4">col-4</div>
+    </div>
+
+    <div class="example row align-items-end">
+      <div class="example__col col-4">col-4</div>
+      <div class="example__col col-4">col-4</div>
+      <div class="example__col col-4">col-4</div>
+    </div>
+
+    <div class="example row align-items-stretch">
+      <div class="example__col col-4">col-4</div>
+      <div class="example__col col-4">col-4</div>
+      <div class="example__col col-4">col-4</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col-4 align-self-start">col-4</div>
+      <div class="example__col col-4 align-self-center">col-4</div>
+      <div class="example__col col-4 align-self-end">col-4</div>
+    </div>
+  </div>`,
+
+  `<div class="container">
+    <div class="example row">
+      <div class="example__col col-3">1</div>
+      <div class="example__col col-3">2</div>
+      <div class="example__col col-3">3</div>
+      <div class="example__col col-3">4</div>
+    </div>
+
+    <div class="example row direction-row-reverse">
+      <div class="example__col col-3">1</div>
+      <div class="example__col col-3">2</div>
+      <div class="example__col col-3">3</div>
+      <div class="example__col col-3">4</div>
+    </div>
+
+    <div class="example row direction-column">
+      <div class="example__col col-3">1</div>
+      <div class="example__col col-3">2</div>
+      <div class="example__col col-3">3</div>
+      <div class="example__col col-3">4</div>
+    </div>
+
+    <div class="example row direction-column-reverse">
+      <div class="example__col col-3">1</div>
+      <div class="example__col col-3">2</div>
+      <div class="example__col col-3">3</div>
+      <div class="example__col col-3">4</div>
+    </div>
+  </div>`,
+
+  `<div class="container">
+    <div class="example row">
+      <div class="example__col col-2 order-2">1</div>
+      <div class="example__col col-2 order-1">2</div>
+      <div class="example__col col-2 order-4">3</div>
+      <div class="example__col col-2 order-3">4</div>
+      <div class="example__col col-2 order-6">5</div>
+      <div class="example__col col-2 order-5">6</div>
+    </div>
+  </div>`,
+
+  `<div class="container">
+    <div class="example row">
+      <div class="example__col col-1 offset-right-1">of-1</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col-1 offset-right-2">of-2</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col-1 offset-right-3">of-3</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col-1 offset-right-4">of-4</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col-1 offset-right-5">of-5</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col-1 offset-right-6">of-6</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col-1 offset-right-7">of-7</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col-1 offset-right-8">of-8</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col-1 offset-right-9">of-9</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col-1 offset-right-10">of-10</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col-1 no-v-gutters offset-right-11">of-11</div>
+    </div>
+  </div>`,
+
+  `<div class="container">
+    <div class="example row">
+      <div class="example__col col">1</div>
+      <div class="example__col col hide-laptop-md">2</div>
+      <div class="example__col col">3</div>
+      <div class="example__col col hide-laptop-md">4</div>
+    </div>
+  </div>`,
+
+  `<div class="container">
+    <div class="example row">
+      <div class="example__col col">1</div>
+      <div class="example__col col hide-laptop-md show-tablet-landscape">2</div>
+      <div class="example__col col">3</div>
+      <div class="example__col col hide-laptop-md show-tablet-landscape">4</div>
+    </div>
+  </div>`,
+
+  `<div class="container">
+    <div class="example row no-v-gutters">
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+    </div>
+
+    <div class="example row no-v-gutters">
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+    </div>
+  </div>`,
+
+  `<div class="container">
+    <div class="example row">
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+    </div>
+
+    <div class="example row no-children-v-gutters">
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+    </div>
+  </div>`,
+
+  `<div class="container">
+    <div class="example row">
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+    </div>
+
+    <div class="example row no-children-h-gutters">
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+    </div>
+  </div>`,
+
+  `<div class="container">
+    <div class="example row">
+      <div class="example__col col no-v-gutters">col</div>
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+    </div>
+  </div>`,
+
+  `<div class="container">
+    <div class="example row">
+      <div class="example__col col no-h-gutters">col</div>
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+    </div>
+  </div>`,
+
+  `<div class="container">
+    <div class="example row no-children-gutters">
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+      <div class="example__col col">col</div>
+    </div>
+  </div>`,
+
+  `<div class="container">
+    <div class="example row">
+      <div class="example__col col-2 col-laptop-3 col-laptop-md-4 col-tablet-landscape-6 col-phone-landscape-12">1</div>
+      <div class="example__col col-2 col-laptop-3 col-laptop-md-4 col-tablet-landscape-6 col-phone-landscape-12">2</div>
+      <div class="example__col col-2 col-laptop-3 col-laptop-md-4 col-tablet-landscape-6 col-phone-landscape-12">3</div>
+      <div class="example__col col-2 col-laptop-3 col-laptop-md-4 col-tablet-landscape-6 col-phone-landscape-12">4</div>
+      <div class="example__col col-2 col-laptop-3 col-laptop-md-4 col-tablet-landscape-6 col-phone-landscape-12">5</div>
+      <div class="example__col col-2 col-laptop-3 col-laptop-md-4 col-tablet-landscape-6 col-phone-landscape-12">6</div>
+    </div>
+  </div>`,
+
+  `<div class="container">
+    <div class="example row justify-content-laptop-center justify-content-laptop-md-end justify-content-tablet-landscape-between justify-content-phone-landscape-around">
+      <div class="example__col col-2">1</div>
+      <div class="example__col col-2">2</div>
+    </div>
+  </div>`,
+
+  `<div class="container">
+    <div class="example row align-items-start align-items-laptop-center align-items-laptop-md-end align-items-tablet-landscape-stretch align-items-phone-landscape-baseline">
+      <div class="example__col col">1</div>
+      <div class="example__col col">2</div>
+      <div class="example__col col">3</div>
+    </div>
+  </div>`,
+
+  `<div class="container">
+    <div class="example row align-items-start">
+      <div class="example__col col align-self-laptop-center align-self-laptop-md-end align-self-tablet-landscape-stretch align-self-phone-landscape-baseline">1</div>
+      <div class="example__col col">2</div>
+      <div class="example__col col">3</div>
+    </div>
+  </div>`,
+
+  `<div class="container">
+    <div class="example row align-items-start align-items-laptop-md-stretch direction-laptop-row-reverse direction-laptop-md-column direction-tablet-landscape-column-reverse">
+      <div class="example__col col">1</div>
+      <div class="example__col col">2</div>
+      <div class="example__col col">3</div>
+    </div>
+  </div>`,
+
+  `<div class="container">
+    <div class="example row">
+      <div class="example__col col-2 offset-laptop-right-2 offset-laptop-md-right-4 offset-tablet-landscape-right-6 offset-phone-landscape-right-auto">1</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col-2 offset-laptop-md-right-auto">2</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col-2 offset-right-auto offset-desktop-left-auto">3</div>
+    </div>
+  </div>`,
+
+  `<div class="container">
+    <div class="example row">
+      <div class="example__col col order-laptop-2">1</div>
+      <div class="example__col col order-laptop-1">2</div>
+      <div class="example__col col order-laptop-4">3</div>
+      <div class="example__col col order-laptop-3">4</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col order-laptop-last">1</div>
+      <div class="example__col col">2</div>
+      <div class="example__col col">3</div>
+      <div class="example__col col order-laptop-first">4</div>
+    </div>
+  </div>`,
+
+  `<div class="container">
+    <div class="example row">
+      <div class="example__col col hide-laptop">1</div>
+      <div class="example__col col">2</div>
+    </div>
+
+    <div class="example row">
+      <div class="example__col col">3</div>
+      <div class="example__col col hide show-laptop">4</div>
+    </div>
+  </div>`
+  ],
+
+  sass: [
+  `.wrapper {
+    @include container();
+  }
+
+  .page-header,
+  .page-main,
+  .page-footer {
+    @include row();
+  }
+
+  .logo {
+    @include col(2);
+  }
+
+  .main-nav {
+    @include col();
+  }
+
+  .left-sidebar,
+  .right-sidebar {
+    @include col(3);
+  }
+
+  .page-content {
+    @include col(6);
+  }
+
+  .footer-menu {
+    @include col(4);
+  }
+
+  .license {
+    @include col(8);
+  }`,
+
+  `.container {
+    @include container();
+  }
+
+  .row {
+    @include row();
+  }
+
+  .col {
+    @include col();
+  }`,
+
+  `.container {
+    @include container();
+  }
+
+  .example {
+    @include row();
+
+    &:first-child {
+
+      .example__col {
+        @include col(12);
+      }
+    }
+
+    &:nth-child(2) {
+
+      .example__col:first-child {
+        @include col(1);
+      }
+
+      .example__col:nth-child(2) {
+        @include col(11);
+      }
+    }
+
+    &:nth-child(3) {
+
+      .example__col:first-child {
+        @include col(2);
+      }
+
+      .example__col:nth-child(2) {
+        @include col(10);
+      }
+    }
+
+    &:nth-child(4) {
+
+      .example__col:first-child {
+        @include col(3);
+      }
+
+      .example__col:nth-child(2) {
+        @include col(9);
+      }
+    }
+
+    &:nth-child(5) {
+
+      .example__col:first-child {
+        @include col(4);
+      }
+
+      .example__col:nth-child(2) {
+        @include col(8);
+      }
+    }
+
+    &:nth-child(6) {
+
+      .example__col:first-child {
+        @include col(5);
+      }
+
+      .example__col:nth-child(2) {
+        @include col(7);
+      }
+    }
+
+    &:nth-child(7) {
+
+      .example__col:first-child {
+        @include col(6);
+      }
+
+      .example__col:nth-child(2) {
+        @include col(6);
+      }
+    }
+
+    &:nth-child(8) {
+
+      .example__col:first-child {
+        @include col(7);
+      }
+
+      .example__col:nth-child(2) {
+        @include col(5);
+      }
+    }
+
+    &:nth-child(9) {
+
+      .example__col:first-child {
+        @include col(8);
+      }
+
+      .example__col:nth-child(2) {
+        @include col(4);
+      }
+    }
+
+    &:nth-child(10) {
+
+      .example__col:first-child {
+        @include col(9);
+      }
+
+      .example__col:nth-child(2) {
+        @include col(3);
+      }
+    }
+
+    &:nth-child(11) {
+
+      .example__col:first-child {
+        @include col(10);
+      }
+
+      .example__col:nth-child(2) {
+        @include col(2);
+      }
+    }
+
+    &:nth-child(12) {
+
+      .example__col:first-child {
+        @include col(11);
+      }
+
+      .example__col:nth-child(2) {
+        @include col(1);
+      }
+    }
+  }`,
+
+  `.container {
+    @include container();
+
+    .example {
+      @include row();
+
+      &:first-child {
+        @include justify-content(flex-start);
+      }
+
+      &:nth-child(2) {
+        @include justify-content(center);
+      }
+
+      &:nth-child(3) {
+        @include justify-content(flex-end);
+      }
+
+      &:nth-child(4) {
+        @include justify-content(space-between);
+      }
+
+      &:nth-child(5) {
+        @include justify-content(space-around);
+      }
+
+      &__col {
+        @include col(2);
+      }
+    }
+  }`,
+
+  `.container {
+    @include container();
+
+    .example {
+      @include row();
+
+      &:first-child {
+        @include align-items(flex-start);
+      }
+
+      &:nth-child(2) {
+        @include align-items(center);
+      }
+
+      &:nth-child(3) {
+        @include align-items(flex-end);
+      }
+
+      &:nth-child(4) {
+        @include align-items(stretch);
+      }
+
+      &:nth-child(5) {
+
+        .example__col:first-child {
+          @include align-self(flex-start);
+        }
+
+        .example__col:nth-child(2) {
+          @include align-self(center);
+        }
+
+        .example__col:nth-child(3) {
+          @include align-self(flex-end);
+        }
+      }
+
+      &__col {
+        @include col(4);
+      }
+    }
+  }`,
+
+  `.container {
+    @include container();
+
+    .example {
+      @include row();
+
+      &:nth-child(2) {
+        @include direction(row-reverse);
+      }
+
+      &:nth-child(3) {
+        @include direction(column);
+      }
+
+      &:nth-child(4) {
+        @include direction(column-reverse);
+      }
+
+      &__col {
+        @include col(3);
+      }
+    }
+  }`,
+
+  `.container {
+    @include container();
+
+    .example {
+      @include row();
+
+      &__col {
+        @include col(2);
+
+        &:first-child {
+          @include order(2);
+        }
+
+        &:nth-child(2) {
+          @include order(1);
+        }
+
+        &:nth-child(3) {
+          @include order(4);
+        }
+
+        &:nth-child(4) {
+          @include order(3);
+        }
+
+        &:nth-child(5) {
+          @include order(6);
+        }
+
+        &:last-child {
+          @include order(5);
+        }
+      }
+    }
+  }`,
+
+  `.container {
+    @include container();
+  }
+
+  .example {
+    @include row();
+
+    &:first-child {
+
+      .example__col {
+        @include offset-right(1);
+      }
+    }
+
+    &:nth-child(2) {
+
+      .example__col {
+        @include offset-right(2);
+      }
+    }
+
+    &:nth-child(3) {
+
+      .example__col {
+        @include offset-right(3);
+      }
+    }
+
+    &:nth-child(4) {
+
+      .example__col {
+        @include offset-right(4);
+      }
+    }
+
+    &:nth-child(5) {
+
+      .example__col {
+        @include offset-right(5);
+      }
+    }
+
+    &:nth-child(6) {
+
+      .example__col {
+        @include offset-right(6);
+      }
+    }
+
+    &:nth-child(7) {
+
+      .example__col {
+        @include offset-right(7);
+      }
+    }
+
+    &:nth-child(8) {
+
+      .example__col {
+        @include offset-right(8);
+      }
+    }
+
+    &:nth-child(9) {
+
+      .example__col {
+        @include offset-right(9);
+      }
+    }
+
+    &:nth-child(10) {
+
+      .example__col {
+        @include offset-right(10);
+      }
+    }
+
+    &:nth-child(11) {
+
+      .example__col {
+        @include offset-right(11);
+      }
+    }
+
+    &:nth-child(12) {
+
+      .example__col {
+        @include offset-right(12);
+      }
+    }
+  }`,
+
+  `.container {
+    @include container();
+  }
+
+  .example {
+    @include row();
+
+    &__col {
+      @include col();
+    }
+
+    &:nth-child(2),
+    &:nth-child(4) {
+      .example__col {
+        @include hide(laptop-md);
+      }
+    }
+  }`,
+
+  `.container {
+    @include container();
+  }
+
+  .example {
+    @include row();
+
+    &__col {
+      @include col();
+    }
+
+    &:nth-child(2),
+    &:nth-child(4) {
+      .example__col {
+        @include hide(laptop-md);
+        @include show(tablet-landscape);
+      }
+    }
+  }`,
+
+  `.container {
+    @include container();
+  }
+
+  .example {
+    @include row();
+
+    &__col {
+      @include col();
+    }
+
+    &:first-child,
+    &:nth-child(2) {
+      @include no-v-gutters();
+    }
+  }`,
+
+  `.container {
+    @include container();
+  }
+
+  .example {
+    @include row();
+
+    &__col {
+      @include col();
+    }
+
+    &:nth-child(2) {
+      @include no-children-v-gutters();
+    }
+  }`,
+
+  `.container {
+    @include container();
+  }
+
+  .example {
+    @include row();
+
+    &__col {
+      @include col();
+    }
+
+    &:nth-child(2) {
+      @include no-children-h-gutters();
+    }
+  }`,
+
+  `.container {
+    @include container();
+  }
+
+  .example {
+    @include row();
+
+    &__col {
+      @include col();
+
+      &:first-child {
+        @include no-v-gutters();
+      }
+    }
+  }`,
+
+  `.container {
+    @include container();
+  }
+
+  .example {
+    @include row();
+
+    &__col {
+      @include col();
+
+      &:first-child {
+        @include no-h-gutters();
+      }
+    }
+  }`,
+
+  `.container {
+    @include container();
+  }
+
+  .example {
+    @include row();
+    @include no-children-gutters();
+
+    &__col {
+      @include col();
+    }
+  }`,
+
+  `.container {
+    @include container();
+
+    .example {
+      @include row();
+
+      &__col {
+        @include col(2);
+        @include col(3, laptop);
+        @include col(4, laptop-md);
+        @include col(6, tablet-landscape);
+        @include col(12, phone-landscape);
+      }
+    }
+  }`,
+
+  `.container {
+    @include container();
+
+    .example {
+      @include row();
+      @include justify-content(center, laptop);
+      @include justify-content(flex-end, laptop-md);
+      @include justify-content(space-between, tablet-landscape);
+      @include justify-content(space-around, phone-landscape);
+
+      &__col {
+        @include col(2);
+      }
+    }
+  }`,
+
+  `.container {
+    @include container();
+
+    .example {
+      @include row();
+      @include align-items(flex-start);
+      @include align-items(center, laptop);
+      @include align-items(flex-end, laptop-md);
+      @include align-items(stretch, tablet-landscape);
+      @include align-items(baseline, phone-landscape);
+
+      &__col {
+        @include col();
+      }
+    }
+  }`,
+
+  `.container {
+    @include container();
+
+    .example {
+      @include row();
+      @include align-items(flex-start);
+
+      &__col {
+        @include col();
+
+        &:first-child {
+          @include align-self(center, laptop);
+          @include align-self(end, laptop-md);
+          @include align-self(stretch, tablet-landscape);
+          @include align-self(baseline, phone-landscape);
+        }
+      }
+    }
+  }`,
+
+  `.container {
+    @include container();
+
+    .example {
+      @include row();
+      @include align-items(flex-start);
+      @include align-items(stretch, laptop-md);
+      @include direction(row-reverse, laptop);
+      @include direction(column, laptop-md);
+      @include direction(column-reverse, tablet-landscape);
+
+      &__col {
+        @include col();
+
+        &:first-child {
+          @include align-self(center, laptop);
+          @include align-self(end, laptop-md);
+          @include align-self(stretch, tablet-landscape);
+          @include align-self(baseline, phone-landscape);
+        }
+      }
+    }
+  }`,
+
+  `.container {
+    @include container();
+
+    .example {
+      @include row();
+
+      &:first-child {
+
+        .example__col {
+          @include offset(right, 2, laptop);
+          @include offset(right, 4, laptop-md);
+          @include offset(right, 6, tablet-landscape);
+          @include offset(right, auto, phone-landscape);
+        }
+      }
+
+      &:nth-child(2) {
+
+        .example__col {
+          @include offset(right, auto, laptop-md);
+        }
+      }
+
+      &:nth-child(3) {
+
+        .example__col {
+          @include offset(right, auto);
+          @include offset(left, auto, desktop);
+        }
+      }
+
+      &__col {
+        @include col(2);
+      }
+    }
+  }`,
+
+  `.container {
+    @include container();
+
+    .example {
+      @include row();
+
+      &:first-child {
+
+        .example__col:first-child {
+          @include order(2, laptop);
+        }
+
+        .example__col:nth-child(2) {
+          @include order(1, laptop);
+        }
+
+        .example__col:nth-child(3) {
+          @include order(4, laptop);
+        }
+
+        .example__col:last-child {
+          @include order(3, laptop);
+        }
+      }
+
+      &:last-child {
+
+        .example__col:first-child {
+          @include order(last, laptop);
+        }
+
+        .example__col:last-child {
+          @include order(first, laptop);
+        }
+      }
+
+      &__col {
+        @include col();
+      }
+    }
+  }`,
+
+  `.container {
+    @include container();
+
+    .example {
+      @include row();
+
+      &:first-child {
+
+        .example__col:first-child {
+          @include hide(laptop);
+        }
+      }
+
+      &:last-child {
+
+        .example__col:last-child {
+          @include show(laptop);
+        }
+      }
+
+      &__col {
+        @include col();
+      }
+    }
+  }`,
+
+  `$partials: false;`,
+
+  `$grid-breakpoints: (
+    lg: 1280px,
+    md: 960px,
+    sm: 768px,
+    xs: 480px
+  );`,
+
+  `$container-width: 1920px;
+  $container-padding: 10px;
+  $h-gutter: 15px;
+  $columns: 24;
+  $mobile-first: true;
+
+  $grid-breakpoints: (
+    lg: 1280px,
+    md: 960px,
+    sm: 768px,
+    xs: 480px
+  );
+
+  @import 'path/to/grid/grid.scss'`,
+
+  `$container-width: 1140px !default;
+  $container-padding: 15px !default;
+  $h-gutter: 30px !default;
+  $v-gutter: $h-gutter !default;
+  $columns: 12 !default;
+  $mobile-first: false !default;
+
+  @function query-direction() {
+    @if($mobile-first) {
+      @return min;
+    } @else {
+      @return max;
+    }
+  }
+
+  $media-query: query-direction();
+
+  $grid-breakpoints: (
+    desktop: 1280px,
+    laptop: 1024px,
+    laptop-md: 960px,
+    tablet-landscape: 768px,
+    phone-landscape: 640px,
+    phone: 480px,
+    phone-md: 360px,
+    phone-sm: 320px
+  ) !default;
+
+  $partials: (
+    alignment,
+    direction,
+    hide,
+    offset,
+    ordering,
+    show,
+    gutters
+  ) !default;
+
+  @import 'mixins/mixins';
+  @import 'partials/alignment';
+  @import 'partials/ordering';
+  @import 'partials/direction';
+  @import 'partials/hide';
+  @import 'partials/show';
+  @import 'partials/offset';
+  @import 'partials/gutters.scss';
+  @import 'base';`
+  ]
+  };

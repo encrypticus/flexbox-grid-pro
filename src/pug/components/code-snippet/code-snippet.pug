@@ -1,0 +1,5 @@
+mixin code-snippet({ code = '', title = 'HTML', classes = '' } = {})
+  .code-snippet&attributes(attributes)
+    h3.code-snippet__title= title
+    pre
+      code(class= classes != '' ? classes : '')= code

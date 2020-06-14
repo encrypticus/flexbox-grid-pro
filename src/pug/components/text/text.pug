@@ -1,0 +1,8 @@
+mixin text(text)
+  .text&attributes(attributes)!= text
+    block
+
+mixin text-list(list = [])
+  ul.text__list
+    each listItem in list
+      li.text__list-item= listItem

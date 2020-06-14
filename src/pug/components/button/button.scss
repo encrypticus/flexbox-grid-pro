@@ -1,0 +1,78 @@
+.button {
+  display: inline-block;
+  padding: pxToRem(5) pxToRem(30);
+  font-size: pxToRem(20);
+  font-family: inherit;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  max-width: 100%;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  user-select: none;
+  text-decoration: none;
+  text-transform: none;
+  background-image: none;
+  cursor: pointer;
+  min-width: 200px;
+  transition: .3s;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    background-color: darken(#007FFF, 10%);
+    border-color: darken(#fff, 12%);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+  }
+
+  // &:visited {
+  //   color: $text-color;
+  // }
+
+  &:active,
+  &:focus {
+    //@include field-focus;
+  }
+
+  &--disabled,
+  &:disabled {
+    //opacity: $opacity;
+    cursor: not-allowed;
+    //color: $text-color;
+    //background-color: $gray-lightest;
+    // border-color: $gray-lighter;
+
+    @at-root a.btn--disabled {
+      pointer-events: none;
+    }
+  }
+
+  // &__icon {
+  //   display: inline-block;
+  //   vertical-align: middle;
+  // }
+
+  // &--main {
+  //   color: #fff;
+  //   background-color: $color-main;
+  //   // border: 1px solid $color-main;
+
+  //   &:hover,
+  //   &:focus {
+  //     color: #fff;
+  //     background-color: darken($color-main, 10%);
+  //     // border-color: darken($color-main, 12%);
+  //   }
+
+  //   &--disabled,
+  //   &:disabled {
+  //     color: #fff;
+  //     background-color: $color-main;
+  //     // border-color: $color-main;
+  //   }
+  // }
+}

@@ -1,0 +1,51 @@
+@if (type_of($partials) == list and index($partials, gutters)) or (type_of($partials) == string and index($partials, gutters)) {
+  .no-gutters {
+    @include no-gutters;
+  }
+
+  .no-h-gutters {
+    @include no-h-gutters;
+  }
+
+  .no-v-gutters {
+    @include no-v-gutters;
+  }
+
+  .no-children-gutters {
+    @include no-children-gutters;
+  }
+
+  .no-children-h-gutters {
+    @include no-children-h-gutters;
+  }
+
+  .no-children-v-gutters {
+    @include no-children-v-gutters
+  }
+
+  @each $breakpoint-name, $breakpoint-value in $grid-breakpoints {
+    .no-gutters-#{$breakpoint-name} {
+      @include no-gutters($breakpoint-name);
+    }
+
+    .no-h-gutters-#{$breakpoint-name} {
+      @include no-h-gutters($breakpoint-name);
+    }
+
+    .no-v-gutters-#{$breakpoint-name} {
+      @include no-v-gutters($breakpoint-name);
+    }
+
+    .no-children-gutters-#{$breakpoint-name} {
+      @include no-children-gutters($breakpoint-name);
+    }
+
+    .no-children-h-gutters-#{$breakpoint-name} {
+      @include no-children-h-gutters($breakpoint-name);
+    }
+
+    .no-children-v-gutters-#{$breakpoint-name} {
+      @include no-children-v-gutters($breakpoint-name);
+    }
+  }
+}

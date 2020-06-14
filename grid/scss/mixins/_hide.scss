@@ -1,0 +1,15 @@
+/* Скрытие элементов */
+
+/*
+  Скрывает элемент, на котором вызван миксин. Если значение аргумента $breakpoint соответствует одному из имен ключей
+  глобального объекта $grid-breakpoints, правило будет применено в соответствующем медиазапросе
+*/
+@mixin hide($breakpoint: null) {
+  @if (map_has_key($grid-breakpoints, $breakpoint)) {
+    @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint)) {
+      display: none;
+    }
+  } @else {
+    display: none;
+  }
+}

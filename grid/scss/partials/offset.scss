@@ -1,0 +1,42 @@
+@if (type_of($partials) == list and index($partials, offset)) or (type_of($partials) == string and index($partials, offset)) {
+
+  // генерация "смещающих" классов соответственно числу колонок и соответственно числу колонок и медиазапросам
+  @for $i from 1 through $columns {
+    .offset-right-#{$i} {
+      @include offset(right, $i);
+    }
+
+    .offset-left-#{$i} {
+      @include offset(left, $i);
+    }
+
+    @each $breakpoint-name, $breakpoint-value in $grid-breakpoints {
+      .offset-#{$breakpoint-name}-right-#{$i} {
+        @include offset(right, $i, $breakpoint-name);
+      }
+
+      .offset-#{$breakpoint-name}-left-#{$i} {
+        @include offset(left, $i, $breakpoint-name);
+      }
+    }
+  }
+
+  // генерация "автосмещающих" классов, правила в которых применяются в медиазапросах
+  @each $breakpoint-name, $breakpoint-value in $grid-breakpoints {
+    .offset-#{$breakpoint-name}-right-auto {
+      @include offset(right, auto, $breakpoint-name);
+    }
+
+    .offset-#{$breakpoint-name}-left-auto {
+      @include offset(left, auto, $breakpoint-name);
+    }
+  }
+
+  .offset-right-auto {
+    @include offset(right);
+  }
+
+  .offset-left-auto {
+    @include offset(left);
+  }
+}

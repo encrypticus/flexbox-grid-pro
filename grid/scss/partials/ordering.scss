@@ -1,0 +1,52 @@
+@if (type_of($partials) == list and index($partials, ordering)) or (type_of($partials) == string and index($partials, ordering)) {
+
+  /*
+  Генерация "упорядочавающих" классов и правил для них: order-1, order-2, order-3 и т.д. согласно количеству заданных
+  колонок $columns
+  */
+  @for $i from 0 through $columns {
+    .order-#{$i} {
+      order: #{$i};
+    }
+  }
+
+  /*
+    Генерация "упорядочивающих" классов в медиазапросах и правил для них: order-desktop-3, order-tablet-8, order-laptop-md-2 и т.д.
+    согласно количеству заданных колонок $columns и значениям для медиазапросов $grid-breakpoints
+  */
+  @each $breakpoint-name, $breakpoint-value in $grid-breakpoints {
+    @for $i from 0 through $columns {
+      .order-#{$breakpoint-name}-#{$i} {
+        @include order($i, $breakpoint-name);
+      }
+    }
+  }
+
+  /*
+    Генерация "упорядочивающих" классов, перемещающих ячейку в самое начало строки, в медиазапросах: order-desktop-first,
+    order-laptop-first, order-phone-sm-first и т.д. согласно заданным значениям в глобальном объекте $grid-breakpoints
+  */
+  @each $breakpoint-name, $breakpoint-value in $grid-breakpoints {
+    .order-#{$breakpoint-name}-first {
+      @include order-first($breakpoint-name);
+    }
+  }
+
+  /*
+    Генерация "упорядочивающих" классов, перемещающих ячейку в самый конец строки, в медиазапросах: order-desktop-last,
+    order-laptop-last, order-phone-sm-last и т.д. согласно заданным значениям в глобальном объекте $grid-breakpoints
+  */
+  @each $breakpoint-name, $breakpoint-value in $grid-breakpoints {
+    .order-#{$breakpoint-name}-last {
+      @include order-last($breakpoint-name);
+    }
+  }
+
+  .order-first {
+    @include order-first;
+  }
+
+  .order-last {
+    @include order-last;
+  }
+}

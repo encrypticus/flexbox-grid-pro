@@ -1,0 +1,46 @@
+/* Расположение ячеек в строке */
+
+/*
+  Задает направление главной оси, вдоль которой укладываются ячейки сетки в строке.
+  В качестве аргумента для первого параметра $direction должно быть передано одно
+  из следующиех значений: row, row-reverse, column, column-reverse.
+  Если вторым аргументом передано значение, соответствующее одному из имен ключей
+  глобального объекта $grid-breakpoints, правило будет применено в медиазапросе.
+*/
+@mixin direction($direction: row, $breakpoint: 'false') {
+  @if (map_has_key($grid-breakpoints, $breakpoint)) {
+    @if ($direction == row) {
+      @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint)) {
+        flex-direction: row;
+      }
+    } @else if ($direction == row-reverse) {
+      @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint)) {
+        flex-direction: row-reverse;
+      }
+    } @else if ($direction == column) {
+      @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint)) {
+        flex-direction: column;
+      }
+    } @else if ($direction == column-reverse) {
+      @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint)) {
+        flex-direction: column-reverse;
+      }
+    } @else {
+      @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint)) {
+        flex-direction: row;
+      }
+    }
+  } @else {
+    @if ($direction == row) {
+      flex-direction: row;
+    } @else if ($direction == row-reverse) {
+      flex-direction: row-reverse;
+    } @else if ($direction == column) {
+      flex-direction: column;
+    } @else if ($direction == column-reverse) {
+      flex-direction: column-reverse;
+    } @else {
+      flex-direction: row;
+    }
+  }
+}

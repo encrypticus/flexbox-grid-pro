@@ -1,0 +1,28 @@
+$container-width: 1140px !default
+$container-padding: 15px !default
+$h-gutter: 30px !default
+$v-gutter: $h-gutter !default
+$columns: 12 !default
+$mobile-first: false !default
+
+@function query-direction()
+  @if $mobile-first
+    @return min
+  @else
+    @return max
+
+$media-query: query-direction()
+
+$grid-breakpoints: (desktop: 1280px, laptop: 1024px, laptop-md: 960px, tablet-landscape: 768px, phone-landscape: 640px, phone: 480px, phone-md: 360px, phone-sm: 320px) !default
+
+$partials: alignment, direction, hide, offset, ordering, show, gutters !default
+
+@import mixins/mixins
+@import partials/alignment
+@import partials/ordering
+@import partials/direction
+@import partials/hide
+@import partials/show
+@import partials/offset
+@import partials/gutters
+@import base

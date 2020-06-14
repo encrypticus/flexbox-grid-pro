@@ -1,0 +1,42 @@
+$h-alignment-classes: (start: flex-start, center: center, end: flex-end, between: space-between, around: space-around)
+
+$v-alignment-classes: (start: flex-start, center: center, end: flex-end, stretch: stretch, baseline: baseline)
+
+=justify-content($align: flex-start, $breakpoint: null)
+  @if map_has_key($grid-breakpoints, $breakpoint)
+    @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint))
+      justify-content: $align
+  @else
+    justify-content: $align
+
+=align-items($align: flex-start, $breakpoint: null)
+  @if map_has_key($grid-breakpoints, $breakpoint)
+    @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint))
+      align-items: $align
+  @else
+    align-items: $align
+
+=align-self($align: flex-start, $breakpoint: null)
+  @if map_has_key($grid-breakpoints, $breakpoint)
+    @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint))
+      align-self: $align
+  @else
+    align-self: $align
+
+=generate-h-alignment-breakpoints
+  @each $breakpoint-name, $breakpoint-value in $grid-breakpoints
+    @each $className, $value in $h-alignment-classes
+      .justify-content-#{$breakpoint-name}-#{$className}
+        +justify-content($value, $breakpoint-name)
+
+=generate-v-alignment-breakpoints
+  @each $breakpoint-name, $breakpoint-value in $grid-breakpoints
+    @each $className, $value in $v-alignment-classes
+      .align-items-#{$breakpoint-name}-#{$className}
+        +align-items($value, $breakpoint-name)
+
+=generate-self-alignment-breakpoints
+  @each $breakpoint-name, $breakpoint-value in $grid-breakpoints
+    @each $className, $value in $v-alignment-classes
+      .align-self-#{$breakpoint-name}-#{$className}
+        +align-self($value, $breakpoint-name)

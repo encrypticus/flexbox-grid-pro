@@ -1,0 +1,25 @@
+@if type_of($partials) == list and index($partials, direction) or type_of($partials) == string and index($partials, direction)
+  .direction-row
+    +direction(row)
+
+  .direction-row-reverse
+    +direction(row-reverse)
+
+  .direction-column
+    +direction(column)
+
+  .direction-column-reverse
+    +direction(column-reverse)
+
+  @each $breakpoint-name, $breakpoint-value in $grid-breakpoints
+    .direction-#{$breakpoint-name}-row
+      +direction(row, $breakpoint-name)
+
+    .direction-#{$breakpoint-name}-row-reverse
+      +direction(row-reverse, $breakpoint-name)
+
+    .direction-#{$breakpoint-name}-column
+      +direction(column, $breakpoint-name)
+
+    .direction-#{$breakpoint-name}-column-reverse
+      +direction(column-reverse, $breakpoint-name)

@@ -1,0 +1,19 @@
+/* Отображение скрытых элементов */
+
+/*
+  Устанавливает свойство display у элемента, на котором вызван миксин. Если значение аргумента $breakpoint соответствует
+  одному из имен ключей глобального объекта $grid-breakpoints, правило будет применено в соответствующем медиазапросе
+*/
+@mixin show($display: initial, $breakpoint: null) {
+  @if ($display == none) {
+    $display: initial;
+  }
+
+  @if (map_has_key($grid-breakpoints, $breakpoint)) {
+    @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint)) {
+      display: $display;
+    }
+  } @else {
+    display: $display;
+  }
+}

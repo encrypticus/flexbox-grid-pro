@@ -1,0 +1,51 @@
+@if type_of($partials) == list and index($partials, alignment) or type_of($partials) == string and index($partials, alignment)
+  .justify-content-start
+    +justify-content(flex-start)
+
+  .justify-content-center
+    +justify-content(center)
+
+  .justify-content-end
+    +justify-content(flex-end)
+
+  .justify-content-space-between
+    +justify-content(space-between)
+
+  .justify-content-space-around
+    +justify-content(space-around)
+
+  .align-items-start
+    +align-items(flex-start)
+
+  .align-items-center
+    +align-items(center)
+
+  .align-items-end
+    +align-items(flex-end)
+
+  .align-items-stretch
+    +align-items(stretch)
+
+  .align-items-baseline
+    +align-items(baseline)
+
+  .align-self-start
+    +align-self(flex-start)
+
+  .align-self-center
+    +align-self(center)
+
+  .align-self-end
+    +align-self(flex-end)
+
+  .align-self-stretch
+    +align-self(stretch)
+
+  .align-self-baseline
+    +align-self(baseline)
+
+  +generate-h-alignment-breakpoints
+
+  +generate-v-alignment-breakpoints
+
+  +generate-self-alignment-breakpoints

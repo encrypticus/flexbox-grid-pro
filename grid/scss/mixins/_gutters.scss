@@ -1,0 +1,90 @@
+// обнуляет внешние отступы элемента
+@mixin no-gutters($breakpoint: null) {
+  @if map_has_key($grid-breakpoints, $breakpoint) {
+    @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint)) {
+      margin: 0 !important;
+    }
+  } @else {
+    margin: 0 !important;
+  }
+}
+
+// обнуляет внешние горизонтальные отступы элемента
+@mixin no-h-gutters($breakpoint: null) {
+  @if map_has_key($grid-breakpoints, $breakpoint) {
+    @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint)) {
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+    }
+  } @else {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+
+// обнуляет внешние вертикальные отступы элемента
+@mixin no-v-gutters($breakpoint: null) {
+  @if map_has_key($grid-breakpoints, $breakpoint) {
+    @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint)) {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
+  } @else {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+}
+
+// обнуляет внешние отступы колонок сетки
+@mixin no-children-gutters($breakpoint: null) {
+  @if map_has_key($grid-breakpoints, $breakpoint) {
+    @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint)) {
+      > .col,
+      > [class*='col-'] {
+        margin: 0 !important;
+      }
+    }
+  } @else {
+    > .col,
+    > [class*='col-'] {
+      margin: 0 !important;
+    }
+  }
+}
+
+// обнуляет внешние горизонтальные отступы колонок сетки
+@mixin no-children-h-gutters($breakpoint: null) {
+  @if map_has_key($grid-breakpoints, $breakpoint) {
+    @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint)) {
+      > .col,
+      > [class*='col-'] {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+    }
+  } @else {
+    > .col,
+    > [class*='col-'] {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+  }
+}
+
+// обнуляет внешние вертикальные отступы колонок сетки
+@mixin no-children-v-gutters($breakpoint: null) {
+  @if map_has_key($grid-breakpoints, $breakpoint) {
+    @media screen and (#{$media-query}-width: map_get($grid-breakpoints, $breakpoint)) {
+      > .col,
+      > [class*='col-'] {
+        margin-bottom: 0 !important;
+      }
+    }
+  } @else {
+    > .col,
+    > [class*='col-'] {
+      margin-bottom: 0 !important;
+    }
+  }
+}
