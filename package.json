@@ -1,6 +1,6 @@
 {
   "name": "flexbox-grid-pro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rich modular grid system based on flexbox css property",
   "main": "dist/grid.min.css",
   "scripts": {
