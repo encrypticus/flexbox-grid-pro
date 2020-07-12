@@ -1,38 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0055aa">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/tomorrow.min.css">
-    <link href="grid.css" rel="stylesheet">
-    <link href="common.css" rel="stylesheet">
-    <link href="index.css" rel="stylesheet"><script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.0/build/highlight.min.js"></script>
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0055aa"><meta name="description" content=""><meta name="keywords" content=""><meta http-equiv="X-UA-Compatible" content="IE=Edge"><link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png"><link rel="manifest" href="favicons/site.webmanifest"><link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5"><meta name="msapplication-TileColor" content="#da532c"><meta name="theme-color" content="#007fff"><link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/tomorrow.min.css"><link href="grid.css" rel="stylesheet"><link href="common.css" rel="stylesheet"><link href="index.css" rel="stylesheet"><script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.0/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<script src="burger.js"></script>
-    <title>Flexbox Grid Pro</title>
-  </head>
-  <body>
-    <header class="page-header">
-      <div class="hero row direction-column">
-        <h1 class="hero__title col no-gutters">Flexbox Grid Pro</h1>
-        <h2 class="hero__subtitle col">Богатая модульная сеточная система, основанная на css-свойстве flexbox</h2>
-        <div class="buttons row justify-content-center"><a class="button col-1" href="https://npmjs.com/package/flexbox-grid-pro" target="_blank">Download</a><a class="button col-1" href="https://github.com/encrypticus/flexbox-grid-pro" target="_blank">Github</a>
-        </div>
-      </div>
-    </header>
-    <div class="container">
-      <main class="page-main row">
-        <h3 class="title col-12">Введение</h3><a id="intro"></a>
-        <div class="text col-12">Flexbox Grid Pro - это богатая модульная сеточная система для создания адаптивных, отзывчивых макетов. Сетка доступна в двух вариантах - как набор предопределенных css-классов и как набор sass-миксинов. То есть вы можете либо в html-разметке проставить нужным элементам небходимые классы, либо же в вашем sass-коде в селекторах подключить необходимые миксины, как показано ниже. Оба варианта равнозначны и дают аналогичные результаты. Каким из них воспользоваться - лишь вопрос ваших предпочтений:
-        </div>
-        <div class="code-snippet col col-phone-landscape-12">
-          <h3 class="code-snippet__title">HTML</h3>
-          <pre><code class="html">&lt;div class=&quot;wrapper container&quot;&gt;
+<script src="burger.js"></script><title>Flexbox Grid Pro</title></head><body><header class="page-header"><div class="hero row direction-column"><h1 class="hero__title col no-gutters">Flexbox Grid Pro</h1><h2 class="hero__subtitle col">Богатая модульная сеточная система, основанная на css-свойстве flexbox</h2><div class="buttons row justify-content-center"><a class="button col-1" href="https://npmjs.com/package/flexbox-grid-pro" target="_blank">Download</a><a class="button col-1" href="https://github.com/encrypticus/flexbox-grid-pro" target="_blank">Github</a></div></div></header><div class="container"><main class="page-main row"><h3 class="title col-12">Введение</h3><a id="intro"></a><div class="text col-12">Flexbox Grid Pro - это богатая модульная сеточная система для создания адаптивных, отзывчивых макетов. Сетка доступна в двух вариантах - как набор предопределенных css-классов и как набор sass-миксинов. То есть вы можете либо в html-разметке проставить нужным элементам небходимые классы, либо же в вашем sass-коде в селекторах подключить необходимые миксины, как показано ниже. Оба варианта равнозначны и дают аналогичные результаты. Каким из них воспользоваться - лишь вопрос ваших предпочтений:</div><div class="code-snippet col col-phone-landscape-12"><h3 class="code-snippet__title">HTML</h3><pre><code class="html">&lt;div class=&quot;wrapper container&quot;&gt;
   &lt;header class=&quot;page-header row&quot;&gt;
     &lt;div class=&quot;logo col-2&quot;&gt;&lt;/div&gt;
     &lt;nav class=&quot;main-nav col&quot;&gt;&lt;/nav&gt;
@@ -48,11 +16,7 @@
     &lt;div class=&quot;footer-menu col-4&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;license col-8&quot;&gt;&lt;/div&gt;
   &lt;/footer&gt;
-&lt;/div&gt;</code></pre>
-        </div>
-        <div class="code-snippet col">
-          <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-          <pre><code class="scss">.wrapper {
+&lt;/div&gt;</code></pre></div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">.wrapper {
   @include container();
 }
 
@@ -85,39 +49,7 @@
 
 .license {
   @include col(8);
-}</code></pre>
-        </div>
-        <div class="text col-12">Библиотека содержит следующие разделы наборов css-классов и соответствующих sass-миксинов:
-          <ul class="text__list">
-            <li class="text__list-item">Выравнивание</li>
-            <li class="text__list-item">Направление располжения ячеек в сетке</li>
-            <li class="text__list-item">Смещение колонок</li>
-            <li class="text__list-item">Упорядочивание ячеек</li>
-            <li class="text__list-item">Скрытие и отображение элементов</li>
-          </ul>
-        </div>
-        <div class="text col-12">Для того чтобы создать адаптивную сетку, нужно в разметку добавить элемент контейнера <span class='inline-snippet'>container</span>, содержащий элементы строк с необходимым количеством столбцов внутри. В примере ниже представлена сетка, состоящая из трёх строк <span class='inline-snippet'>row</span>, каждая из которых в свою очередь содержит по три колонки <span class='inline-snippet'>col</span> одинаковой ширины:
-        </div>
-        <div class="col-12">
-          <div class="example row">
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-          </div>
-          <div class="example row">
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-          </div>
-          <div class="example row no-children-v-gutters">
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-          </div>
-        </div>
-        <div class="code-snippet col col-phone-landscape-12">
-          <h3 class="code-snippet__title">HTML</h3>
-          <pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+}</code></pre></div><div class="text col-12">Библиотека содержит следующие разделы наборов css-классов и соответствующих sass-миксинов:<ul class="text__list"><li class="text__list-item">Выравнивание</li><li class="text__list-item">Направление располжения ячеек в сетке</li><li class="text__list-item">Смещение колонок</li><li class="text__list-item">Упорядочивание ячеек</li><li class="text__list-item">Скрытие и отображение элементов</li></ul></div><div class="text col-12">Для того чтобы создать адаптивную сетку, нужно в разметку добавить элемент контейнера <span class='inline-snippet'>container</span>, содержащий элементы строк с необходимым количеством столбцов внутри. В примере ниже представлена сетка, состоящая из трёх строк <span class='inline-snippet'>row</span>, каждая из которых в свою очередь содержит по три колонки <span class='inline-snippet'>col</span> одинаковой ширины:</div><div class="col-12"><div class="example row"><div class="example__col col">col</div><div class="example__col col">col</div><div class="example__col col">col</div></div><div class="example row"><div class="example__col col">col</div><div class="example__col col">col</div><div class="example__col col">col</div></div><div class="example row no-children-v-gutters"><div class="example__col col">col</div><div class="example__col col">col</div><div class="example__col col">col</div></div></div><div class="code-snippet col col-phone-landscape-12"><h3 class="code-snippet__title">HTML</h3><pre><code class="html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col&quot;&gt;&lt;/div&gt;
   &lt;/div&gt;
@@ -127,11 +59,7 @@
   &lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col&quot;&gt;&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-        </div>
-        <div class="code-snippet col">
-          <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-          <pre><code class="scss">.container {
+&lt;/div&gt;</code></pre></div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">.container {
   @include container();
 }
 
@@ -141,63 +69,7 @@
 
 .col {
   @include col();
-}</code></pre>
-        </div>
-        <h3 class="title col-12">Колонки заданной ширины</h3><a id="different-width-cols"></a>
-        <div class="text col">По умолчанию сетка состоит из двенадцати колонок. Просто задайте элементу необходимый класс или подключите в селекторе нужный миксин:
-        </div>
-        <div class="col-12">
-          <div class="example row">
-            <div class="example__col col">col-12</div>
-          </div>
-          <div class="example row">
-            <div class="example__col col-1">col-1</div>
-            <div class="example__col col-11">col-11</div>
-          </div>
-          <div class="example row">
-            <div class="example__col col-2">col-2</div>
-            <div class="example__col col-10">col-10</div>
-          </div>
-          <div class="example row">
-            <div class="example__col col-3">col-3</div>
-            <div class="example__col col-9">col-9</div>
-          </div>
-          <div class="example row">
-            <div class="example__col col-4">col-4</div>
-            <div class="example__col col-8">col-8</div>
-          </div>
-          <div class="example row">
-            <div class="example__col col-5">col-5</div>
-            <div class="example__col col-7">col-7</div>
-          </div>
-          <div class="example row">
-            <div class="example__col col-6">col-6</div>
-            <div class="example__col col-6">col-6</div>
-          </div>
-          <div class="example row">
-            <div class="example__col col-7">col-7</div>
-            <div class="example__col col-5">col-5</div>
-          </div>
-          <div class="example row">
-            <div class="example__col col-8">col-8</div>
-            <div class="example__col col-4">col-4</div>
-          </div>
-          <div class="example row">
-            <div class="example__col col-9">col-9</div>
-            <div class="example__col col-3">col-3</div>
-          </div>
-          <div class="example row">
-            <div class="example__col col-10">col-10</div>
-            <div class="example__col col-2">col-2</div>
-          </div>
-          <div class="example row">
-            <div class="example__col col-11">col-11</div>
-            <div class="example__col col-1">col-1</div>
-          </div>
-        </div>
-        <div class="code-snippet col col-phone-landscape-12">
-          <h3 class="code-snippet__title">HTML</h3>
-          <pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+}</code></pre></div><h3 class="title col-12">Колонки заданной ширины</h3><a id="different-width-cols"></a><div class="text col">По умолчанию сетка состоит из двенадцати колонок. Просто задайте элементу необходимый класс или подключите в селекторе нужный миксин:</div><div class="col-12"><div class="example row"><div class="example__col col">col-12</div></div><div class="example row"><div class="example__col col-1">col-1</div><div class="example__col col-11">col-11</div></div><div class="example row"><div class="example__col col-2">col-2</div><div class="example__col col-10">col-10</div></div><div class="example row"><div class="example__col col-3">col-3</div><div class="example__col col-9">col-9</div></div><div class="example row"><div class="example__col col-4">col-4</div><div class="example__col col-8">col-8</div></div><div class="example row"><div class="example__col col-5">col-5</div><div class="example__col col-7">col-7</div></div><div class="example row"><div class="example__col col-6">col-6</div><div class="example__col col-6">col-6</div></div><div class="example row"><div class="example__col col-7">col-7</div><div class="example__col col-5">col-5</div></div><div class="example row"><div class="example__col col-8">col-8</div><div class="example__col col-4">col-4</div></div><div class="example row"><div class="example__col col-9">col-9</div><div class="example__col col-3">col-3</div></div><div class="example row"><div class="example__col col-10">col-10</div><div class="example__col col-2">col-2</div></div><div class="example row"><div class="example__col col-11">col-11</div><div class="example__col col-1">col-1</div></div></div><div class="code-snippet col col-phone-landscape-12"><h3 class="code-snippet__title">HTML</h3><pre><code class="html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;example row&quot;&gt;
     &lt;div class=&quot;example__col col&quot;&gt;col-12&lt;/div&gt;
   &lt;/div&gt;
@@ -256,11 +128,7 @@
     &lt;div class=&quot;example__col col-11&quot;&gt;col-11&lt;/div&gt;
     &lt;div class=&quot;example__col col-1&quot;&gt;col-1&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-        </div>
-        <div class="code-snippet col">
-          <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-          <pre><code class="scss">.container {
+&lt;/div&gt;</code></pre></div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">.container {
   @include container();
 }
 
@@ -394,39 +262,7 @@
       @include col(1);
     }
   }
-}</code></pre>
-        </div>
-        <h3 class="title col-12">Выравнивание</h3><a id="alignment"></a>
-        <div class="text col-12">Для горизонтального и вертикального выравнивания колонок воспользуйтесь необходимыми классами или миксинами.
-        </div>
-        <h4 class="subtitle col-12">Горизонтальное</h4><a id="alignment-horizontal"></a>
-        <div class="col-12">
-          <div class="example example_colored row justify-content-start no-children-v-gutters">
-            <div class="example__col col-2">col-2</div>
-            <div class="example__col col-2">col-2</div>
-          </div>
-          <div class="example example_colored row justify-content-center no-children-v-gutters">
-            <div class="example__col col-2">col-2</div>
-            <div class="example__col col-2">col-2</div>
-          </div>
-          <div class="example example_colored row justify-content-end no-children-v-gutters">
-            <div class="example__col col-2">col-2</div>
-            <div class="example__col col-2">col-2</div>
-          </div>
-          <div class="example example_colored row justify-content-space-between no-children-v-gutters">
-            <div class="example__col col-2">col-2</div>
-            <div class="example__col col-2">col-2</div>
-            <div class="example__col col-2">col-2</div>
-          </div>
-          <div class="example example_colored row justify-content-space-around no-children-v-gutters">
-            <div class="example__col col-2">col-2</div>
-            <div class="example__col col-2">col-2</div>
-            <div class="example__col col-2">col-2</div>
-          </div>
-        </div>
-        <div class="code-snippet col col-phone-landscape-12">
-          <h3 class="code-snippet__title">HTML</h3>
-          <pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+}</code></pre></div><h3 class="title col-12">Выравнивание</h3><a id="alignment"></a><div class="text col-12">Для горизонтального и вертикального выравнивания колонок воспользуйтесь необходимыми классами или миксинами.</div><h4 class="subtitle col-12">Горизонтальное</h4><a id="alignment-horizontal"></a><div class="col-12"><div class="example example_colored row justify-content-start no-children-v-gutters"><div class="example__col col-2">col-2</div><div class="example__col col-2">col-2</div></div><div class="example example_colored row justify-content-center no-children-v-gutters"><div class="example__col col-2">col-2</div><div class="example__col col-2">col-2</div></div><div class="example example_colored row justify-content-end no-children-v-gutters"><div class="example__col col-2">col-2</div><div class="example__col col-2">col-2</div></div><div class="example example_colored row justify-content-space-between no-children-v-gutters"><div class="example__col col-2">col-2</div><div class="example__col col-2">col-2</div><div class="example__col col-2">col-2</div></div><div class="example example_colored row justify-content-space-around no-children-v-gutters"><div class="example__col col-2">col-2</div><div class="example__col col-2">col-2</div><div class="example__col col-2">col-2</div></div></div><div class="code-snippet col col-phone-landscape-12"><h3 class="code-snippet__title">HTML</h3><pre><code class="html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;example row justify-content-start&quot;&gt;
     &lt;div class=&quot;example__col col-2&quot;&gt;col-2&lt;/div&gt;
     &lt;div class=&quot;example__col col-2&quot;&gt;col-2&lt;/div&gt;
@@ -453,11 +289,7 @@
     &lt;div class=&quot;example__col col-2&quot;&gt;col-2&lt;/div&gt;
     &lt;div class=&quot;example__col col-2&quot;&gt;col-2&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-        </div>
-        <div class="code-snippet col">
-          <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-          <pre><code class="scss">.container {
+&lt;/div&gt;</code></pre></div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">.container {
   @include container();
 
   .example {
@@ -487,39 +319,7 @@
       @include col(2);
     }
   }
-}</code></pre>
-        </div>
-        <h4 class="subtitle col-12">Вертикальное</h4><a id="alignment-vertical"></a>
-        <div class="col-12">
-          <div class="example example_colored row example_fixed-size no-children-v-gutters align-items-start">
-            <div class="example__col col-4">col-4</div>
-            <div class="example__col col-4">col-4</div>
-            <div class="example__col col-4">col-4</div>
-          </div>
-          <div class="example example_colored row example_fixed-size no-children-v-gutters align-items-center">
-            <div class="example__col col-4">col-4</div>
-            <div class="example__col col-4">col-4</div>
-            <div class="example__col col-4">col-4</div>
-          </div>
-          <div class="example example_colored row example_fixed-size no-children-v-gutters align-items-end">
-            <div class="example__col col-4">col-4</div>
-            <div class="example__col col-4">col-4</div>
-            <div class="example__col col-4">col-4</div>
-          </div>
-          <div class="example example_colored row example_fixed-size no-children-v-gutters align-items-stretch">
-            <div class="example__col col-4">col-4</div>
-            <div class="example__col col-4">col-4</div>
-            <div class="example__col col-4">col-4</div>
-          </div>
-          <div class="example example_colored row example_fixed-size no-children-v-gutters">
-            <div class="example__col col-4 align-self-start">col-4</div>
-            <div class="example__col col-4 align-self-center">col-4</div>
-            <div class="example__col col-4 align-self-end">col-4</div>
-          </div>
-        </div>
-        <div class="code-snippet col col-phone-landscape-12">
-          <h3 class="code-snippet__title">HTML</h3>
-          <pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+}</code></pre></div><h4 class="subtitle col-12">Вертикальное</h4><a id="alignment-vertical"></a><div class="col-12"><div class="example example_colored row example_fixed-size no-children-v-gutters align-items-start"><div class="example__col col-4">col-4</div><div class="example__col col-4">col-4</div><div class="example__col col-4">col-4</div></div><div class="example example_colored row example_fixed-size no-children-v-gutters align-items-center"><div class="example__col col-4">col-4</div><div class="example__col col-4">col-4</div><div class="example__col col-4">col-4</div></div><div class="example example_colored row example_fixed-size no-children-v-gutters align-items-end"><div class="example__col col-4">col-4</div><div class="example__col col-4">col-4</div><div class="example__col col-4">col-4</div></div><div class="example example_colored row example_fixed-size no-children-v-gutters align-items-stretch"><div class="example__col col-4">col-4</div><div class="example__col col-4">col-4</div><div class="example__col col-4">col-4</div></div><div class="example example_colored row example_fixed-size no-children-v-gutters"><div class="example__col col-4 align-self-start">col-4</div><div class="example__col col-4 align-self-center">col-4</div><div class="example__col col-4 align-self-end">col-4</div></div></div><div class="code-snippet col col-phone-landscape-12"><h3 class="code-snippet__title">HTML</h3><pre><code class="html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;example row align-items-start&quot;&gt;
     &lt;div class=&quot;example__col col-4&quot;&gt;col-4&lt;/div&gt;
     &lt;div class=&quot;example__col col-4&quot;&gt;col-4&lt;/div&gt;
@@ -549,11 +349,7 @@
     &lt;div class=&quot;example__col col-4 align-self-center&quot;&gt;col-4&lt;/div&gt;
     &lt;div class=&quot;example__col col-4 align-self-end&quot;&gt;col-4&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-        </div>
-        <div class="code-snippet col">
-          <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-          <pre><code class="scss">.container {
+&lt;/div&gt;</code></pre></div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">.container {
   @include container();
 
   .example {
@@ -594,40 +390,7 @@
       @include col(4);
     }
   }
-}</code></pre>
-        </div>
-        <h3 class="title col-12">Направление расположения главной оси</h3><a id="axis-direction"></a>
-        <div class="text col-12">Чтобы задать направление расположения столбцов в строке, воспользуйтесь необходимыми классами или миксинами:
-        </div>
-        <div class="col-12">
-          <div class="example row">
-            <div class="example__col col-3">1</div>
-            <div class="example__col col-3">2</div>
-            <div class="example__col col-3">3</div>
-            <div class="example__col col-3">4</div>
-          </div>
-          <div class="example row direction-row-reverse">
-            <div class="example__col col-3">1</div>
-            <div class="example__col col-3">2</div>
-            <div class="example__col col-3">3</div>
-            <div class="example__col col-3">4</div>
-          </div>
-          <div class="example row direction-column example_colored">
-            <div class="example__col col-3">1</div>
-            <div class="example__col col-3">2</div>
-            <div class="example__col col-3">3</div>
-            <div class="example__col col-3 no-v-gutters">4</div>
-          </div>
-          <div class="example row direction-column-reverse example_colored">
-            <div class="example__col col-3 no-v-gutters">1</div>
-            <div class="example__col col-3">2</div>
-            <div class="example__col col-3">3</div>
-            <div class="example__col col-3">4</div>
-          </div>
-        </div>
-        <div class="code-snippet col col-phone-landscape-12">
-          <h3 class="code-snippet__title">HTML</h3>
-          <pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+}</code></pre></div><h3 class="title col-12">Направление расположения главной оси</h3><a id="axis-direction"></a><div class="text col-12">Чтобы задать направление расположения столбцов в строке, воспользуйтесь необходимыми классами или миксинами:</div><div class="col-12"><div class="example row"><div class="example__col col-3">1</div><div class="example__col col-3">2</div><div class="example__col col-3">3</div><div class="example__col col-3">4</div></div><div class="example row direction-row-reverse"><div class="example__col col-3">1</div><div class="example__col col-3">2</div><div class="example__col col-3">3</div><div class="example__col col-3">4</div></div><div class="example row direction-column example_colored"><div class="example__col col-3">1</div><div class="example__col col-3">2</div><div class="example__col col-3">3</div><div class="example__col col-3 no-v-gutters">4</div></div><div class="example row direction-column-reverse example_colored"><div class="example__col col-3 no-v-gutters">1</div><div class="example__col col-3">2</div><div class="example__col col-3">3</div><div class="example__col col-3">4</div></div></div><div class="code-snippet col col-phone-landscape-12"><h3 class="code-snippet__title">HTML</h3><pre><code class="html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;example row&quot;&gt;
     &lt;div class=&quot;example__col col-3&quot;&gt;1&lt;/div&gt;
     &lt;div class=&quot;example__col col-3&quot;&gt;2&lt;/div&gt;
@@ -655,11 +418,7 @@
     &lt;div class=&quot;example__col col-3&quot;&gt;3&lt;/div&gt;
     &lt;div class=&quot;example__col col-3&quot;&gt;4&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-        </div>
-        <div class="code-snippet col">
-          <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-          <pre><code class="scss">.container {
+&lt;/div&gt;</code></pre></div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">.container {
   @include container();
 
   .example {
@@ -681,24 +440,7 @@
       @include col(3);
     }
   }
-}</code></pre>
-        </div>
-        <h3 class="title col-12">Порядок расположения колонок</h3><a id="column-order"></a>
-        <div class="text col-12">Для указания порядка расположения столбцов в строке воспользуйтесь нужными классами или миксинами:
-        </div>
-        <div class="col-12">
-          <div class="example row">
-            <div class="example__col col-2 order-2">1</div>
-            <div class="example__col col-2 order-1">2</div>
-            <div class="example__col col-2 order-4">3</div>
-            <div class="example__col col-2 order-3">4</div>
-            <div class="example__col col-2 order-6">5</div>
-            <div class="example__col col-2 order-5">6</div>
-          </div>
-        </div>
-        <div class="code-snippet col col-phone-landscape-12">
-          <h3 class="code-snippet__title">HTML</h3>
-          <pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+}</code></pre></div><h3 class="title col-12">Порядок расположения колонок</h3><a id="column-order"></a><div class="text col-12">Для указания порядка расположения столбцов в строке воспользуйтесь нужными классами или миксинами:</div><div class="col-12"><div class="example row"><div class="example__col col-2 order-2">1</div><div class="example__col col-2 order-1">2</div><div class="example__col col-2 order-4">3</div><div class="example__col col-2 order-3">4</div><div class="example__col col-2 order-6">5</div><div class="example__col col-2 order-5">6</div></div></div><div class="code-snippet col col-phone-landscape-12"><h3 class="code-snippet__title">HTML</h3><pre><code class="html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;example row&quot;&gt;
     &lt;div class=&quot;example__col col-2 order-2&quot;&gt;1&lt;/div&gt;
     &lt;div class=&quot;example__col col-2 order-1&quot;&gt;2&lt;/div&gt;
@@ -707,11 +449,7 @@
     &lt;div class=&quot;example__col col-2 order-6&quot;&gt;5&lt;/div&gt;
     &lt;div class=&quot;example__col col-2 order-5&quot;&gt;6&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-        </div>
-        <div class="code-snippet col">
-          <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-          <pre><code class="scss">.container {
+&lt;/div&gt;</code></pre></div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">.container {
   @include container();
 
   .example {
@@ -745,49 +483,7 @@
       }
     }
   }
-}</code></pre>
-        </div>
-        <h3 class="title col-12">Смещение колонок</h3><a id="column-offset"></a>
-        <div class="text col-12">Для смещения колонок используйте нужные классы или миксины:
-        </div>
-        <div class="col-12">
-          <div class="example row example_colored">
-            <div class="example__col col-1 no-v-gutters offset-right-1">of-1</div>
-          </div>
-          <div class="example row example_colored">
-            <div class="example__col col-1 no-v-gutters offset-right-2">of-2</div>
-          </div>
-          <div class="example row example_colored">
-            <div class="example__col col-1 no-v-gutters offset-right-3">of-3</div>
-          </div>
-          <div class="example row example_colored">
-            <div class="example__col col-1 no-v-gutters offset-right-4">of-4</div>
-          </div>
-          <div class="example row example_colored">
-            <div class="example__col col-1 no-v-gutters offset-right-5">of-5</div>
-          </div>
-          <div class="example row example_colored">
-            <div class="example__col col-1 no-v-gutters offset-right-6">of-6</div>
-          </div>
-          <div class="example row example_colored">
-            <div class="example__col col-1 no-v-gutters offset-right-7">of-7</div>
-          </div>
-          <div class="example row example_colored">
-            <div class="example__col col-1 no-v-gutters offset-right-8">of-8</div>
-          </div>
-          <div class="example row example_colored">
-            <div class="example__col col-1 no-v-gutters offset-right-9">of-9</div>
-          </div>
-          <div class="example row example_colored">
-            <div class="example__col col-1 no-v-gutters offset-right-10">of-10</div>
-          </div>
-          <div class="example row example_colored">
-            <div class="example__col col-1 no-v-gutters offset-right-11">of-11</div>
-          </div>
-        </div>
-        <div class="code-snippet col col-phone-landscape-12">
-          <h3 class="code-snippet__title">HTML</h3>
-          <pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+}</code></pre></div><h3 class="title col-12">Смещение колонок</h3><a id="column-offset"></a><div class="text col-12">Для смещения колонок используйте нужные классы или миксины:</div><div class="col-12"><div class="example row example_colored"><div class="example__col col-1 no-v-gutters offset-right-1">of-1</div></div><div class="example row example_colored"><div class="example__col col-1 no-v-gutters offset-right-2">of-2</div></div><div class="example row example_colored"><div class="example__col col-1 no-v-gutters offset-right-3">of-3</div></div><div class="example row example_colored"><div class="example__col col-1 no-v-gutters offset-right-4">of-4</div></div><div class="example row example_colored"><div class="example__col col-1 no-v-gutters offset-right-5">of-5</div></div><div class="example row example_colored"><div class="example__col col-1 no-v-gutters offset-right-6">of-6</div></div><div class="example row example_colored"><div class="example__col col-1 no-v-gutters offset-right-7">of-7</div></div><div class="example row example_colored"><div class="example__col col-1 no-v-gutters offset-right-8">of-8</div></div><div class="example row example_colored"><div class="example__col col-1 no-v-gutters offset-right-9">of-9</div></div><div class="example row example_colored"><div class="example__col col-1 no-v-gutters offset-right-10">of-10</div></div><div class="example row example_colored"><div class="example__col col-1 no-v-gutters offset-right-11">of-11</div></div></div><div class="code-snippet col col-phone-landscape-12"><h3 class="code-snippet__title">HTML</h3><pre><code class="html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;example row&quot;&gt;
     &lt;div class=&quot;example__col col-1 offset-right-1&quot;&gt;of-1&lt;/div&gt;
   &lt;/div&gt;
@@ -831,11 +527,7 @@
   &lt;div class=&quot;example row&quot;&gt;
     &lt;div class=&quot;example__col col-1 no-v-gutters offset-right-11&quot;&gt;of-11&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-        </div>
-        <div class="code-snippet col">
-          <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-          <pre><code class="scss">.container {
+&lt;/div&gt;</code></pre></div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">.container {
   @include container();
 }
 
@@ -925,34 +617,14 @@
       @include offset-right(12);
     }
   }
-}</code></pre>
-        </div>
-        <h3 class="title col-12">Скрытие и отображение элементов</h3><a id="hide-and-show"></a>
-        <h4 class="subtitle col-12">Скрытие</h4><a id="hide"></a>
-        <div class="text col-12">Для скрытия элементов используйте нужные классы или миксины. В примере ниже вторая и четвертая колонки будут скрыты при ширине вьюпорта 960px и меньше:
-        </div>
-        <div class="col-12">
-          <div class="example row">
-            <div class="example__col col">1</div>
-            <div class="example__col col hide-laptop-md">2</div>
-            <div class="example__col col">3</div>
-            <div class="example__col col hide-laptop-md">4</div>
-          </div>
-        </div>
-        <div class="code-snippet col col-phone-landscape-12">
-          <h3 class="code-snippet__title">HTML</h3>
-          <pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+}</code></pre></div><h3 class="title col-12">Скрытие и отображение элементов</h3><a id="hide-and-show"></a><h4 class="subtitle col-12">Скрытие</h4><a id="hide"></a><div class="text col-12">Для скрытия элементов используйте нужные классы или миксины. В примере ниже вторая и четвертая колонки будут скрыты при ширине вьюпорта 960px и меньше:</div><div class="col-12"><div class="example row"><div class="example__col col">1</div><div class="example__col col hide-laptop-md">2</div><div class="example__col col">3</div><div class="example__col col hide-laptop-md">4</div></div></div><div class="code-snippet col col-phone-landscape-12"><h3 class="code-snippet__title">HTML</h3><pre><code class="html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;example row&quot;&gt;
     &lt;div class=&quot;example__col col&quot;&gt;1&lt;/div&gt;
     &lt;div class=&quot;example__col col hide-laptop-md&quot;&gt;2&lt;/div&gt;
     &lt;div class=&quot;example__col col&quot;&gt;3&lt;/div&gt;
     &lt;div class=&quot;example__col col hide-laptop-md&quot;&gt;4&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-        </div>
-        <div class="code-snippet col">
-          <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-          <pre><code class="scss">.container {
+&lt;/div&gt;</code></pre></div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">.container {
   @include container();
 }
 
@@ -969,33 +641,14 @@
       @include hide(laptop-md);
     }
   }
-}</code></pre>
-        </div>
-        <h4 class="subtitle col-12">Отображение</h4><a id="display"></a>
-        <div class="text col-12">Для отображения элементов используйте нужные классы или миксины. В примере ниже вторая и четвертая колонки будут скрыты при ширине вьюпорта 960px и меньше, но снова отобразятся при ширине вьюпорта 768px:
-        </div>
-        <div class="col-12">
-          <div class="example row">
-            <div class="example__col col">1</div>
-            <div class="example__col col hide-laptop-md show-tablet-landscape">2</div>
-            <div class="example__col col">3</div>
-            <div class="example__col col hide-laptop-md show-tablet-landscape">4</div>
-          </div>
-        </div>
-        <div class="code-snippet col col-phone-landscape-12">
-          <h3 class="code-snippet__title">HTML</h3>
-          <pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+}</code></pre></div><h4 class="subtitle col-12">Отображение</h4><a id="display"></a><div class="text col-12">Для отображения элементов используйте нужные классы или миксины. В примере ниже вторая и четвертая колонки будут скрыты при ширине вьюпорта 960px и меньше, но снова отобразятся при ширине вьюпорта 768px:</div><div class="col-12"><div class="example row"><div class="example__col col">1</div><div class="example__col col hide-laptop-md show-tablet-landscape">2</div><div class="example__col col">3</div><div class="example__col col hide-laptop-md show-tablet-landscape">4</div></div></div><div class="code-snippet col col-phone-landscape-12"><h3 class="code-snippet__title">HTML</h3><pre><code class="html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;example row&quot;&gt;
     &lt;div class=&quot;example__col col&quot;&gt;1&lt;/div&gt;
     &lt;div class=&quot;example__col col hide-laptop-md show-tablet-landscape&quot;&gt;2&lt;/div&gt;
     &lt;div class=&quot;example__col col&quot;&gt;3&lt;/div&gt;
     &lt;div class=&quot;example__col col hide-laptop-md show-tablet-landscape&quot;&gt;4&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-        </div>
-        <div class="code-snippet col">
-          <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-          <pre><code class="scss">.container {
+&lt;/div&gt;</code></pre></div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">.container {
   @include container();
 }
 
@@ -1013,34 +666,7 @@
       @include show(tablet-landscape);
     }
   }
-}</code></pre>
-        </div>
-        <h3 class="title col-12">Обнуление внешних отступов у элементов строк и колонок</h3><a id="zeroing"></a>
-        <div class="text col-12">Чтобы обнулить внешние отступы у элементов строк и колонок, воспользуйтесь предназначенными для этого классами или миксинами. В примере ниже сброшены вертикальные внешние отступы у первых двух элементов строк:
-        </div>
-        <div class="col-12">
-          <div class="example example_colored row no-v-gutters">
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-          </div>
-          <div class="example example_colored row no-v-gutters">
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-          </div>
-          <div class="example example_colored row">
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-          </div>
-        </div>
-        <div class="code-snippet col col-phone-landscape-12">
-          <h3 class="code-snippet__title">HTML</h3>
-          <pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+}</code></pre></div><h3 class="title col-12">Обнуление внешних отступов у элементов строк и колонок</h3><a id="zeroing"></a><div class="text col-12">Чтобы обнулить внешние отступы у элементов строк и колонок, воспользуйтесь предназначенными для этого классами или миксинами. В примере ниже сброшены вертикальные внешние отступы у первых двух элементов строк:</div><div class="col-12"><div class="example example_colored row no-v-gutters"><div class="example__col col">col</div><div class="example__col col">col</div><div class="example__col col">col</div><div class="example__col col">col</div></div><div class="example example_colored row no-v-gutters"><div class="example__col col">col</div><div class="example__col col">col</div><div class="example__col col">col</div><div class="example__col col">col</div></div><div class="example example_colored row"><div class="example__col col">col</div><div class="example__col col">col</div><div class="example__col col">col</div><div class="example__col col">col</div></div></div><div class="code-snippet col col-phone-landscape-12"><h3 class="code-snippet__title">HTML</h3><pre><code class="html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;example row no-v-gutters&quot;&gt;
     &lt;div class=&quot;example__col col&quot;&gt;col&lt;/div&gt;
     &lt;div class=&quot;example__col col&quot;&gt;col&lt;/div&gt;
@@ -1061,11 +687,7 @@
     &lt;div class=&quot;example__col col&quot;&gt;col&lt;/div&gt;
     &lt;div class=&quot;example__col col&quot;&gt;col&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-        </div>
-        <div class="code-snippet col">
-          <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-          <pre><code class="scss">.container {
+&lt;/div&gt;</code></pre></div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">.container {
   @include container();
 }
 
@@ -1080,27 +702,7 @@
   &amp;:nth-child(2) {
     @include no-v-gutters();
   }
-}</code></pre>
-        </div>
-        <div class="text col-12">В следующем примере вертикальные внешние отступы сброшены у колонок во второй строке:
-        </div>
-        <div class="col-12">
-          <div class="example example_colored row">
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-          </div>
-          <div class="example example_colored row no-children-v-gutters">
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-          </div>
-        </div>
-        <div class="code-snippet col col-phone-landscape-12">
-          <h3 class="code-snippet__title">HTML</h3>
-          <pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+}</code></pre></div><div class="text col-12">В следующем примере вертикальные внешние отступы сброшены у колонок во второй строке:</div><div class="col-12"><div class="example example_colored row"><div class="example__col col">col</div><div class="example__col col">col</div><div class="example__col col">col</div><div class="example__col col">col</div></div><div class="example example_colored row no-children-v-gutters"><div class="example__col col">col</div><div class="example__col col">col</div><div class="example__col col">col</div><div class="example__col col">col</div></div></div><div class="code-snippet col col-phone-landscape-12"><h3 class="code-snippet__title">HTML</h3><pre><code class="html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;example row&quot;&gt;
     &lt;div class=&quot;example__col col&quot;&gt;col&lt;/div&gt;
     &lt;div class=&quot;example__col col&quot;&gt;col&lt;/div&gt;
@@ -1114,11 +716,7 @@
     &lt;div class=&quot;example__col col&quot;&gt;col&lt;/div&gt;
     &lt;div class=&quot;example__col col&quot;&gt;col&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-        </div>
-        <div class="code-snippet col">
-          <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-          <pre><code class="scss">.container {
+&lt;/div&gt;</code></pre></div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">.container {
   @include container();
 }
 
@@ -1132,27 +730,7 @@
   &amp;:nth-child(2) {
     @include no-children-v-gutters();
   }
-}</code></pre>
-        </div>
-        <div class="text col-12">В следующем примере у колонок во второй строке сброшены горизонтальные внешние отступы:
-        </div>
-        <div class="col-12">
-          <div class="example example_colored row">
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-          </div>
-          <div class="example example_colored row no-children-h-gutters">
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-          </div>
-        </div>
-        <div class="code-snippet col col-phone-landscape-12">
-          <h3 class="code-snippet__title">HTML</h3>
-          <pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+}</code></pre></div><div class="text col-12">В следующем примере у колонок во второй строке сброшены горизонтальные внешние отступы:</div><div class="col-12"><div class="example example_colored row"><div class="example__col col">col</div><div class="example__col col">col</div><div class="example__col col">col</div><div class="example__col col">col</div></div><div class="example example_colored row no-children-h-gutters"><div class="example__col col">col</div><div class="example__col col">col</div><div class="example__col col">col</div><div class="example__col col">col</div></div></div><div class="code-snippet col col-phone-landscape-12"><h3 class="code-snippet__title">HTML</h3><pre><code class="html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;example row&quot;&gt;
     &lt;div class=&quot;example__col col&quot;&gt;col&lt;/div&gt;
     &lt;div class=&quot;example__col col&quot;&gt;col&lt;/div&gt;
@@ -1166,11 +744,7 @@
     &lt;div class=&quot;example__col col&quot;&gt;col&lt;/div&gt;
     &lt;div class=&quot;example__col col&quot;&gt;col&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-        </div>
-        <div class="code-snippet col">
-          <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-          <pre><code class="scss">.container {
+&lt;/div&gt;</code></pre></div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">.container {
   @include container();
 }
 
@@ -1184,32 +758,14 @@
   &amp;:nth-child(2) {
     @include no-children-h-gutters();
   }
-}</code></pre>
-        </div>
-        <div class="text col-12">В следующем примере у первой колонки сброшены вертикальные внешние отступы:
-        </div>
-        <div class="col-12">
-          <div class="example example_colored row">
-            <div class="example__col col no-v-gutters">col</div>
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-          </div>
-        </div>
-        <div class="code-snippet col col-phone-landscape-12">
-          <h3 class="code-snippet__title">HTML</h3>
-          <pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+}</code></pre></div><div class="text col-12">В следующем примере у первой колонки сброшены вертикальные внешние отступы:</div><div class="col-12"><div class="example example_colored row"><div class="example__col col no-v-gutters">col</div><div class="example__col col">col</div><div class="example__col col">col</div><div class="example__col col">col</div></div></div><div class="code-snippet col col-phone-landscape-12"><h3 class="code-snippet__title">HTML</h3><pre><code class="html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;example row&quot;&gt;
     &lt;div class=&quot;example__col col no-v-gutters&quot;&gt;col&lt;/div&gt;
     &lt;div class=&quot;example__col col&quot;&gt;col&lt;/div&gt;
     &lt;div class=&quot;example__col col&quot;&gt;col&lt;/div&gt;
     &lt;div class=&quot;example__col col&quot;&gt;col&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-        </div>
-        <div class="code-snippet col">
-          <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-          <pre><code class="scss">.container {
+&lt;/div&gt;</code></pre></div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">.container {
   @include container();
 }
 
@@ -1223,32 +779,14 @@
       @include no-v-gutters();
     }
   }
-}</code></pre>
-        </div>
-        <div class="text col-12">В следующем примере у первой колонки сброшены горизонтальные внешние отступы:
-        </div>
-        <div class="col-12">
-          <div class="example example_colored row">
-            <div class="example__col col no-h-gutters">col</div>
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-          </div>
-        </div>
-        <div class="code-snippet col col-phone-landscape-12">
-          <h3 class="code-snippet__title">HTML</h3>
-          <pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+}</code></pre></div><div class="text col-12">В следующем примере у первой колонки сброшены горизонтальные внешние отступы:</div><div class="col-12"><div class="example example_colored row"><div class="example__col col no-h-gutters">col</div><div class="example__col col">col</div><div class="example__col col">col</div><div class="example__col col">col</div></div></div><div class="code-snippet col col-phone-landscape-12"><h3 class="code-snippet__title">HTML</h3><pre><code class="html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;example row&quot;&gt;
     &lt;div class=&quot;example__col col no-h-gutters&quot;&gt;col&lt;/div&gt;
     &lt;div class=&quot;example__col col&quot;&gt;col&lt;/div&gt;
     &lt;div class=&quot;example__col col&quot;&gt;col&lt;/div&gt;
     &lt;div class=&quot;example__col col&quot;&gt;col&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-        </div>
-        <div class="code-snippet col">
-          <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-          <pre><code class="scss">.container {
+&lt;/div&gt;</code></pre></div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">.container {
   @include container();
 }
 
@@ -1262,32 +800,14 @@
       @include no-h-gutters();
     }
   }
-}</code></pre>
-        </div>
-        <div class="text col-12">В следующем примере у колонок сброшены как горизонтальные, так и вертикальные внешние отступы:
-        </div>
-        <div class="col-12">
-          <div class="example example_colored row no-children-gutters">
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-            <div class="example__col col">col</div>
-          </div>
-        </div>
-        <div class="code-snippet col col-phone-landscape-12">
-          <h3 class="code-snippet__title">HTML</h3>
-          <pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+}</code></pre></div><div class="text col-12">В следующем примере у колонок сброшены как горизонтальные, так и вертикальные внешние отступы:</div><div class="col-12"><div class="example example_colored row no-children-gutters"><div class="example__col col">col</div><div class="example__col col">col</div><div class="example__col col">col</div><div class="example__col col">col</div></div></div><div class="code-snippet col col-phone-landscape-12"><h3 class="code-snippet__title">HTML</h3><pre><code class="html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;example row no-children-gutters&quot;&gt;
     &lt;div class=&quot;example__col col&quot;&gt;col&lt;/div&gt;
     &lt;div class=&quot;example__col col&quot;&gt;col&lt;/div&gt;
     &lt;div class=&quot;example__col col&quot;&gt;col&lt;/div&gt;
     &lt;div class=&quot;example__col col&quot;&gt;col&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-        </div>
-        <div class="code-snippet col">
-          <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-          <pre><code class="scss">.container {
+&lt;/div&gt;</code></pre></div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">.container {
   @include container();
 }
 
@@ -1298,97 +818,7 @@
   &amp;__col {
     @include col();
   }
-}</code></pre>
-        </div>
-        <h3 class="title col-12">Колоночные классы</h3><a id="column-classes"></a>
-        <div class="text col-12">По умолчанию сетка состоит из двенадцати колонок и соответственно содержит двенадцать "колоночных" классов:
-          <ul class="class-list">
-            <li class="class-list__item"><span class="inline-snippet">col-1</span></li>
-            <li class="class-list__item"><span class="inline-snippet">col-2</span></li>
-            <li class="class-list__item"><span class="inline-snippet">col-3</span></li>
-            <li class="class-list__item"><span class="inline-snippet">col-4</span></li>
-            <li class="class-list__item"><span class="inline-snippet">col-5</span></li>
-            <li class="class-list__item"><span class="inline-snippet">col-6</span></li>
-            <li class="class-list__item"><span class="inline-snippet">col-7</span></li>
-            <li class="class-list__item"><span class="inline-snippet">col-8</span></li>
-            <li class="class-list__item"><span class="inline-snippet">col-9</span></li>
-            <li class="class-list__item"><span class="inline-snippet">col-10</span></li>
-            <li class="class-list__item"><span class="inline-snippet">col-11</span></li>
-            <li class="class-list__item"><span class="inline-snippet">col-12</span></li>
-          </ul>
-        </div>
-        <h3 class="title col-12">Контрольные точки ( breakpointns )</h3><a id="breakpoints"></a>
-        <div class="text col-12">По умолчанию система использует восемь предопределенных контрольных точек в стиле desktop-first:
-        </div>
-        <div class="col-12">
-          <table>
-            <tr>
-              <th>Контрольная точка</th>
-              <th>Размер вьюпорта</th>
-              <tr>
-                <td>desktop</td>
-                <td>1280px</td>
-              </tr>
-              <tr>
-                <td>laptop</td>
-                <td>1024px</td>
-              </tr>
-              <tr>
-                <td>laptop-md</td>
-                <td>960px</td>
-              </tr>
-              <tr>
-                <td>tablet-landscape</td>
-                <td>768px</td>
-              </tr>
-              <tr>
-                <td>phone-landscape</td>
-                <td>640px</td>
-              </tr>
-              <tr>
-                <td>phone</td>
-                <td>480px</td>
-              </tr>
-              <tr>
-                <td>phone-md</td>
-                <td>360px</td>
-              </tr>
-              <tr>
-                <td>phone-sm</td>
-                <td>320px</td>
-              </tr>
-            </tr>
-          </table>
-        </div>
-        <h3 class="title col-12">&quot;Отзывчивые&quot; колоночные классы</h3><a id="responsive-column-classes"></a>
-        <div class="text col-12">Исходя из предопределенного числа используемых в сетке столбцов и названий контрольных точек ( по умолчанию ) система включает набор "отзывчивых" колоночных классов:
-          <ul class="class-list">
-            <li class="class-list__item"><span class="inline-snippet">col-desktop-1 - col-desktop-12</span></li>
-            <li class="class-list__item"><span class="inline-snippet">col-laptop-1 - col-laptop-12</span></li>
-            <li class="class-list__item"><span class="inline-snippet">col-laptop-md-1 - col-laptop-md-12</span></li>
-            <li class="class-list__item"><span class="inline-snippet">col-tablet-landscape-1 - col-tablet-landscape-12</span></li>
-            <li class="class-list__item"><span class="inline-snippet">col-phone-landscape-1 - col-phone-landscape-12</span></li>
-            <li class="class-list__item"><span class="inline-snippet">col-phone-1 - col-phone-12</span></li>
-            <li class="class-list__item"><span class="inline-snippet">col-phone-md-1 - col-phone-md-12</span></li>
-            <li class="class-list__item"><span class="inline-snippet">col-phone-sm-1 - col-phone-sm-12</span></li>
-          </ul>
-        </div>
-        <h3 class="title col-12">Кастомизация сетки</h3><a id="grid-customization"></a>
-        <div class="text col-12">Наряду с готовым css-файлом библиотека доступна в виде исходных файлов Sass. При этом доступен как sass-, так и scss-синтаксис. При использовании Sass у вас есть возможность использовать набор готовых переменных и миксинов для кастомизации сетки и её гибкой настройки. Все предопределённые классы сетки используют те же переменные и миксины для предоставления целого набора готовых к использованию класоов для быстрого создания адаптивных макетов.
-        </div>
-        <h4 class="subtitle col-12">Переменные</h4><a id="grid-customization-vars"></a>
-        <div class="text col-12">Переменные и карты определяют ширину контейнера сетки и его внутренние горизонтальные отступы, количество столбцов и расстояние между ними по горизонтали и вертикали, контрольные точки для медиазапросов, а также части библиотеки, которые будут включены в сформированный css-файл. Они используются для генерации заданных классов сетки, а также для миксинов, использованных в примерах выше.
-        </div>
-        <h4 class="subtitle col-12">Миксины</h4><a id="grid-customization-mixins"></a>
-        <div class="text col-12">В директории <span class='inline-snippet'>grid/mixins/</span> содержатся миксины, которые используются вместе с переменными сетки для генерации css. Все генерируемые классы библиотеки используют эти же миксины.
-        </div>
-        <h3 class="title col-12">Исходные файлы Sass</h3><a id="sass-source-files"></a>
-        <h4 class="subtitle col-12">Сетка</h4><a id="sass-source-files-grid"></a>
-        <div class="text col-12">В файле <span class='inline-snippet'>grid/grid.scss</span> содержатся все переменные и настройки сетки, которые вы можете переопределить:
-        </div>
-        <div class="code-snippet col">
-          <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-          <pre><code class="scss">$container-width: 1140px !default;
+}</code></pre></div><h3 class="title col-12">Колоночные классы</h3><a id="column-classes"></a><div class="text col-12">По умолчанию сетка состоит из двенадцати колонок и соответственно содержит двенадцать "колоночных" классов:<ul class="class-list"><li class="class-list__item"><span class="inline-snippet">col-1</span></li><li class="class-list__item"><span class="inline-snippet">col-2</span></li><li class="class-list__item"><span class="inline-snippet">col-3</span></li><li class="class-list__item"><span class="inline-snippet">col-4</span></li><li class="class-list__item"><span class="inline-snippet">col-5</span></li><li class="class-list__item"><span class="inline-snippet">col-6</span></li><li class="class-list__item"><span class="inline-snippet">col-7</span></li><li class="class-list__item"><span class="inline-snippet">col-8</span></li><li class="class-list__item"><span class="inline-snippet">col-9</span></li><li class="class-list__item"><span class="inline-snippet">col-10</span></li><li class="class-list__item"><span class="inline-snippet">col-11</span></li><li class="class-list__item"><span class="inline-snippet">col-12</span></li></ul></div><h3 class="title col-12">Контрольные точки ( breakpointns )</h3><a id="breakpoints"></a><div class="text col-12">По умолчанию система использует восемь предопределенных контрольных точек в стиле desktop-first:</div><div class="col-12"><table><tr><th>Контрольная точка</th><th>Размер вьюпорта</th><tr><td>desktop</td><td>1280px</td></tr><tr><td>laptop</td><td>1024px</td></tr><tr><td>laptop-md</td><td>960px</td></tr><tr><td>tablet-landscape</td><td>768px</td></tr><tr><td>phone-landscape</td><td>640px</td></tr><tr><td>phone</td><td>480px</td></tr><tr><td>phone-md</td><td>360px</td></tr><tr><td>phone-sm</td><td>320px</td></tr></tr></table></div><h3 class="title col-12">&quot;Отзывчивые&quot; колоночные классы</h3><a id="responsive-column-classes"></a><div class="text col-12">Исходя из предопределенного числа используемых в сетке столбцов и названий контрольных точек ( по умолчанию ) система включает набор "отзывчивых" колоночных классов:<ul class="class-list"><li class="class-list__item"><span class="inline-snippet">col-desktop-1 - col-desktop-12</span></li><li class="class-list__item"><span class="inline-snippet">col-laptop-1 - col-laptop-12</span></li><li class="class-list__item"><span class="inline-snippet">col-laptop-md-1 - col-laptop-md-12</span></li><li class="class-list__item"><span class="inline-snippet">col-tablet-landscape-1 - col-tablet-landscape-12</span></li><li class="class-list__item"><span class="inline-snippet">col-phone-landscape-1 - col-phone-landscape-12</span></li><li class="class-list__item"><span class="inline-snippet">col-phone-1 - col-phone-12</span></li><li class="class-list__item"><span class="inline-snippet">col-phone-md-1 - col-phone-md-12</span></li><li class="class-list__item"><span class="inline-snippet">col-phone-sm-1 - col-phone-sm-12</span></li></ul></div><h3 class="title col-12">Кастомизация сетки</h3><a id="grid-customization"></a><div class="text col-12">Наряду с готовым css-файлом библиотека доступна в виде исходных файлов Sass. При этом доступен как sass-, так и scss-синтаксис. При использовании Sass у вас есть возможность использовать набор готовых переменных и миксинов для кастомизации сетки и её гибкой настройки. Все предопределённые классы сетки используют те же переменные и миксины для предоставления целого набора готовых к использованию класоов для быстрого создания адаптивных макетов.</div><h4 class="subtitle col-12">Переменные</h4><a id="grid-customization-vars"></a><div class="text col-12">Переменные и карты определяют ширину контейнера сетки и его внутренние горизонтальные отступы, количество столбцов и расстояние между ними по горизонтали и вертикали, контрольные точки для медиазапросов, а также части библиотеки, которые будут включены в сформированный css-файл. Они используются для генерации заданных классов сетки, а также для миксинов, использованных в примерах выше.</div><h4 class="subtitle col-12">Миксины</h4><a id="grid-customization-mixins"></a><div class="text col-12">В директории <span class='inline-snippet'>grid/mixins/</span> содержатся миксины, которые используются вместе с переменными сетки для генерации css. Все генерируемые классы библиотеки используют эти же миксины.</div><h3 class="title col-12">Исходные файлы Sass</h3><a id="sass-source-files"></a><h4 class="subtitle col-12">Сетка</h4><a id="sass-source-files-grid"></a><div class="text col-12">В файле <span class='inline-snippet'>grid/grid.scss</span> содержатся все переменные и настройки сетки, которые вы можете переопределить:</div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">$container-width: 1140px !default;
 $container-padding: 15px !default;
 $h-gutter: 30px !default;
 $v-gutter: $h-gutter !default;
@@ -1434,13 +864,7 @@ $partials: (
 @import 'partials/show';
 @import 'partials/offset';
 @import 'partials/gutters.scss';
-@import 'base';</code></pre>
-        </div>
-        <div class="text col-12">Для того чтобы переопределить переменные по умолчанию, задайте им свои значения перед импортом основного файла библиотеки <span class='inline-snippet'>grid/grid.scss</span>:
-        </div>
-        <div class="code-snippet col">
-          <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-          <pre><code class="scss">$container-width: 1920px;
+@import 'base';</code></pre></div><div class="text col-12">Для того чтобы переопределить переменные по умолчанию, задайте им свои значения перед импортом основного файла библиотеки <span class='inline-snippet'>grid/grid.scss</span>:</div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">$container-width: 1920px;
 $container-padding: 10px;
 $h-gutter: 15px;
 $columns: 24;
@@ -1453,40 +877,7 @@ $grid-breakpoints: (
   xs: 480px
 );
 
-@import 'path/to/grid/grid.scss'</code></pre>
-        </div>
-        <div class="text col-12">
-          <ul class="class-list">
-            <li class="class-list__item"><span class='inline-snippet'>container-width</span>   - ширина контейнера</li>
-            <li class="class-list__item"><span class='inline-snippet'>container-padding</span> - внутренние отступы контейнера</li>
-            <li class="class-list__item"><span class='inline-snippet'>h-gutter</span>          - расстояние между колонками сетки по горизонтали</li>
-            <li class="class-list__item"><span class='inline-snippet'>v-gutter</span>          - расстояние между колонками сетки по вертикали</li>
-            <li class="class-list__item"><span class='inline-snippet'>columns</span>           - количество колонок сетки</li>
-            <li class="class-list__item"><span class='inline-snippet'>mobile-first</span>      - булев флаг, указывающий, какой подход будет использован при формировании медиазапросов - mobile first или desktop first</li>
-            <li class="class-list__item"><span class='inline-snippet'>media-query</span>       - переменная принимает одно из двух значений - min или max. Какое значение примет переменная, зависит от значения переменной mobile-first. Эта переменная служит для определения того, по какому принципу будут сформированы медиазапросы сетки - mobile first или desktop first.</li>
-            <li class="class-list__item"><span class='inline-snippet'>grid-breakpoints</span>  - карта контрольных точек ( breakpoints ) сетки. По умолчанию доступно восемь контрольных точек. Карта используется миксинами системы, а также частями библиотеки <span class='inline-snippet'>grid/partials</span>, отвечающими за генерацию "отзывчивых" колоночных и иных классов. Например, исходя из имен ключей карты и их значений в собранном конечном css-файле библиотеки будут сгенерированы классы и медиазапросы для них, как показано ниже.</li>
-            <li class="class-list__item"><span class='inline-snippet'>partials</span>  - список частей библиотеки, отвечающих за генерацию определенных разделов html-классов. Чтобы уменьшить размер конечного css-файла библиотеки, вы можете присвоить этой переменной значение false перед импортом основного файла библиотеки. Это предотвратит генерацию большого количества предопределенных классов.</li>
-          </ul>
-        </div>
-        <h4 class="subtitle col-12">&quot;Отзывчивые&quot; классы на основе карты контрольных точек</h4><a id="sass-source-files-responsive-classes"></a>
-        <div class="text col-12">Ниже представлены классы сетки, сгенерированные на основе карты контрольных точек <span class='inline-snippet'>$grid-breakpoints</span> и срабатывающие при заданной ширине вьюпорта. Имена классов генерируются на основе имён ключей карты <span class='inline-snippet'>$grid-breakpoints</span>, значения же ширины вьюпорта в медиазапросах для этих классов генерируются на основе значений соответствующих ключей. Если вы хотите назначить свои имена для классов и свои значения для ширин вьюпорта, просто переопределите переменную <span class='inline-snippet'>$grid-breakpoints</span> перед импортом основного файла библиотеки <span class='inline-snippet'>grid.scss</span>. Чтобы увидеть, как будет перестраиваться сетка при различной ширине вьюпорта, просто поизменяйте размер окна браузера.
-        </div>
-        <div class="text col-12">
-          <ul class="responsive-list">
-            <li class="responsive-list__item">
-              <p class="responsive-list__text">Количество колонок в строке при различной ширине вьюпорта - <span class='inline-snippet'>col-desktop-5</span>, <span class='inline-snippet'>col-laptop-2</span>, <span class='inline-snippet'>col-tablet-landscape-3</span>, <span class='inline-snippet'>col-phone-md-12</span> и т.д.:</p>
-              <div class="example row">
-                <div class="example__col col-2 col-laptop-3 col-laptop-md-4 col-tablet-landscape-6 col-phone-landscape-12">1</div>
-                <div class="example__col col-2 col-laptop-3 col-laptop-md-4 col-tablet-landscape-6 col-phone-landscape-12">2</div>
-                <div class="example__col col-2 col-laptop-3 col-laptop-md-4 col-tablet-landscape-6 col-phone-landscape-12">3</div>
-                <div class="example__col col-2 col-laptop-3 col-laptop-md-4 col-tablet-landscape-6 col-phone-landscape-12">4</div>
-                <div class="example__col col-2 col-laptop-3 col-laptop-md-4 col-tablet-landscape-6 col-phone-landscape-12">5</div>
-                <div class="example__col col-2 col-laptop-3 col-laptop-md-4 col-tablet-landscape-6 col-phone-landscape-12">6</div>
-              </div>
-              <div class="row">
-                <div class="code-snippet col col-phone-landscape-12">
-                  <h3 class="code-snippet__title">HTML</h3>
-                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+@import 'path/to/grid/grid.scss'</code></pre></div><div class="text col-12"><ul class="class-list"><li class="class-list__item"><span class='inline-snippet'>container-width</span>   - ширина контейнера</li><li class="class-list__item"><span class='inline-snippet'>container-padding</span> - внутренние отступы контейнера</li><li class="class-list__item"><span class='inline-snippet'>h-gutter</span>          - расстояние между колонками сетки по горизонтали</li><li class="class-list__item"><span class='inline-snippet'>v-gutter</span>          - расстояние между колонками сетки по вертикали</li><li class="class-list__item"><span class='inline-snippet'>columns</span>           - количество колонок сетки</li><li class="class-list__item"><span class='inline-snippet'>mobile-first</span>      - булев флаг, указывающий, какой подход будет использован при формировании медиазапросов - mobile first или desktop first</li><li class="class-list__item"><span class='inline-snippet'>media-query</span>       - переменная принимает одно из двух значений - min или max. Какое значение примет переменная, зависит от значения переменной mobile-first. Эта переменная служит для определения того, по какому принципу будут сформированы медиазапросы сетки - mobile first или desktop first.</li><li class="class-list__item"><span class='inline-snippet'>grid-breakpoints</span>  - карта контрольных точек ( breakpoints ) сетки. По умолчанию доступно восемь контрольных точек. Карта используется миксинами системы, а также частями библиотеки <span class='inline-snippet'>grid/partials</span>, отвечающими за генерацию "отзывчивых" колоночных и иных классов. Например, исходя из имен ключей карты и их значений в собранном конечном css-файле библиотеки будут сгенерированы классы и медиазапросы для них, как показано ниже.</li><li class="class-list__item"><span class='inline-snippet'>partials</span>  - список частей библиотеки, отвечающих за генерацию определенных разделов html-классов. Чтобы уменьшить размер конечного css-файла библиотеки, вы можете присвоить этой переменной значение false перед импортом основного файла библиотеки. Это предотвратит генерацию большого количества предопределенных классов.</li></ul></div><h4 class="subtitle col-12">&quot;Отзывчивые&quot; классы на основе карты контрольных точек</h4><a id="sass-source-files-responsive-classes"></a><div class="text col-12">Ниже представлены классы сетки, сгенерированные на основе карты контрольных точек <span class='inline-snippet'>$grid-breakpoints</span> и срабатывающие при заданной ширине вьюпорта. Имена классов генерируются на основе имён ключей карты <span class='inline-snippet'>$grid-breakpoints</span>, значения же ширины вьюпорта в медиазапросах для этих классов генерируются на основе значений соответствующих ключей. Если вы хотите назначить свои имена для классов и свои значения для ширин вьюпорта, просто переопределите переменную <span class='inline-snippet'>$grid-breakpoints</span> перед импортом основного файла библиотеки <span class='inline-snippet'>grid.scss</span>. Чтобы увидеть, как будет перестраиваться сетка при различной ширине вьюпорта, просто поизменяйте размер окна браузера.</div><div class="text col-12"><ul class="responsive-list"><li class="responsive-list__item"><p class="responsive-list__text">Количество колонок в строке при различной ширине вьюпорта - <span class='inline-snippet'>col-desktop-5</span>, <span class='inline-snippet'>col-laptop-2</span>, <span class='inline-snippet'>col-tablet-landscape-3</span>, <span class='inline-snippet'>col-phone-md-12</span> и т.д.:</p><div class="example row"><div class="example__col col-2 col-laptop-3 col-laptop-md-4 col-tablet-landscape-6 col-phone-landscape-12">1</div><div class="example__col col-2 col-laptop-3 col-laptop-md-4 col-tablet-landscape-6 col-phone-landscape-12">2</div><div class="example__col col-2 col-laptop-3 col-laptop-md-4 col-tablet-landscape-6 col-phone-landscape-12">3</div><div class="example__col col-2 col-laptop-3 col-laptop-md-4 col-tablet-landscape-6 col-phone-landscape-12">4</div><div class="example__col col-2 col-laptop-3 col-laptop-md-4 col-tablet-landscape-6 col-phone-landscape-12">5</div><div class="example__col col-2 col-laptop-3 col-laptop-md-4 col-tablet-landscape-6 col-phone-landscape-12">6</div></div><div class="row"><div class="code-snippet col col-phone-landscape-12"><h3 class="code-snippet__title">HTML</h3><pre><code class="html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;example row&quot;&gt;
     &lt;div class=&quot;example__col col-2 col-laptop-3 col-laptop-md-4 col-tablet-landscape-6 col-phone-landscape-12&quot;&gt;1&lt;/div&gt;
     &lt;div class=&quot;example__col col-2 col-laptop-3 col-laptop-md-4 col-tablet-landscape-6 col-phone-landscape-12&quot;&gt;2&lt;/div&gt;
@@ -1495,11 +886,7 @@ $grid-breakpoints: (
     &lt;div class=&quot;example__col col-2 col-laptop-3 col-laptop-md-4 col-tablet-landscape-6 col-phone-landscape-12&quot;&gt;5&lt;/div&gt;
     &lt;div class=&quot;example__col col-2 col-laptop-3 col-laptop-md-4 col-tablet-landscape-6 col-phone-landscape-12&quot;&gt;6&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-                </div>
-                <div class="code-snippet col">
-                  <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-                  <pre><code class="scss">.container {
+&lt;/div&gt;</code></pre></div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">.container {
   @include container();
 
   .example {
@@ -1513,29 +900,12 @@ $grid-breakpoints: (
       @include col(12, phone-landscape);
     }
   }
-}</code></pre>
-                </div>
-              </div>
-            </li>
-            <li class="responsive-list__item">
-              <p class="responsive-list__text">Горизонтальное выравнивание колонок в строке при различной ширине вьюпорта: <span class='inline-snippet'>justify-content-desktop-start</span>, <span class='inline-snippet'>justify-content-desktop-center</span>, <span class='inline-snippet'>justify-content-laptop-end</span> и т.д.:</p>
-              <div class="example example_colored row justify-content-laptop-center justify-content-laptop-md-end justify-content-tablet-landscape-between justify-content-phone-landscape-around">
-                <div class="example__col col-2">1</div>
-                <div class="example__col col-2">2</div>
-              </div>
-              <div class="row">
-                <div class="code-snippet col col-phone-landscape-12">
-                  <h3 class="code-snippet__title">HTML</h3>
-                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+}</code></pre></div></div></li><li class="responsive-list__item"><p class="responsive-list__text">Горизонтальное выравнивание колонок в строке при различной ширине вьюпорта: <span class='inline-snippet'>justify-content-desktop-start</span>, <span class='inline-snippet'>justify-content-desktop-center</span>, <span class='inline-snippet'>justify-content-laptop-end</span> и т.д.:</p><div class="example example_colored row justify-content-laptop-center justify-content-laptop-md-end justify-content-tablet-landscape-between justify-content-phone-landscape-around"><div class="example__col col-2">1</div><div class="example__col col-2">2</div></div><div class="row"><div class="code-snippet col col-phone-landscape-12"><h3 class="code-snippet__title">HTML</h3><pre><code class="html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;example row justify-content-laptop-center justify-content-laptop-md-end justify-content-tablet-landscape-between justify-content-phone-landscape-around&quot;&gt;
     &lt;div class=&quot;example__col col-2&quot;&gt;1&lt;/div&gt;
     &lt;div class=&quot;example__col col-2&quot;&gt;2&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-                </div>
-                <div class="code-snippet col">
-                  <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-                  <pre><code class="scss">.container {
+&lt;/div&gt;</code></pre></div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">.container {
   @include container();
 
   .example {
@@ -1549,31 +919,13 @@ $grid-breakpoints: (
       @include col(2);
     }
   }
-}</code></pre>
-                </div>
-              </div>
-            </li>
-            <li class="responsive-list__item">
-              <p class="responsive-list__text">Вертикальное выравнивание колонок в строке при различной ширине вьюпорта: <span class='inline-snippet'>align-items-desktop-start</span>, <span class='inline-snippet'>align-items-desktop-center</span>, <span class='inline-snippet'>align-items-laptop-end</span>, <span class='inline-snippet'>align-items-tablet-landscape-stretch</span>, <span class='inline-snippet'>align-items-phone-baseline</span> и т.д.:</p>
-              <div class="example example_colored example_fixed-size row no-children-v-gutters align-items-start align-items-laptop-center align-items-laptop-md-end align-items-tablet-landscape-stretch align-items-phone-landscape-baseline">
-                <div class="example__col col">1</div>
-                <div class="example__col col">2</div>
-                <div class="example__col col">3</div>
-              </div>
-              <div class="row">
-                <div class="code-snippet col col-phone-landscape-12">
-                  <h3 class="code-snippet__title">HTML</h3>
-                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+}</code></pre></div></div></li><li class="responsive-list__item"><p class="responsive-list__text">Вертикальное выравнивание колонок в строке при различной ширине вьюпорта: <span class='inline-snippet'>align-items-desktop-start</span>, <span class='inline-snippet'>align-items-desktop-center</span>, <span class='inline-snippet'>align-items-laptop-end</span>, <span class='inline-snippet'>align-items-tablet-landscape-stretch</span>, <span class='inline-snippet'>align-items-phone-baseline</span> и т.д.:</p><div class="example example_colored example_fixed-size row no-children-v-gutters align-items-start align-items-laptop-center align-items-laptop-md-end align-items-tablet-landscape-stretch align-items-phone-landscape-baseline"><div class="example__col col">1</div><div class="example__col col">2</div><div class="example__col col">3</div></div><div class="row"><div class="code-snippet col col-phone-landscape-12"><h3 class="code-snippet__title">HTML</h3><pre><code class="html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;example row align-items-start align-items-laptop-center align-items-laptop-md-end align-items-tablet-landscape-stretch align-items-phone-landscape-baseline&quot;&gt;
     &lt;div class=&quot;example__col col&quot;&gt;1&lt;/div&gt;
     &lt;div class=&quot;example__col col&quot;&gt;2&lt;/div&gt;
     &lt;div class=&quot;example__col col&quot;&gt;3&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-                </div>
-                <div class="code-snippet col">
-                  <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-                  <pre><code class="scss">.container {
+&lt;/div&gt;</code></pre></div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">.container {
   @include container();
 
   .example {
@@ -1588,31 +940,13 @@ $grid-breakpoints: (
       @include col();
     }
   }
-}</code></pre>
-                </div>
-              </div>
-            </li>
-            <li class="responsive-list__item">
-              <p class="responsive-list__text">Вертикальное выравнивание отдельно взятой колонки в строке при различной ширине вьюпорта: <span class='inline-snippet'>align-self-desktop-start</span>, <span class='inline-snippet'>align-self-desktop-center</span>, <span class='inline-snippet'>align-self-laptop-end</span>, <span class='inline-snippet'>align-self-tablet-landscape-stretch</span>, <span class='inline-snippet'>align-self-phone-baseline</span> и т.д.:</p>
-              <div class="example example_colored example_fixed-size row no-children-v-gutters align-items-start">
-                <div class="example__col col align-self-laptop-center align-self-laptop-md-end align-self-tablet-landscape-stretch align-self-phone-landscape-baseline">1</div>
-                <div class="example__col col">2</div>
-                <div class="example__col col">3</div>
-              </div>
-              <div class="row">
-                <div class="code-snippet col col-phone-landscape-12">
-                  <h3 class="code-snippet__title">HTML</h3>
-                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+}</code></pre></div></div></li><li class="responsive-list__item"><p class="responsive-list__text">Вертикальное выравнивание отдельно взятой колонки в строке при различной ширине вьюпорта: <span class='inline-snippet'>align-self-desktop-start</span>, <span class='inline-snippet'>align-self-desktop-center</span>, <span class='inline-snippet'>align-self-laptop-end</span>, <span class='inline-snippet'>align-self-tablet-landscape-stretch</span>, <span class='inline-snippet'>align-self-phone-baseline</span> и т.д.:</p><div class="example example_colored example_fixed-size row no-children-v-gutters align-items-start"><div class="example__col col align-self-laptop-center align-self-laptop-md-end align-self-tablet-landscape-stretch align-self-phone-landscape-baseline">1</div><div class="example__col col">2</div><div class="example__col col">3</div></div><div class="row"><div class="code-snippet col col-phone-landscape-12"><h3 class="code-snippet__title">HTML</h3><pre><code class="html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;example row align-items-start&quot;&gt;
     &lt;div class=&quot;example__col col align-self-laptop-center align-self-laptop-md-end align-self-tablet-landscape-stretch align-self-phone-landscape-baseline&quot;&gt;1&lt;/div&gt;
     &lt;div class=&quot;example__col col&quot;&gt;2&lt;/div&gt;
     &lt;div class=&quot;example__col col&quot;&gt;3&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-                </div>
-                <div class="code-snippet col">
-                  <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-                  <pre><code class="scss">.container {
+&lt;/div&gt;</code></pre></div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">.container {
   @include container();
 
   .example {
@@ -1630,31 +964,13 @@ $grid-breakpoints: (
       }
     }
   }
-}</code></pre>
-                </div>
-              </div>
-            </li>
-            <li class="responsive-list__item">
-              <p class="responsive-list__text">Направление расположения колонок в строке при различной ширине вьюпорта: <span class='inline-snippet'>direction-desktop-column</span>, <span class='inline-snippet'>direction-desktop-row-reverse</span>, <span class='inline-snippet'>direction-laptop-column</span>, <span class='inline-snippet'>direction-laptop-row-reverse</span> и т.д.:</p>
-              <div class="example example_colored row align-items-start align-items-laptop-md-stretch direction-laptop-row-reverse direction-laptop-md-column direction-tablet-landscape-column-reverse">
-                <div class="example__col col">1</div>
-                <div class="example__col col">2</div>
-                <div class="example__col col">3</div>
-              </div>
-              <div class="row">
-                <div class="code-snippet col col-phone-landscape-12">
-                  <h3 class="code-snippet__title">HTML</h3>
-                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+}</code></pre></div></div></li><li class="responsive-list__item"><p class="responsive-list__text">Направление расположения колонок в строке при различной ширине вьюпорта: <span class='inline-snippet'>direction-desktop-column</span>, <span class='inline-snippet'>direction-desktop-row-reverse</span>, <span class='inline-snippet'>direction-laptop-column</span>, <span class='inline-snippet'>direction-laptop-row-reverse</span> и т.д.:</p><div class="example example_colored row align-items-start align-items-laptop-md-stretch direction-laptop-row-reverse direction-laptop-md-column direction-tablet-landscape-column-reverse"><div class="example__col col">1</div><div class="example__col col">2</div><div class="example__col col">3</div></div><div class="row"><div class="code-snippet col col-phone-landscape-12"><h3 class="code-snippet__title">HTML</h3><pre><code class="html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;example row align-items-start align-items-laptop-md-stretch direction-laptop-row-reverse direction-laptop-md-column direction-tablet-landscape-column-reverse&quot;&gt;
     &lt;div class=&quot;example__col col&quot;&gt;1&lt;/div&gt;
     &lt;div class=&quot;example__col col&quot;&gt;2&lt;/div&gt;
     &lt;div class=&quot;example__col col&quot;&gt;3&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-                </div>
-                <div class="code-snippet col">
-                  <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-                  <pre><code class="scss">.container {
+&lt;/div&gt;</code></pre></div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">.container {
   @include container();
 
   .example {
@@ -1676,25 +992,7 @@ $grid-breakpoints: (
       }
     }
   }
-}</code></pre>
-                </div>
-              </div>
-            </li>
-            <li class="responsive-list__item">
-              <p class="responsive-list__text">Смещение колонок в строке при различной ширине вьюпорта: <span class='inline-snippet'>offset-desktop-right-2</span>, <span class='inline-snippet'>offset-laptop-left-4</span>, <span class='inline-snippet'>offset-tablet-landscape-left-9</span>, <span class='inline-snippet'>offset-phone-left-11</span> и т.д.:</p>
-              <div class="example example_colored row no-children-v-gutters">
-                <div class="example__col col-2 offset-laptop-right-2 offset-laptop-md-right-4 offset-tablet-landscape-right-6 offset-phone-landscape-right-auto">1</div>
-              </div>
-              <div class="example example_colored row no-children-v-gutters">
-                <div class="example__col col-2 offset-laptop-md-right-auto">2</div>
-              </div>
-              <div class="example example_colored row no-children-v-gutters">
-                <div class="example__col col-2 offset-right-auto offset-desktop-left-auto">3</div>
-              </div>
-              <div class="row">
-                <div class="code-snippet col col-phone-landscape-12">
-                  <h3 class="code-snippet__title">HTML</h3>
-                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+}</code></pre></div></div></li><li class="responsive-list__item"><p class="responsive-list__text">Смещение колонок в строке при различной ширине вьюпорта: <span class='inline-snippet'>offset-desktop-right-2</span>, <span class='inline-snippet'>offset-laptop-left-4</span>, <span class='inline-snippet'>offset-tablet-landscape-left-9</span>, <span class='inline-snippet'>offset-phone-left-11</span> и т.д.:</p><div class="example example_colored row no-children-v-gutters"><div class="example__col col-2 offset-laptop-right-2 offset-laptop-md-right-4 offset-tablet-landscape-right-6 offset-phone-landscape-right-auto">1</div></div><div class="example example_colored row no-children-v-gutters"><div class="example__col col-2 offset-laptop-md-right-auto">2</div></div><div class="example example_colored row no-children-v-gutters"><div class="example__col col-2 offset-right-auto offset-desktop-left-auto">3</div></div><div class="row"><div class="code-snippet col col-phone-landscape-12"><h3 class="code-snippet__title">HTML</h3><pre><code class="html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;example row&quot;&gt;
     &lt;div class=&quot;example__col col-2 offset-laptop-right-2 offset-laptop-md-right-4 offset-tablet-landscape-right-6 offset-phone-landscape-right-auto&quot;&gt;1&lt;/div&gt;
   &lt;/div&gt;
@@ -1706,11 +1004,7 @@ $grid-breakpoints: (
   &lt;div class=&quot;example row&quot;&gt;
     &lt;div class=&quot;example__col col-2 offset-right-auto offset-desktop-left-auto&quot;&gt;3&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-                </div>
-                <div class="code-snippet col">
-                  <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-                  <pre><code class="scss">.container {
+&lt;/div&gt;</code></pre></div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">.container {
   @include container();
 
   .example {
@@ -1745,28 +1039,7 @@ $grid-breakpoints: (
       @include col(2);
     }
   }
-}</code></pre>
-                </div>
-              </div>
-            </li>
-            <li class="responsive-list__item">
-              <p class="responsive-list__text">Изменение порядка колонок в строке: <span class='inline-snippet'>order-desktop-1</span>, <span class='inline-snippet'>order-laptop-3</span>, <span class='inline-snippet'>order-laptop-md-5</span>, <span class='inline-snippet'>order-phone-first</span>, <span class='inline-snippet'>order-phone-sm-last</span> и т.д.:</p>
-              <div class="example row">
-                <div class="example__col col order-laptop-2">1</div>
-                <div class="example__col col order-laptop-1">2</div>
-                <div class="example__col col order-laptop-4">3</div>
-                <div class="example__col col order-laptop-3">4</div>
-              </div>
-              <div class="example row">
-                <div class="example__col col order-laptop-last">1</div>
-                <div class="example__col col">2</div>
-                <div class="example__col col">3</div>
-                <div class="example__col col order-laptop-first">4</div>
-              </div>
-              <div class="row">
-                <div class="code-snippet col col-phone-landscape-12">
-                  <h3 class="code-snippet__title">HTML</h3>
-                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+}</code></pre></div></div></li><li class="responsive-list__item"><p class="responsive-list__text">Изменение порядка колонок в строке: <span class='inline-snippet'>order-desktop-1</span>, <span class='inline-snippet'>order-laptop-3</span>, <span class='inline-snippet'>order-laptop-md-5</span>, <span class='inline-snippet'>order-phone-first</span>, <span class='inline-snippet'>order-phone-sm-last</span> и т.д.:</p><div class="example row"><div class="example__col col order-laptop-2">1</div><div class="example__col col order-laptop-1">2</div><div class="example__col col order-laptop-4">3</div><div class="example__col col order-laptop-3">4</div></div><div class="example row"><div class="example__col col order-laptop-last">1</div><div class="example__col col">2</div><div class="example__col col">3</div><div class="example__col col order-laptop-first">4</div></div><div class="row"><div class="code-snippet col col-phone-landscape-12"><h3 class="code-snippet__title">HTML</h3><pre><code class="html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;example row&quot;&gt;
     &lt;div class=&quot;example__col col order-laptop-2&quot;&gt;1&lt;/div&gt;
     &lt;div class=&quot;example__col col order-laptop-1&quot;&gt;2&lt;/div&gt;
@@ -1780,11 +1053,7 @@ $grid-breakpoints: (
     &lt;div class=&quot;example__col col&quot;&gt;3&lt;/div&gt;
     &lt;div class=&quot;example__col col order-laptop-first&quot;&gt;4&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-                </div>
-                <div class="code-snippet col">
-                  <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-                  <pre><code class="scss">.container {
+&lt;/div&gt;</code></pre></div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">.container {
   @include container();
 
   .example {
@@ -1824,23 +1093,7 @@ $grid-breakpoints: (
       @include col();
     }
   }
-}</code></pre>
-                </div>
-              </div>
-              <li class="responsive-list__item">
-                <p class="responsive-list__text">Скрытие и отображение элементов сетки при различной ширине вьюпорта: <span class='inline-snippet'>hide-desktop</span>, <span class='inline-snippet'>hide-laptop</span>, <span class='inline-snippet'>hide-tablet-landscape</span>, <span class='inline-snippet'>hide-phone-sm</span>, <span class='inline-snippet'>show-desktop</span>, <span class='inline-snippet'>show-laptop</span>, <span class='inline-snippet'>show-tablet-landscape</span> и т.д.:</p>
-                <div class="example row">
-                  <div class="example__col col hide-laptop">1</div>
-                  <div class="example__col col">2</div>
-                </div>
-                <div class="example row">
-                  <div class="example__col col">3</div>
-                  <div class="example__col col hide show-laptop">4</div>
-                </div>
-                <div class="row">
-                  <div class="code-snippet col col-phone-landscape-12">
-                    <h3 class="code-snippet__title">HTML</h3>
-                    <pre><code class="html">&lt;div class=&quot;container&quot;&gt;
+}</code></pre></div></div><li class="responsive-list__item"><p class="responsive-list__text">Скрытие и отображение элементов сетки при различной ширине вьюпорта: <span class='inline-snippet'>hide-desktop</span>, <span class='inline-snippet'>hide-laptop</span>, <span class='inline-snippet'>hide-tablet-landscape</span>, <span class='inline-snippet'>hide-phone-sm</span>, <span class='inline-snippet'>show-desktop</span>, <span class='inline-snippet'>show-laptop</span>, <span class='inline-snippet'>show-tablet-landscape</span> и т.д.:</p><div class="example row"><div class="example__col col hide-laptop">1</div><div class="example__col col">2</div></div><div class="example row"><div class="example__col col">3</div><div class="example__col col hide show-laptop">4</div></div><div class="row"><div class="code-snippet col col-phone-landscape-12"><h3 class="code-snippet__title">HTML</h3><pre><code class="html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;example row&quot;&gt;
     &lt;div class=&quot;example__col col hide-laptop&quot;&gt;1&lt;/div&gt;
     &lt;div class=&quot;example__col col&quot;&gt;2&lt;/div&gt;
@@ -1850,11 +1103,7 @@ $grid-breakpoints: (
     &lt;div class=&quot;example__col col&quot;&gt;3&lt;/div&gt;
     &lt;div class=&quot;example__col col hide show-laptop&quot;&gt;4&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-                  </div>
-                  <div class="code-snippet col">
-                    <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-                    <pre><code class="scss">.container {
+&lt;/div&gt;</code></pre></div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">.container {
   @include container();
 
   .example {
@@ -1878,861 +1127,9 @@ $grid-breakpoints: (
       @include col();
     }
   }
-}</code></pre>
-                  </div>
-                </div>
-              </li>
-              <li class="responsive-list__item">
-                <p class="responsive-list__text">Также, как и другие переменные по умолчанию, вы можете переопределить значение переменной <span class='inline-snippet'>$grid-breakpoints</span>, задав для контрольных точек более традиционные названия и размеры вьюпорта:</p>
-                <div class="code-snippet col">
-                  <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-                  <pre><code class="scss">$grid-breakpoints: (
+}</code></pre></div></div></li><li class="responsive-list__item"><p class="responsive-list__text">Также, как и другие переменные по умолчанию, вы можете переопределить значение переменной <span class='inline-snippet'>$grid-breakpoints</span>, задав для контрольных точек более традиционные названия и размеры вьюпорта:</p><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">$grid-breakpoints: (
   lg: 1280px,
   md: 960px,
   sm: 768px,
   xs: 480px
-);</code></pre>
-                </div>
-              </li>
-              <div class="text col-12">Это сгенерирует классы вида <span class='inline-snippet'>col-lg-12</span>, <span class='inline-snippet'>col-md-4</span>, <span class='inline-snippet'>justify-content-sm-center</span>, <span class='inline-snippet'>offset-xs-2</span>, <span class='inline-snippet'>order-lg-9</span>, <span class='inline-snippet'>direction-sm-column</span>, <span class='inline-snippet'>hide-sm</span>, <span class='inline-snippet'>show-xs</span> и т.д.
-              </div>
-            </li>
-          </ul>
-        </div>
-        <h3 class="title col-12">Части</h3><a id="partials"></a>
-        <div class="text col-12">Директория <span class='inline-snippet'>partials</span> содержит список частей библиотеки, отвечающих за генерацию категорий классов и медиазапросов. С целью уменьшения сформированного css-файла библиотеки вы можете переопределить список, оставив лишь те элементы, названия которых соответствуют тем частям библиотеки, классы которых вы будете использовать. Ниже ещё будет сказано, какие части за что отвечают. Либо же, если вместо расстановки классов на элементах в разметке для построения сетки вы предпочитаете использовать Sass и предопределенные миксины, вы можете присвоить переменной <span class='inline-snippet'>partials</span> значение <span class='inline-script'>false</span> ( не <span class='inline-script'>null</span> ) или любое другое "не null" значение.
-        </div>
-        <div class="code-snippet col">
-          <h3 class="code-snippet__title">Sass ( Scss syntax )</h3>
-          <pre><code class="scss">$partials: false;</code></pre>
-        </div>
-        <div class="text col-12">Это предотвратит генерацию большого количества готовых классов, что позволит значительно уменьшить размер конечного css-файла библиотеки.
-        </div>
-        <h4 class="subtitle col-12">Выравнивание</h4><a id="partials-alignment"></a>
-        <div class="text col-12">Файл <span class='inline-snippet'>grid/partials/alignment.scss</span> содержит код, генерирующий классы, отвечающие за выравнивание колонок внутри строки.
-        </div>
-        <h4 class="subtitle col-12">Направление расположения колонок в строке</h4><a id="partials-direction"></a>
-        <div class="text col-12">Файл <span class='inline-snippet'>grid/partials/direction.scss</span> содержит код, генерирующий классы, отвечающие за направление главной оси, вдоль которой выстраиваются столбцы внутри строки.
-        </div>
-        <h4 class="subtitle col-12">Упорядочивание колонок</h4><a id="partials-order"></a>
-        <div class="text col-12">Файл <span class='inline-snippet'>grid/partials/ordering.scss</span> содержит код, генерирующий классы, отвечающие за порядок расположения колонок внутри строки.
-        </div>
-        <h4 class="subtitle col-12">Смещение колонок</h4><a id="partials-offset"></a>
-        <div class="text col-12">Файл <span class='inline-snippet'>grid/partials/offset.scss</span> содержит код, генерирующий классы, отвечающие за смещение колонок внутри строки.
-        </div>
-        <h4 class="subtitle col-12">Скрытие элементов</h4><a id="partials-hide"></a>
-        <div class="text col-12">Файл <span class='inline-snippet'>grid/partials/hide.scss</span> содержит код, генерирующий классы, отвечающие за скрытие элементов.
-        </div>
-        <h4 class="subtitle col-12">Отображение элементов</h4><a id="partials-display"></a>
-        <div class="text col-12">Файл <span class='inline-snippet'>grid/partials/visible.scss</span> содержит код, генерирующий классы, отвечающие за отображение элементов.
-        </div>
-        <h4 class="subtitle col-12">Обнуление внешних отступов у элементов строк и колонок</h4><a id="partials-margins-reset"></a>
-        <div class="text col-12">Файл <span class='inline-snippet'>grid/partials/gutters.scss</span> содержит код, генерирующий классы, отвечающие за обнуление внешних отступов у элементов строк и колонок.
-        </div>
-        <h4 class="subtitle col-12">Базовая инициализация сетки</h4><a id="grid-basic-init"></a>
-        <div class="text col-12">Файл <span class='inline-snippet'>grid/base.scss</span> содержит код, генерирующий базовые классы сетки.
-        </div>
-        <h3 class="title col-12">Компиляция исходных sass-файлов</h3><a id="compiling-sass-files"></a>
-        <div class="text col-12">При использовании библиотеки flexbox-grid-pro в виде sass-файлов, настоятельно рекомендуется использовать минификаторы <a href='https://github.com/Se7enSky/group-css-media-queries'>group-css-media-queries</a> и <a href='https://github.com/css/csso'>csso</a>. Это значительно сократит объём собранного css-файла библиотеки.
-        </div>
-        <h3 class="title col-12">Справочная таблица по классам и миксинам</h3><a id="reference-table"></a>
-        <h4 class="subtitle col-12">Выравнивание</h4><a id="ref-table-alignment"></a>
-        <div class="class-table-wrapper col-12">
-          <table class="class-table">
-            <tbody>
-              <tr>
-                <th>Классы</th>
-                <th>Соответствующий миксин</th>
-                <th>Описание</th>
-              </tr>
-              <tr>
-                <td class="class-table__name">
-                  <div>justify-content-start,</div>
-                  <div>justify-content-center,</div>
-                  <div>justify-content-end,</div>
-                  <div>justify-content-space-between,</div>
-                  <div>justify-content-space-around</div>
-                </td>
-                <td>
-                  <div class="class-table__mixin-name">justify-content( $align, $breakpoint )</div>
-                  <div class="class-table__mixin-description">Выравнивает столбцы в строке согласно параметру <span class='inline-snippet'>$align</span>, который должен принимать одно из следующих значений: <span class='inline-snippet'>flex-start</span>, <span class='inline-snippet'>flex-end</span>, <span class='inline-snippet'>center</span>, <span class='inline-snippet'>space-between</span>, <span class='inline-snippet'>space-around</span>. Применяется к элементам строки ( <span class='inline-snippet'>row</span> ) сетки. Если передан аргумент <span class='inline-snippet'>$breakpoint</span>, выравнивание сработает в медиазапросе согласно значению этого аргумента. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</div>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>Параметр</th>
-                        <th>Тип</th>
-                        <th>Доступные значения</th>
-                        <th>Значение по умолчанию</th>
-                        <th>Описание</th>
-                        <tr>
-                          <td>align</td>
-                          <td>String</td>
-                          <td class="class-table__available">
-                            <div>flex-start,</div>
-                            <div>center,</div>
-                            <div>flex-end,</div>
-                            <div>space-between,</div>
-                            <div>space-around,</div>
-                          </td>
-                          <td class="class-table__default">flex-start</td>
-                          <td>Задаёт способ выравнивания столбцов</td>
-                        </tr>
-                        <tr>
-                          <td>breakpoint</td>
-                          <td>String</td>
-                          <td class="class-table__available">
-                            <div>desktop,</div>
-                            <div>laptop,</div>
-                            <div>laptop-md,</div>
-                            <div>tablet-landscape,</div>
-                            <div>phone-landscape,</div>
-                            <div>phone,</div>
-                            <div>phone-md,</div>
-                            <div>phone-sm</div>
-                          </td>
-                          <td class="class-table__default">null</td>
-                          <td>Необязательный параметр. Если для него передано значение, выравнивание сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td>
-                        </tr>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <td class="class-table__description">Выравнивают столбцы в строке в соответствии со свойствами flex-контейнера: flex-start, center, flex-end, space-between, space-around. Применяются к элементу строки.</td>
-                </td>
-              </tr>
-              <tr>
-                <td class="class-table__name">
-                  <div>align-items-start,</div>
-                  <div>align-items-center,</div>
-                  <div>align-items-end,</div>
-                  <div>align-items-stretch,</div>
-                  <div>align-items-baseline</div>
-                </td>
-                <td>
-                  <div class="class-table__mixin-name">align-items( $align, $breakpoint )</div>
-                  <div class="class-table__mixin-description">Выравнивает столбцы в строке согласно параметру <span class='inline-snippet'>$align</span>, который должен принимать одно из следующих значений: <span class='inline-snippet'>flex-start</span>, <span class='inline-snippet'>flex-end</span>, <span class='inline-snippet'>center</span>, <span class='inline-snippet'>stretch</span>, <span class='inline-snippet'>baseline</span>. Применяется к элементам строки ( <span class='inline-snippet'>row</span> ) сетки. Если передан аргумент <span class='inline-snippet'>$breakpoint</span>, выравнивание сработает в медиазапросе согласно значению этого аргумента. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</div>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>Параметр</th>
-                        <th>Тип</th>
-                        <th>Доступные значения</th>
-                        <th>Значение по умолчанию</th>
-                        <th>Описание</th>
-                        <tr>
-                          <td>align</td>
-                          <td>String</td>
-                          <td class="class-table__available">
-                            <div>flex-start,</div>
-                            <div>center,</div>
-                            <div>flex-end,</div>
-                            <div>stretch,</div>
-                            <div>baseline</div>
-                          </td>
-                          <td class="class-table__default">flex-start</td>
-                          <td>Задаёт способ выравнивания столбцов</td>
-                        </tr>
-                        <tr>
-                          <td>breakpoint</td>
-                          <td>String</td>
-                          <td class="class-table__available">
-                            <div>desktop,</div>
-                            <div>laptop,</div>
-                            <div>laptop-md,</div>
-                            <div>tablet-landscape,</div>
-                            <div>phone-landscape,</div>
-                            <div>phone,</div>
-                            <div>phone-md,</div>
-                            <div>phone-sm</div>
-                          </td>
-                          <td class="class-table__default">null</td>
-                          <td>Необязательный параметр. Если для него передано значение, выравнивание сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td>
-                        </tr>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <td class="class-table__description">Выравнивают столбцы в строке в соответствии со свойствами flex-контейнера: flex-start, center, flex-end, stretch, baseline. Применяются к элементу строки.</td>
-                </td>
-              </tr>
-              <tr>
-                <td class="class-table__name">
-                  <div>align-self-start,</div>
-                  <div>align-self-center,</div>
-                  <div>align-self-end,</div>
-                  <div>align-self-stretch,</div>
-                  <div>align-self-baseline</div>
-                </td>
-                <td>
-                  <div class="class-table__mixin-name">align-self( $align, $breakpoint )</div>
-                  <div class="class-table__mixin-description">Выравнивает отдельно взятый столбец в строке согласно параметру <span class='inline-snippet'>$align</span>, который должен принимать одно из следующих значений: <span class='inline-snippet'>flex-start</span>, <span class='inline-snippet'>flex-end</span>, <span class='inline-snippet'>center</span>, <span class='inline-snippet'>stretch</span>, <span class='inline-snippet'>baseline</span>. Применяется к элементам столбца ( <span class='inline-snippet'>col</span> ) сетки. Если передан аргумент <span class='inline-snippet'>$breakpoint</span>, выравнивание сработает в медиазапросе согласно значению этого аргумента. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</div>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>Параметр</th>
-                        <th>Тип</th>
-                        <th>Доступные значения</th>
-                        <th>Значение по умолчанию</th>
-                        <th>Описание</th>
-                        <tr>
-                          <td>align</td>
-                          <td>String</td>
-                          <td class="class-table__available">
-                            <div>flex-start,</div>
-                            <div>center,</div>
-                            <div>flex-end,</div>
-                            <div>stretch,</div>
-                            <div>baseline,</div>
-                          </td>
-                          <td class="class-table__default">flex-start</td>
-                          <td>Задаёт способ выравнивания отдельно взятого столбца в строке.</td>
-                        </tr>
-                        <tr>
-                          <td>breakpoint</td>
-                          <td>String</td>
-                          <td class="class-table__available">
-                            <div>desktop,</div>
-                            <div>laptop,</div>
-                            <div>laptop-md,</div>
-                            <div>tablet-landscape,</div>
-                            <div>phone-landscape,</div>
-                            <div>phone,</div>
-                            <div>phone-md,</div>
-                            <div>phone-sm</div>
-                          </td>
-                          <td class="class-table__default">null</td>
-                          <td>Необязательный параметр. Если для него передано значение, выравнивание сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td>
-                        </tr>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <td class="class-table__description">Выравнивают отдельно взятый столбец в строке в соответствии со свойствами flex-контейнера: flex-start, center, flex-end, stretch, baseline. Применяются к элементу столбца.</td>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <h4 class="subtitle col-12">Направление расположения главной оси</h4><a id="ref-table-direction"></a>
-        <div class="class-table-wrapper col-12">
-          <table class="class-table">
-            <tbody>
-              <tr>
-                <th>Классы</th>
-                <th>Соответствующий миксин</th>
-                <th>Описание</th>
-              </tr>
-              <tr>
-                <td class="class-table__name">
-                  <div>direction-row,</div>
-                  <div>direction-row-reverse,</div>
-                  <div>direction-column,</div>
-                  <div>direction-column-reverse</div>
-                </td>
-                <td>
-                  <div class="class-table__mixin-name">direction( $direction, $breakpoint )</div>
-                  <div class="class-table__mixin-description">Задает направление главной оси, вдоль которой выстраиваются колонки в строке. В качестве аргумента для первого параметра <span class='inline-snippet'>$direction</span> должно быть передано одно из следующиех значений: <span class='inline-snippet'>row</span>, <span class='inline-snippet'>row-reverse</span>, <span class='inline-snippet'>column</span>, <span class='inline-snippet'>column-reverse</span>. Если вторым аргументом передано значение, соответствующее одному из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>, правило будет применено в медиазапросе.</div>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>Параметр</th>
-                        <th>Тип</th>
-                        <th>Доступные значения</th>
-                        <th>Значение по умолчанию</th>
-                        <th>Описание</th>
-                        <tr>
-                          <td>direction</td>
-                          <td>String</td>
-                          <td class="class-table__available">
-                            <div>row,</div>
-                            <div>row-reverse,</div>
-                            <div>column,</div>
-                            <div>column-reverse</div>
-                          </td>
-                          <td class="class-table__default">row</td>
-                          <td>Задаёт направление главной оси, вдоль которой выстраиваются колонки в строке.</td>
-                        </tr>
-                        <tr>
-                          <td>breakpoint</td>
-                          <td>String</td>
-                          <td class="class-table__available">
-                            <div>desktop,</div>
-                            <div>laptop,</div>
-                            <div>laptop-md,</div>
-                            <div>tablet-landscape,</div>
-                            <div>phone-landscape,</div>
-                            <div>phone,</div>
-                            <div>phone-md,</div>
-                            <div>phone-sm</div>
-                          </td>
-                          <td class="class-table__default">null</td>
-                          <td>Необязательный параметр. Если для него передано значение, установка направления главной оси сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td>
-                        </tr>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <td class="class-table__description">Задают направление главной оси, вдоль которой выстраиваются колонки в стрке, в соответствии со свойствами flex-контейнера: row, row-reverse, column, column-reverse. Применяются к элементу строки <span class='inline-snippet'>row</span>.</td>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <h4 class="subtitle col-12">Смещение колонок</h4><a id="ref-table-offset"></a>
-        <div class="class-table-wrapper col-12">
-          <table class="class-table">
-            <tbody>
-              <tr>
-                <th>Классы</th>
-                <th>Соответствующий миксин</th>
-                <th>Описание</th>
-              </tr>
-              <tr>
-                <td class="class-table__name">
-                  <div>offset-left-1 - offset-left-12,</div>
-                  <div>offset-right-1 - offset-right-12,</div>
-                  <div>offset-left-auto,</div>
-                  <div>offset-right-auto</div>
-                </td>
-                <td>
-                  <div class="class-table__mixin-name">offset( $direction, $offset, $breakpoint )</div>
-                  <div class="class-table__mixin-description">Смещает колонку в строке на <span class='inline-snippet'>$offset</span> - целое число колонок, вправо - <span class='inline-snippet'>$direction</span>: right или влево - <span class='inline-snippet'>$direction</span>: left. Если в качестве второго аргумента передано значение auto, колонка смещается на свободное пространство в ту или иную сторону. Если значение аргумента <span class='inline-snippet'>$breakpoint</span> соответствует одному из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>, правила применяются в соответствующем медиазапросе.</div>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>Параметр</th>
-                        <th>Тип</th>
-                        <th>Доступные значения</th>
-                        <th>Значение по умолчанию</th>
-                        <th>Описание</th>
-                        <tr>
-                          <td>direction</td>
-                          <td>String</td>
-                          <td class="class-table__available">
-                            <div>left,</div>
-                            <div>right</div>
-                          </td>
-                          <td class="class-table__default">right</td>
-                          <td>От этого параметра зависит, в какую сторону будет происходить смещение колонок - вправо или влево.</td>
-                        </tr>
-                        <tr>
-                          <td>offset</td>
-                          <td>Number|String</td>
-                          <td class="class-table__available">
-                            <div>целое число колонок,</div>
-                            <div>auto</div>
-                          </td>
-                          <td class="class-table__default">auto</td>
-                          <td>Число колонок, на которое будет смещена колонка. Если передано значение <span class='inline-snippet'>auto</span>, колонка сместится вправо/влево ( зависит от второго параметра <span class='inline-snippet'>direction</span> ) на всё доступное свободное пространство.</td>
-                        </tr>
-                        <tr>
-                          <td>breakpoint</td>
-                          <td>String</td>
-                          <td class="class-table__available">
-                            <div>desktop,</div>
-                            <div>laptop,</div>
-                            <div>laptop-md,</div>
-                            <div>tablet-landscape,</div>
-                            <div>phone-landscape,</div>
-                            <div>phone,</div>
-                            <div>phone-md,</div>
-                            <div>phone-sm</div>
-                          </td>
-                          <td class="class-table__default">null</td>
-                          <td>Необязательный параметр. Если для него передано значение, смещение для колонки сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td>
-                        </tr>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <td class="class-table__description">Смещают колонки в строке на определённое число колонок вправо или влево.</td>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <h4 class="subtitle col-12">Порядок расположения колонок</h4><a id="ref-table-order"></a>
-        <div class="class-table-wrapper col-12">
-          <table class="class-table">
-            <tbody>
-              <tr>
-                <th>Классы</th>
-                <th>Соответствующий миксин</th>
-                <th>Описание</th>
-              </tr>
-              <tr>
-                <td class="class-table__name">
-                  <div>order-0 - order-12,</div>
-                  <div>order-first,</div>
-                  <div>order-last,</div>
-                </td>
-                <td>
-                  <div class="class-table__mixin-name">order( $order, $breakpoint )</div>
-                  <div class="class-table__mixin-description">Упорядочивает колонки в строке согласно параметру <span class='inline-snippet'>$order</span> - целому числу, определяющему порядок следования колонок - чем меньше число, тем ближе к началу строки будет расположена колонка. Если при вызове миксина ему будет передан второй аргумент <span class='inline-snippet'>$breakpoint</span>, и при этом его значение будет соответствовать одному из имён ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>, то правило упорядочивания будет срабатывать лишь в соответствующем медиазапросе. Применяется к элементу строки <span class='inline-snippet'>row</span></div>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>Параметр</th>
-                        <th>Тип</th>
-                        <th>Доступные значения</th>
-                        <th>Значение по умолчанию</th>
-                        <th>Описание</th>
-                        <tr>
-                          <td>order</td>
-                          <td>Number|String</td>
-                          <td class="class-table__available">
-                            <div>0 - общее число колонок,</div>
-                            <div>first,</div>
-                            <div>last</div>
-                          </td>
-                          <td class="class-table__default">0</td>
-                          <td>Целое число или строка, определяющие визуальное положение колонки в строке сетки. Чем меньше число, тем ближе к началу строки будет расположена колонка.</td>
-                        </tr>
-                        <tr>
-                          <td>breakpoint</td>
-                          <td>String</td>
-                          <td class="class-table__available">
-                            <div>desktop,</div>
-                            <div>laptop,</div>
-                            <div>laptop-md,</div>
-                            <div>tablet-landscape,</div>
-                            <div>phone-landscape,</div>
-                            <div>phone,</div>
-                            <div>phone-md,</div>
-                            <div>phone-sm</div>
-                          </td>
-                          <td class="class-table__default">null</td>
-                          <td>Необязательный параметр. Если для него передано значение, сещение для колонки сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td>
-                        </tr>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <td class="class-table__description">Задают порядок визуального расположения колонок в строке. Применяются к элементу строки <span class='inline-snippet'>row</span>.</td>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <h4 class="subtitle col-12">Сброс внешних отступов ( margins )</h4><a id="ref-table-reset"></a>
-        <div class="class-table-wrapper col-12">
-          <table class="class-table">
-            <tbody>
-              <tr>
-                <th>Классы</th>
-                <th>Соответствующий миксин</th>
-                <th>Описание</th>
-              </tr>
-              <tr>
-                <td class="class-table__name">
-                  <div>no-gutters</div>
-                </td>
-                <td>
-                  <div class="class-table__mixin-name">no-gutters( $breakpoint )</div>
-                  <div class="class-table__mixin-description">Обнуляет внешние отступы элемента. Применяется к любому элементу сетки.</div>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>Параметр</th>
-                        <th>Тип</th>
-                        <th>Доступные значения</th>
-                        <th>Значение по умолчанию</th>
-                        <th>Описание</th>
-                        <tr>
-                          <td>$breakpoint</td>
-                          <td>String</td>
-                          <td class="class-table__available">
-                            <div>desktop,</div>
-                            <div>laptop,</div>
-                            <div>laptop-md,</div>
-                            <div>tablet-landscape,</div>
-                            <div>phone-landscape,</div>
-                            <div>phone,</div>
-                            <div>phone-md,</div>
-                            <div>phone-sm</div>
-                          </td>
-                          <td class="class-table__default">null</td>
-                          <td>Необязательный параметр. Если для него передано значение, сброс отступов для элемента сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td>
-                        </tr>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <td class="class-table__description">Обнуляют все внешние отступы у элемента. Применяются как к элементу строки, так и к элементу сетки.</td>
-                </td>
-              </tr>
-              <tr>
-                <td class="class-table__name">
-                  <div>no-h-gutters</div>
-                </td>
-                <td>
-                  <div class="class-table__mixin-name">no-h-gutters( $breakpoint )</div>
-                  <div class="class-table__mixin-description">Обнуляет внешние горизонтальные отступы элемента. Применяется как к элементу строки, так и к элементу колонки.</div>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>Параметр</th>
-                        <th>Тип</th>
-                        <th>Доступные значения</th>
-                        <th>Значение по умолчанию</th>
-                        <th>Описание</th>
-                        <tr>
-                          <td>breakpoint</td>
-                          <td>String</td>
-                          <td class="class-table__available">
-                            <div>desktop,</div>
-                            <div>laptop,</div>
-                            <div>laptop-md,</div>
-                            <div>tablet-landscape,</div>
-                            <div>phone-landscape,</div>
-                            <div>phone,</div>
-                            <div>phone-md,</div>
-                            <div>phone-sm</div>
-                          </td>
-                          <td class="class-table__default">null</td>
-                          <td>Необязательный параметр. Если для него передано значение, сброс отступов для элемента сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td>
-                        </tr>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <td class="class-table__description">Обнуляют внешние горизонтальные отступы элемента. Применяются как к элементу строки, так и к элементу колонки.</td>
-                </td>
-              </tr>
-              <tr>
-                <td class="class-table__name">
-                  <div>no-v-gutters</div>
-                </td>
-                <td>
-                  <div class="class-table__mixin-name">no-v-gutters( $breakpoint )</div>
-                  <div class="class-table__mixin-description">Обнуляет внешние вертикальные отступы элемента. Применяется как к элементу строки, так и к элементу колонки.</div>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>Параметр</th>
-                        <th>Тип</th>
-                        <th>Доступные значения</th>
-                        <th>Значение по умолчанию</th>
-                        <th>Описание</th>
-                        <tr>
-                          <td>breakpoint</td>
-                          <td>String</td>
-                          <td class="class-table__available">
-                            <div>desktop,</div>
-                            <div>laptop,</div>
-                            <div>laptop-md,</div>
-                            <div>tablet-landscape,</div>
-                            <div>phone-landscape,</div>
-                            <div>phone,</div>
-                            <div>phone-md,</div>
-                            <div>phone-sm</div>
-                          </td>
-                          <td class="class-table__default">null</td>
-                          <td>Необязательный параметр. Если для него передано значение, сброс отступов для элемента сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td>
-                        </tr>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <td class="class-table__description">Обнуляют внешние вертикальные отступы элемента. Применяются как к элементу строки, так и к элементу колонки.</td>
-                </td>
-              </tr>
-              <tr>
-                <td class="class-table__name">
-                  <div>no-children-gutters</div>
-                </td>
-                <td>
-                  <div class="class-table__mixin-name">no-children-gutters( $breakpoint )</div>
-                  <div class="class-table__mixin-description">Обнуляет внешние отступы элементов колонок в строке. Применяется к элементу строки.</div>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>Параметр</th>
-                        <th>Тип</th>
-                        <th>Доступные значения</th>
-                        <th>Значение по умолчанию</th>
-                        <th>Описание</th>
-                        <tr>
-                          <td>breakpoint</td>
-                          <td>String</td>
-                          <td class="class-table__available">
-                            <div>desktop,</div>
-                            <div>laptop,</div>
-                            <div>laptop-md,</div>
-                            <div>tablet-landscape,</div>
-                            <div>phone-landscape,</div>
-                            <div>phone,</div>
-                            <div>phone-md,</div>
-                            <div>phone-sm</div>
-                          </td>
-                          <td class="class-table__default">null</td>
-                          <td>Необязательный параметр. Если для него передано значение, сброс отступов для элемента сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td>
-                        </tr>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <td class="class-table__description">Обнуляют внешние отступы элементов колонок в строке. Применяются к элементу строки.</td>
-                </td>
-              </tr>
-              <tr>
-                <td class="class-table__name">
-                  <div>no-children-h-gutters</div>
-                </td>
-                <td>
-                  <div class="class-table__mixin-name">no-children-h-gutters( $breakpoint )</div>
-                  <div class="class-table__mixin-description">Обнуляет внешние горизонтальные отступы элементов колонок в строке. Применяется к элементу строки.</div>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>Параметр</th>
-                        <th>Тип</th>
-                        <th>Доступные значения</th>
-                        <th>Значение по умолчанию</th>
-                        <th>Описание</th>
-                        <tr>
-                          <td>breakpoint</td>
-                          <td>String</td>
-                          <td class="class-table__available">
-                            <div>desktop,</div>
-                            <div>laptop,</div>
-                            <div>laptop-md,</div>
-                            <div>tablet-landscape,</div>
-                            <div>phone-landscape,</div>
-                            <div>phone,</div>
-                            <div>phone-md,</div>
-                            <div>phone-sm</div>
-                          </td>
-                          <td class="class-table__default">null</td>
-                          <td>Необязательный параметр. Если для него передано значение, сброс отступов для элемента сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td>
-                        </tr>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <td class="class-table__description">Обнуляют внешние горизонтальные отступы элементов колонок в строке. Применяется к элементу строки.</td>
-                </td>
-              </tr>
-              <tr>
-                <td class="class-table__name">
-                  <div>no-children-v-gutters</div>
-                </td>
-                <td>
-                  <div class="class-table__mixin-name">no-children-v-gutters( $breakpoint )</div>
-                  <div class="class-table__mixin-description">Обнуляет внешние вертикальные отступы элементов колонок в строке. Применяется к элементу строки.</div>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>Параметр</th>
-                        <th>Тип</th>
-                        <th>Доступные значения</th>
-                        <th>Значение по умолчанию</th>
-                        <th>Описание</th>
-                        <tr>
-                          <td>breakpoint</td>
-                          <td>String</td>
-                          <td class="class-table__available">
-                            <div>desktop,</div>
-                            <div>laptop,</div>
-                            <div>laptop-md,</div>
-                            <div>tablet-landscape,</div>
-                            <div>phone-landscape,</div>
-                            <div>phone,</div>
-                            <div>phone-md,</div>
-                            <div>phone-sm</div>
-                          </td>
-                          <td class="class-table__default">null</td>
-                          <td>Необязательный параметр. Если для него передано значение, сброс отступов для элемента сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td>
-                        </tr>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <td class="class-table__description">Обнуляют внешние горизонтальные отступы элементов колонок в строке. Применяются к элементу строки.</td>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <h4 class="subtitle col-12">Скрытие элементов</h4><a id="ref-table-hide"></a>
-        <div class="class-table-wrapper col-12">
-          <table class="class-table">
-            <tbody>
-              <tr>
-                <th>Классы</th>
-                <th>Соответствующий миксин</th>
-                <th>Описание</th>
-              </tr>
-              <tr>
-                <td class="class-table__name">
-                  <div>hide</div>
-                </td>
-                <td>
-                  <div class="class-table__mixin-name">hide( $breakpoint )</div>
-                  <div class="class-table__mixin-description">Скрывает элемент, устанавливая его свойство display в none. Если значение аргумента <span class='inline-snippet'>$breakpoint</span> соответствует одному из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>, правило будет применено в соответствующем медиазапросе. Применяется к любому элементу сетки.</div>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>Параметр</th>
-                        <th>Тип</th>
-                        <th>Доступные значения</th>
-                        <th>Значение по умолчанию</th>
-                        <th>Описание</th>
-                        <tr>
-                          <td>breakpoint</td>
-                          <td>String</td>
-                          <td class="class-table__available">
-                            <div>desktop,</div>
-                            <div>laptop,</div>
-                            <div>laptop-md,</div>
-                            <div>tablet-landscape,</div>
-                            <div>phone-landscape,</div>
-                            <div>phone,</div>
-                            <div>phone-md,</div>
-                            <div>phone-sm</div>
-                          </td>
-                          <td class="class-table__default">null</td>
-                          <td>Необязательный параметр. Если для него передано значение, скрытие для элемента сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td>
-                        </tr>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <td class="class-table__description">Скрывает элемент, устанавливая его свойство display в none. Применяется к любому элементу сетки.</td>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <h4 class="subtitle col-12">Отображение скрытых элементов</h4><a id="ref-table-display"></a>
-        <div class="class-table-wrapper col-12">
-          <table class="class-table">
-            <tbody>
-              <tr>
-                <th>Классы</th>
-                <th>Соответствующий миксин</th>
-                <th>Описание</th>
-              </tr>
-              <tr>
-                <td class="class-table__name">
-                  <div>show</div>
-                </td>
-                <td>
-                  <div class="class-table__mixin-name">show( $display, $breakpoint )</div>
-                  <div class="class-table__mixin-description">Отображает скрытые элементы, устанавливая его свойство display в любое доступное для этого свойства значение, отличное от none. Применяется к любому элементу сетки.</div>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th>Параметр</th>
-                        <th>Тип</th>
-                        <th>Доступные значения</th>
-                        <th>Значение по умолчанию</th>
-                        <th>Описание</th>
-                        <tr>
-                          <td>display</td>
-                          <td>String</td>
-                          <td class="class-table__available">
-                            <div>Любое доступное для css-свойства <span class='inline-snippet'>display</span> значение, кроме <span class='inline-snippet'>none</span>.</div>
-                          </td>
-                          <td class="class-table__default">initial</td>
-                          <td>Устанавливает свойство display элемента в указанное значение.</td>
-                        </tr>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <td class="class-table__description">Отображает скрытые элементы, устанавливая его свойство display в любое доступное для этого свойства значение, отличное от none. Применяется к любому элементу сетки.</td>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </main>
-    </div>
-    <div class="sidebar-wrapper">
-      <div class="lang-widget"><a class="lang-widget__link" href="index.ru.html">ru</a><a class="lang-widget__link" href="index.html">en</a></div>
-      <button class="burger"><span class="inner"></span></button>
-      <!--include nav.data.pug-->
-      <nav class="main-nav">
-        <ul class="main-nav__list main-nav__list_level-1">
-      <li class="main-nav__item main-nav__item_level-1"><a class="main-nav__link main-nav__link_level-1" href="#intro">Введение</a>
-      </li>
-      <li class="main-nav__item main-nav__item_level-1"><a class="main-nav__link main-nav__link_level-1" href="#different-width-cols">Колонки заданной ширины</a>
-      </li>
-      <li class="main-nav__item main-nav__item_level-1 main-nav__item_has-child"><a class="main-nav__link main-nav__link_level-1" href="#alignment">Выравнивание</a>
-        <ul class="main-nav__list main-nav__list_level-2">
-          <li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#alignment-horizontal">Горизонтальное</a>
-          </li>
-          <li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#alignment-vertical">Вертикальное</a>
-          </li>
-        </ul>
-      </li>
-      <li class="main-nav__item main-nav__item_level-1"><a class="main-nav__link main-nav__link_level-1" href="#axis-direction">Направление расположения главной оси</a>
-      </li>
-      <li class="main-nav__item main-nav__item_level-1"><a class="main-nav__link main-nav__link_level-1" href="#column-order">Порядок расположения колонок</a>
-      </li>
-      <li class="main-nav__item main-nav__item_level-1"><a class="main-nav__link main-nav__link_level-1" href="#column-offset">Смещение колонок</a>
-      </li>
-      <li class="main-nav__item main-nav__item_level-1 main-nav__item_has-child"><a class="main-nav__link main-nav__link_level-1" href="#hide-and-show">Скрытие и отображение элементов</a>
-        <ul class="main-nav__list main-nav__list_level-2">
-          <li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#hide">Скрытие</a>
-          </li>
-          <li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#display">Отображение</a>
-          </li>
-        </ul>
-      </li>
-      <li class="main-nav__item main-nav__item_level-1"><a class="main-nav__link main-nav__link_level-1" href="#zeroing">Обнуление внешних отступов у элементов строк и колонок</a>
-      </li>
-      <li class="main-nav__item main-nav__item_level-1"><a class="main-nav__link main-nav__link_level-1" href="#column-classes">Колоночные классы</a>
-      </li>
-      <li class="main-nav__item main-nav__item_level-1"><a class="main-nav__link main-nav__link_level-1" href="#breakpoints">Контрольные точки</a>
-      </li>
-      <li class="main-nav__item main-nav__item_level-1"><a class="main-nav__link main-nav__link_level-1" href="#responsive-column-classes">&quot;Отзывчивые&quot; колоночные классы</a>
-      </li>
-      <li class="main-nav__item main-nav__item_level-1 main-nav__item_has-child"><a class="main-nav__link main-nav__link_level-1" href="#grid-customization">Кастомизация сетки</a>
-        <ul class="main-nav__list main-nav__list_level-2">
-          <li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#grid-customization-vars">Переменные</a>
-          </li>
-          <li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#grid-customization-mixins">Миксины</a>
-          </li>
-        </ul>
-      </li>
-      <li class="main-nav__item main-nav__item_level-1 main-nav__item_has-child"><a class="main-nav__link main-nav__link_level-1" href="#sass-source-files">Исходные файлы Sass</a>
-        <ul class="main-nav__list main-nav__list_level-2">
-          <li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#sass-source-files-grid">Сетка</a>
-          </li>
-          <li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#sass-source-files-responsive-classes">&quot;Отзывчивые&quot; классы на основе карты контрольных точек</a>
-          </li>
-          <li class="main-nav__item main-nav__item_level-2 main-nav__item_has-child"><a class="main-nav__link main-nav__link_level-2" href="#partials">Части</a>
-            <ul class="main-nav__list main-nav__list_level-3">
-              <li class="main-nav__item main-nav__item_level-3"><a class="main-nav__link main-nav__link_level-3" href="#partials-alignment">Выравнивание</a>
-              </li>
-              <li class="main-nav__item main-nav__item_level-3"><a class="main-nav__link main-nav__link_level-3" href="#partials-direction">Направление расположения колонок в строке</a>
-              </li>
-              <li class="main-nav__item main-nav__item_level-3"><a class="main-nav__link main-nav__link_level-3" href="#partials-order">Упорядочивание колонок</a>
-              </li>
-              <li class="main-nav__item main-nav__item_level-3"><a class="main-nav__link main-nav__link_level-3" href="#partials-offset">Смещение колонок</a>
-              </li>
-              <li class="main-nav__item main-nav__item_level-3"><a class="main-nav__link main-nav__link_level-3" href="#partials-hide">Скрытие элементов</a>
-              </li>
-              <li class="main-nav__item main-nav__item_level-3"><a class="main-nav__link main-nav__link_level-3" href="#partials-display">Отображение элементов</a>
-              </li>
-              <li class="main-nav__item main-nav__item_level-3"><a class="main-nav__link main-nav__link_level-3" href="#partials-margins-reset">Обнуление внешних отступов у элементов строк и колонок</a>
-              </li>
-            </ul>
-          </li>
-          <li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#grid-basic-init">Базовая инициализация сетки</a>
-          </li>
-          <li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#compiling-sass-files">Компиляция исходных sass-файлов</a>
-          </li>
-        </ul>
-      </li>
-      <li class="main-nav__item main-nav__item_level-1 main-nav__item_has-child"><a class="main-nav__link main-nav__link_level-1" href="#reference-table">Справочная таблица по классам и миксинам</a>
-        <ul class="main-nav__list main-nav__list_level-2">
-          <li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#ref-table-alignment">Выравнивание</a>
-          </li>
-          <li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#ref-table-direction">Направление расположения главной оси</a>
-          </li>
-          <li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#ref-table-offset">Смещение колонок</a>
-          </li>
-          <li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#ref-table-order">Порядок расположения колонок</a>
-          </li>
-          <li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#ref-table-reset">Сброс внешних отступов</a>
-          </li>
-          <li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#ref-table-hide">Скрытие элементов</a>
-          </li>
-          <li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#ref-table-display">Отображение скрытых элементов</a>
-          </li>
-        </ul>
-      </li>
-        </ul>
-      </nav>
-    </div>
-  </body>
-</html>
+);</code></pre></div></li><div class="text col-12">Это сгенерирует классы вида <span class='inline-snippet'>col-lg-12</span>, <span class='inline-snippet'>col-md-4</span>, <span class='inline-snippet'>justify-content-sm-center</span>, <span class='inline-snippet'>offset-xs-2</span>, <span class='inline-snippet'>order-lg-9</span>, <span class='inline-snippet'>direction-sm-column</span>, <span class='inline-snippet'>hide-sm</span>, <span class='inline-snippet'>show-xs</span> и т.д.</div></li></ul></div><h3 class="title col-12">Части</h3><a id="partials"></a><div class="text col-12">Директория <span class='inline-snippet'>partials</span> содержит список частей библиотеки, отвечающих за генерацию категорий классов и медиазапросов. С целью уменьшения сформированного css-файла библиотеки вы можете переопределить список, оставив лишь те элементы, названия которых соответствуют тем частям библиотеки, классы которых вы будете использовать. Ниже ещё будет сказано, какие части за что отвечают. Либо же, если вместо расстановки классов на элементах в разметке для построения сетки вы предпочитаете использовать Sass и предопределенные миксины, вы можете присвоить переменной <span class='inline-snippet'>partials</span> значение <span class='inline-script'>false</span> ( не <span class='inline-script'>null</span> ) или любое другое "не null" значение.</div><div class="code-snippet col"><h3 class="code-snippet__title">Sass ( Scss syntax )</h3><pre><code class="scss">$partials: false;</code></pre></div><div class="text col-12">Это предотвратит генерацию большого количества готовых классов, что позволит значительно уменьшить размер конечного css-файла библиотеки.</div><h4 class="subtitle col-12">Выравнивание</h4><a id="partials-alignment"></a><div class="text col-12">Файл <span class='inline-snippet'>grid/partials/alignment.scss</span> содержит код, генерирующий классы, отвечающие за выравнивание колонок внутри строки.</div><h4 class="subtitle col-12">Направление расположения колонок в строке</h4><a id="partials-direction"></a><div class="text col-12">Файл <span class='inline-snippet'>grid/partials/direction.scss</span> содержит код, генерирующий классы, отвечающие за направление главной оси, вдоль которой выстраиваются столбцы внутри строки.</div><h4 class="subtitle col-12">Упорядочивание колонок</h4><a id="partials-order"></a><div class="text col-12">Файл <span class='inline-snippet'>grid/partials/ordering.scss</span> содержит код, генерирующий классы, отвечающие за порядок расположения колонок внутри строки.</div><h4 class="subtitle col-12">Смещение колонок</h4><a id="partials-offset"></a><div class="text col-12">Файл <span class='inline-snippet'>grid/partials/offset.scss</span> содержит код, генерирующий классы, отвечающие за смещение колонок внутри строки.</div><h4 class="subtitle col-12">Скрытие элементов</h4><a id="partials-hide"></a><div class="text col-12">Файл <span class='inline-snippet'>grid/partials/hide.scss</span> содержит код, генерирующий классы, отвечающие за скрытие элементов.</div><h4 class="subtitle col-12">Отображение элементов</h4><a id="partials-display"></a><div class="text col-12">Файл <span class='inline-snippet'>grid/partials/visible.scss</span> содержит код, генерирующий классы, отвечающие за отображение элементов.</div><h4 class="subtitle col-12">Обнуление внешних отступов у элементов строк и колонок</h4><a id="partials-margins-reset"></a><div class="text col-12">Файл <span class='inline-snippet'>grid/partials/gutters.scss</span> содержит код, генерирующий классы, отвечающие за обнуление внешних отступов у элементов строк и колонок.</div><h4 class="subtitle col-12">Базовая инициализация сетки</h4><a id="grid-basic-init"></a><div class="text col-12">Файл <span class='inline-snippet'>grid/base.scss</span> содержит код, генерирующий базовые классы сетки.</div><h3 class="title col-12">Компиляция исходных sass-файлов</h3><a id="compiling-sass-files"></a><div class="text col-12">При использовании библиотеки flexbox-grid-pro в виде sass-файлов, настоятельно рекомендуется использовать минификаторы <a href='https://github.com/Se7enSky/group-css-media-queries'>group-css-media-queries</a> и <a href='https://github.com/css/csso'>csso</a>. Это значительно сократит объём собранного css-файла библиотеки.</div><h3 class="title col-12">Справочная таблица по классам и миксинам</h3><a id="reference-table"></a><h4 class="subtitle col-12">Выравнивание</h4><a id="ref-table-alignment"></a><div class="class-table-wrapper col-12"><table class="class-table"><tbody><tr><th>Классы</th><th>Соответствующий миксин</th><th>Описание</th></tr><tr><td class="class-table__name"><div>justify-content-start,</div><div>justify-content-center,</div><div>justify-content-end,</div><div>justify-content-space-between,</div><div>justify-content-space-around</div></td><td><div class="class-table__mixin-name">justify-content( $align, $breakpoint )</div><div class="class-table__mixin-description">Выравнивает столбцы в строке согласно параметру <span class='inline-snippet'>$align</span>, который должен принимать одно из следующих значений: <span class='inline-snippet'>flex-start</span>, <span class='inline-snippet'>flex-end</span>, <span class='inline-snippet'>center</span>, <span class='inline-snippet'>space-between</span>, <span class='inline-snippet'>space-around</span>. Применяется к элементам строки ( <span class='inline-snippet'>row</span> ) сетки. Если передан аргумент <span class='inline-snippet'>$breakpoint</span>, выравнивание сработает в медиазапросе согласно значению этого аргумента. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</div><table><tbody><tr><th>Параметр</th><th>Тип</th><th>Доступные значения</th><th>Значение по умолчанию</th><th>Описание</th><tr><td>align</td><td>String</td><td class="class-table__available"><div>flex-start,</div><div>center,</div><div>flex-end,</div><div>space-between,</div><div>space-around,</div></td><td class="class-table__default">flex-start</td><td>Задаёт способ выравнивания столбцов</td></tr><tr><td>breakpoint</td><td>String</td><td class="class-table__available"><div>desktop,</div><div>laptop,</div><div>laptop-md,</div><div>tablet-landscape,</div><div>phone-landscape,</div><div>phone,</div><div>phone-md,</div><div>phone-sm</div></td><td class="class-table__default">null</td><td>Необязательный параметр. Если для него передано значение, выравнивание сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td></tr></tr></tbody></table><td class="class-table__description">Выравнивают столбцы в строке в соответствии со свойствами flex-контейнера: flex-start, center, flex-end, space-between, space-around. Применяются к элементу строки.</td></td></tr><tr><td class="class-table__name"><div>align-items-start,</div><div>align-items-center,</div><div>align-items-end,</div><div>align-items-stretch,</div><div>align-items-baseline</div></td><td><div class="class-table__mixin-name">align-items( $align, $breakpoint )</div><div class="class-table__mixin-description">Выравнивает столбцы в строке согласно параметру <span class='inline-snippet'>$align</span>, который должен принимать одно из следующих значений: <span class='inline-snippet'>flex-start</span>, <span class='inline-snippet'>flex-end</span>, <span class='inline-snippet'>center</span>, <span class='inline-snippet'>stretch</span>, <span class='inline-snippet'>baseline</span>. Применяется к элементам строки ( <span class='inline-snippet'>row</span> ) сетки. Если передан аргумент <span class='inline-snippet'>$breakpoint</span>, выравнивание сработает в медиазапросе согласно значению этого аргумента. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</div><table><tbody><tr><th>Параметр</th><th>Тип</th><th>Доступные значения</th><th>Значение по умолчанию</th><th>Описание</th><tr><td>align</td><td>String</td><td class="class-table__available"><div>flex-start,</div><div>center,</div><div>flex-end,</div><div>stretch,</div><div>baseline</div></td><td class="class-table__default">flex-start</td><td>Задаёт способ выравнивания столбцов</td></tr><tr><td>breakpoint</td><td>String</td><td class="class-table__available"><div>desktop,</div><div>laptop,</div><div>laptop-md,</div><div>tablet-landscape,</div><div>phone-landscape,</div><div>phone,</div><div>phone-md,</div><div>phone-sm</div></td><td class="class-table__default">null</td><td>Необязательный параметр. Если для него передано значение, выравнивание сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td></tr></tr></tbody></table><td class="class-table__description">Выравнивают столбцы в строке в соответствии со свойствами flex-контейнера: flex-start, center, flex-end, stretch, baseline. Применяются к элементу строки.</td></td></tr><tr><td class="class-table__name"><div>align-self-start,</div><div>align-self-center,</div><div>align-self-end,</div><div>align-self-stretch,</div><div>align-self-baseline</div></td><td><div class="class-table__mixin-name">align-self( $align, $breakpoint )</div><div class="class-table__mixin-description">Выравнивает отдельно взятый столбец в строке согласно параметру <span class='inline-snippet'>$align</span>, который должен принимать одно из следующих значений: <span class='inline-snippet'>flex-start</span>, <span class='inline-snippet'>flex-end</span>, <span class='inline-snippet'>center</span>, <span class='inline-snippet'>stretch</span>, <span class='inline-snippet'>baseline</span>. Применяется к элементам столбца ( <span class='inline-snippet'>col</span> ) сетки. Если передан аргумент <span class='inline-snippet'>$breakpoint</span>, выравнивание сработает в медиазапросе согласно значению этого аргумента. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</div><table><tbody><tr><th>Параметр</th><th>Тип</th><th>Доступные значения</th><th>Значение по умолчанию</th><th>Описание</th><tr><td>align</td><td>String</td><td class="class-table__available"><div>flex-start,</div><div>center,</div><div>flex-end,</div><div>stretch,</div><div>baseline,</div></td><td class="class-table__default">flex-start</td><td>Задаёт способ выравнивания отдельно взятого столбца в строке.</td></tr><tr><td>breakpoint</td><td>String</td><td class="class-table__available"><div>desktop,</div><div>laptop,</div><div>laptop-md,</div><div>tablet-landscape,</div><div>phone-landscape,</div><div>phone,</div><div>phone-md,</div><div>phone-sm</div></td><td class="class-table__default">null</td><td>Необязательный параметр. Если для него передано значение, выравнивание сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td></tr></tr></tbody></table><td class="class-table__description">Выравнивают отдельно взятый столбец в строке в соответствии со свойствами flex-контейнера: flex-start, center, flex-end, stretch, baseline. Применяются к элементу столбца.</td></td></tr></tbody></table></div><h4 class="subtitle col-12">Направление расположения главной оси</h4><a id="ref-table-direction"></a><div class="class-table-wrapper col-12"><table class="class-table"><tbody><tr><th>Классы</th><th>Соответствующий миксин</th><th>Описание</th></tr><tr><td class="class-table__name"><div>direction-row,</div><div>direction-row-reverse,</div><div>direction-column,</div><div>direction-column-reverse</div></td><td><div class="class-table__mixin-name">direction( $direction, $breakpoint )</div><div class="class-table__mixin-description">Задает направление главной оси, вдоль которой выстраиваются колонки в строке. В качестве аргумента для первого параметра <span class='inline-snippet'>$direction</span> должно быть передано одно из следующиех значений: <span class='inline-snippet'>row</span>, <span class='inline-snippet'>row-reverse</span>, <span class='inline-snippet'>column</span>, <span class='inline-snippet'>column-reverse</span>. Если вторым аргументом передано значение, соответствующее одному из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>, правило будет применено в медиазапросе.</div><table><tbody><tr><th>Параметр</th><th>Тип</th><th>Доступные значения</th><th>Значение по умолчанию</th><th>Описание</th><tr><td>direction</td><td>String</td><td class="class-table__available"><div>row,</div><div>row-reverse,</div><div>column,</div><div>column-reverse</div></td><td class="class-table__default">row</td><td>Задаёт направление главной оси, вдоль которой выстраиваются колонки в строке.</td></tr><tr><td>breakpoint</td><td>String</td><td class="class-table__available"><div>desktop,</div><div>laptop,</div><div>laptop-md,</div><div>tablet-landscape,</div><div>phone-landscape,</div><div>phone,</div><div>phone-md,</div><div>phone-sm</div></td><td class="class-table__default">null</td><td>Необязательный параметр. Если для него передано значение, установка направления главной оси сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td></tr></tr></tbody></table><td class="class-table__description">Задают направление главной оси, вдоль которой выстраиваются колонки в стрке, в соответствии со свойствами flex-контейнера: row, row-reverse, column, column-reverse. Применяются к элементу строки <span class='inline-snippet'>row</span>.</td></td></tr></tbody></table></div><h4 class="subtitle col-12">Смещение колонок</h4><a id="ref-table-offset"></a><div class="class-table-wrapper col-12"><table class="class-table"><tbody><tr><th>Классы</th><th>Соответствующий миксин</th><th>Описание</th></tr><tr><td class="class-table__name"><div>offset-left-1 - offset-left-12,</div><div>offset-right-1 - offset-right-12,</div><div>offset-left-auto,</div><div>offset-right-auto</div></td><td><div class="class-table__mixin-name">offset( $direction, $offset, $breakpoint )</div><div class="class-table__mixin-description">Смещает колонку в строке на <span class='inline-snippet'>$offset</span> - целое число колонок, вправо - <span class='inline-snippet'>$direction</span>: right или влево - <span class='inline-snippet'>$direction</span>: left. Если в качестве второго аргумента передано значение auto, колонка смещается на свободное пространство в ту или иную сторону. Если значение аргумента <span class='inline-snippet'>$breakpoint</span> соответствует одному из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>, правила применяются в соответствующем медиазапросе.</div><table><tbody><tr><th>Параметр</th><th>Тип</th><th>Доступные значения</th><th>Значение по умолчанию</th><th>Описание</th><tr><td>direction</td><td>String</td><td class="class-table__available"><div>left,</div><div>right</div></td><td class="class-table__default">right</td><td>От этого параметра зависит, в какую сторону будет происходить смещение колонок - вправо или влево.</td></tr><tr><td>offset</td><td>Number|String</td><td class="class-table__available"><div>целое число колонок,</div><div>auto</div></td><td class="class-table__default">auto</td><td>Число колонок, на которое будет смещена колонка. Если передано значение <span class='inline-snippet'>auto</span>, колонка сместится вправо/влево ( зависит от второго параметра <span class='inline-snippet'>direction</span> ) на всё доступное свободное пространство.</td></tr><tr><td>breakpoint</td><td>String</td><td class="class-table__available"><div>desktop,</div><div>laptop,</div><div>laptop-md,</div><div>tablet-landscape,</div><div>phone-landscape,</div><div>phone,</div><div>phone-md,</div><div>phone-sm</div></td><td class="class-table__default">null</td><td>Необязательный параметр. Если для него передано значение, смещение для колонки сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td></tr></tr></tbody></table><td class="class-table__description">Смещают колонки в строке на определённое число колонок вправо или влево.</td></td></tr></tbody></table></div><h4 class="subtitle col-12">Порядок расположения колонок</h4><a id="ref-table-order"></a><div class="class-table-wrapper col-12"><table class="class-table"><tbody><tr><th>Классы</th><th>Соответствующий миксин</th><th>Описание</th></tr><tr><td class="class-table__name"><div>order-0 - order-12,</div><div>order-first,</div><div>order-last,</div></td><td><div class="class-table__mixin-name">order( $order, $breakpoint )</div><div class="class-table__mixin-description">Упорядочивает колонки в строке согласно параметру <span class='inline-snippet'>$order</span> - целому числу, определяющему порядок следования колонок - чем меньше число, тем ближе к началу строки будет расположена колонка. Если при вызове миксина ему будет передан второй аргумент <span class='inline-snippet'>$breakpoint</span>, и при этом его значение будет соответствовать одному из имён ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>, то правило упорядочивания будет срабатывать лишь в соответствующем медиазапросе. Применяется к элементу строки <span class='inline-snippet'>row</span></div><table><tbody><tr><th>Параметр</th><th>Тип</th><th>Доступные значения</th><th>Значение по умолчанию</th><th>Описание</th><tr><td>order</td><td>Number|String</td><td class="class-table__available"><div>0 - общее число колонок,</div><div>first,</div><div>last</div></td><td class="class-table__default">0</td><td>Целое число или строка, определяющие визуальное положение колонки в строке сетки. Чем меньше число, тем ближе к началу строки будет расположена колонка.</td></tr><tr><td>breakpoint</td><td>String</td><td class="class-table__available"><div>desktop,</div><div>laptop,</div><div>laptop-md,</div><div>tablet-landscape,</div><div>phone-landscape,</div><div>phone,</div><div>phone-md,</div><div>phone-sm</div></td><td class="class-table__default">null</td><td>Необязательный параметр. Если для него передано значение, сещение для колонки сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td></tr></tr></tbody></table><td class="class-table__description">Задают порядок визуального расположения колонок в строке. Применяются к элементу строки <span class='inline-snippet'>row</span>.</td></td></tr></tbody></table></div><h4 class="subtitle col-12">Сброс внешних отступов ( margins )</h4><a id="ref-table-reset"></a><div class="class-table-wrapper col-12"><table class="class-table"><tbody><tr><th>Классы</th><th>Соответствующий миксин</th><th>Описание</th></tr><tr><td class="class-table__name"><div>no-gutters</div></td><td><div class="class-table__mixin-name">no-gutters( $breakpoint )</div><div class="class-table__mixin-description">Обнуляет внешние отступы элемента. Применяется к любому элементу сетки.</div><table><tbody><tr><th>Параметр</th><th>Тип</th><th>Доступные значения</th><th>Значение по умолчанию</th><th>Описание</th><tr><td>$breakpoint</td><td>String</td><td class="class-table__available"><div>desktop,</div><div>laptop,</div><div>laptop-md,</div><div>tablet-landscape,</div><div>phone-landscape,</div><div>phone,</div><div>phone-md,</div><div>phone-sm</div></td><td class="class-table__default">null</td><td>Необязательный параметр. Если для него передано значение, сброс отступов для элемента сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td></tr></tr></tbody></table><td class="class-table__description">Обнуляют все внешние отступы у элемента. Применяются как к элементу строки, так и к элементу сетки.</td></td></tr><tr><td class="class-table__name"><div>no-h-gutters</div></td><td><div class="class-table__mixin-name">no-h-gutters( $breakpoint )</div><div class="class-table__mixin-description">Обнуляет внешние горизонтальные отступы элемента. Применяется как к элементу строки, так и к элементу колонки.</div><table><tbody><tr><th>Параметр</th><th>Тип</th><th>Доступные значения</th><th>Значение по умолчанию</th><th>Описание</th><tr><td>breakpoint</td><td>String</td><td class="class-table__available"><div>desktop,</div><div>laptop,</div><div>laptop-md,</div><div>tablet-landscape,</div><div>phone-landscape,</div><div>phone,</div><div>phone-md,</div><div>phone-sm</div></td><td class="class-table__default">null</td><td>Необязательный параметр. Если для него передано значение, сброс отступов для элемента сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td></tr></tr></tbody></table><td class="class-table__description">Обнуляют внешние горизонтальные отступы элемента. Применяются как к элементу строки, так и к элементу колонки.</td></td></tr><tr><td class="class-table__name"><div>no-v-gutters</div></td><td><div class="class-table__mixin-name">no-v-gutters( $breakpoint )</div><div class="class-table__mixin-description">Обнуляет внешние вертикальные отступы элемента. Применяется как к элементу строки, так и к элементу колонки.</div><table><tbody><tr><th>Параметр</th><th>Тип</th><th>Доступные значения</th><th>Значение по умолчанию</th><th>Описание</th><tr><td>breakpoint</td><td>String</td><td class="class-table__available"><div>desktop,</div><div>laptop,</div><div>laptop-md,</div><div>tablet-landscape,</div><div>phone-landscape,</div><div>phone,</div><div>phone-md,</div><div>phone-sm</div></td><td class="class-table__default">null</td><td>Необязательный параметр. Если для него передано значение, сброс отступов для элемента сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td></tr></tr></tbody></table><td class="class-table__description">Обнуляют внешние вертикальные отступы элемента. Применяются как к элементу строки, так и к элементу колонки.</td></td></tr><tr><td class="class-table__name"><div>no-children-gutters</div></td><td><div class="class-table__mixin-name">no-children-gutters( $breakpoint )</div><div class="class-table__mixin-description">Обнуляет внешние отступы элементов колонок в строке. Применяется к элементу строки.</div><table><tbody><tr><th>Параметр</th><th>Тип</th><th>Доступные значения</th><th>Значение по умолчанию</th><th>Описание</th><tr><td>breakpoint</td><td>String</td><td class="class-table__available"><div>desktop,</div><div>laptop,</div><div>laptop-md,</div><div>tablet-landscape,</div><div>phone-landscape,</div><div>phone,</div><div>phone-md,</div><div>phone-sm</div></td><td class="class-table__default">null</td><td>Необязательный параметр. Если для него передано значение, сброс отступов для элемента сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td></tr></tr></tbody></table><td class="class-table__description">Обнуляют внешние отступы элементов колонок в строке. Применяются к элементу строки.</td></td></tr><tr><td class="class-table__name"><div>no-children-h-gutters</div></td><td><div class="class-table__mixin-name">no-children-h-gutters( $breakpoint )</div><div class="class-table__mixin-description">Обнуляет внешние горизонтальные отступы элементов колонок в строке. Применяется к элементу строки.</div><table><tbody><tr><th>Параметр</th><th>Тип</th><th>Доступные значения</th><th>Значение по умолчанию</th><th>Описание</th><tr><td>breakpoint</td><td>String</td><td class="class-table__available"><div>desktop,</div><div>laptop,</div><div>laptop-md,</div><div>tablet-landscape,</div><div>phone-landscape,</div><div>phone,</div><div>phone-md,</div><div>phone-sm</div></td><td class="class-table__default">null</td><td>Необязательный параметр. Если для него передано значение, сброс отступов для элемента сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td></tr></tr></tbody></table><td class="class-table__description">Обнуляют внешние горизонтальные отступы элементов колонок в строке. Применяется к элементу строки.</td></td></tr><tr><td class="class-table__name"><div>no-children-v-gutters</div></td><td><div class="class-table__mixin-name">no-children-v-gutters( $breakpoint )</div><div class="class-table__mixin-description">Обнуляет внешние вертикальные отступы элементов колонок в строке. Применяется к элементу строки.</div><table><tbody><tr><th>Параметр</th><th>Тип</th><th>Доступные значения</th><th>Значение по умолчанию</th><th>Описание</th><tr><td>breakpoint</td><td>String</td><td class="class-table__available"><div>desktop,</div><div>laptop,</div><div>laptop-md,</div><div>tablet-landscape,</div><div>phone-landscape,</div><div>phone,</div><div>phone-md,</div><div>phone-sm</div></td><td class="class-table__default">null</td><td>Необязательный параметр. Если для него передано значение, сброс отступов для элемента сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td></tr></tr></tbody></table><td class="class-table__description">Обнуляют внешние горизонтальные отступы элементов колонок в строке. Применяются к элементу строки.</td></td></tr></tbody></table></div><h4 class="subtitle col-12">Скрытие элементов</h4><a id="ref-table-hide"></a><div class="class-table-wrapper col-12"><table class="class-table"><tbody><tr><th>Классы</th><th>Соответствующий миксин</th><th>Описание</th></tr><tr><td class="class-table__name"><div>hide</div></td><td><div class="class-table__mixin-name">hide( $breakpoint )</div><div class="class-table__mixin-description">Скрывает элемент, устанавливая его свойство display в none. Если значение аргумента <span class='inline-snippet'>$breakpoint</span> соответствует одному из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>, правило будет применено в соответствующем медиазапросе. Применяется к любому элементу сетки.</div><table><tbody><tr><th>Параметр</th><th>Тип</th><th>Доступные значения</th><th>Значение по умолчанию</th><th>Описание</th><tr><td>breakpoint</td><td>String</td><td class="class-table__available"><div>desktop,</div><div>laptop,</div><div>laptop-md,</div><div>tablet-landscape,</div><div>phone-landscape,</div><div>phone,</div><div>phone-md,</div><div>phone-sm</div></td><td class="class-table__default">null</td><td>Необязательный параметр. Если для него передано значение, скрытие для элемента сработает в медиазапросе согласно этому значению. Значением аргумента должно быть одно из имен ключей глобального объекта <span class='inline-snippet'>$grid-breakpoints</span>.</td></tr></tr></tbody></table><td class="class-table__description">Скрывает элемент, устанавливая его свойство display в none. Применяется к любому элементу сетки.</td></td></tr></tbody></table></div><h4 class="subtitle col-12">Отображение скрытых элементов</h4><a id="ref-table-display"></a><div class="class-table-wrapper col-12"><table class="class-table"><tbody><tr><th>Классы</th><th>Соответствующий миксин</th><th>Описание</th></tr><tr><td class="class-table__name"><div>show</div></td><td><div class="class-table__mixin-name">show( $display, $breakpoint )</div><div class="class-table__mixin-description">Отображает скрытые элементы, устанавливая его свойство display в любое доступное для этого свойства значение, отличное от none. Применяется к любому элементу сетки.</div><table><tbody><tr><th>Параметр</th><th>Тип</th><th>Доступные значения</th><th>Значение по умолчанию</th><th>Описание</th><tr><td>display</td><td>String</td><td class="class-table__available"><div>Любое доступное для css-свойства <span class='inline-snippet'>display</span> значение, кроме <span class='inline-snippet'>none</span>.</div></td><td class="class-table__default">initial</td><td>Устанавливает свойство display элемента в указанное значение.</td></tr></tr></tbody></table><td class="class-table__description">Отображает скрытые элементы, устанавливая его свойство display в любое доступное для этого свойства значение, отличное от none. Применяется к любому элементу сетки.</td></td></tr></tbody></table></div></main></div><div class="sidebar-wrapper"><div class="lang-widget"><a class="lang-widget__link" href="index.ru.html">ru</a><a class="lang-widget__link" href="index.html">en</a></div><button class="burger"><span class="inner"></span></button><!--include nav.data.pug--><nav class="main-nav"><ul class="main-nav__list main-nav__list_level-1"><li class="main-nav__item main-nav__item_level-1"><a class="main-nav__link main-nav__link_level-1" href="#intro">Введение</a></li><li class="main-nav__item main-nav__item_level-1"><a class="main-nav__link main-nav__link_level-1" href="#different-width-cols">Колонки заданной ширины</a></li><li class="main-nav__item main-nav__item_level-1 main-nav__item_has-child"><a class="main-nav__link main-nav__link_level-1" href="#alignment">Выравнивание</a><ul class="main-nav__list main-nav__list_level-2"><li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#alignment-horizontal">Горизонтальное</a></li><li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#alignment-vertical">Вертикальное</a></li></ul></li><li class="main-nav__item main-nav__item_level-1"><a class="main-nav__link main-nav__link_level-1" href="#axis-direction">Направление расположения главной оси</a></li><li class="main-nav__item main-nav__item_level-1"><a class="main-nav__link main-nav__link_level-1" href="#column-order">Порядок расположения колонок</a></li><li class="main-nav__item main-nav__item_level-1"><a class="main-nav__link main-nav__link_level-1" href="#column-offset">Смещение колонок</a></li><li class="main-nav__item main-nav__item_level-1 main-nav__item_has-child"><a class="main-nav__link main-nav__link_level-1" href="#hide-and-show">Скрытие и отображение элементов</a><ul class="main-nav__list main-nav__list_level-2"><li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#hide">Скрытие</a></li><li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#display">Отображение</a></li></ul></li><li class="main-nav__item main-nav__item_level-1"><a class="main-nav__link main-nav__link_level-1" href="#zeroing">Обнуление внешних отступов у элементов строк и колонок</a></li><li class="main-nav__item main-nav__item_level-1"><a class="main-nav__link main-nav__link_level-1" href="#column-classes">Колоночные классы</a></li><li class="main-nav__item main-nav__item_level-1"><a class="main-nav__link main-nav__link_level-1" href="#breakpoints">Контрольные точки</a></li><li class="main-nav__item main-nav__item_level-1"><a class="main-nav__link main-nav__link_level-1" href="#responsive-column-classes">&quot;Отзывчивые&quot; колоночные классы</a></li><li class="main-nav__item main-nav__item_level-1 main-nav__item_has-child"><a class="main-nav__link main-nav__link_level-1" href="#grid-customization">Кастомизация сетки</a><ul class="main-nav__list main-nav__list_level-2"><li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#grid-customization-vars">Переменные</a></li><li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#grid-customization-mixins">Миксины</a></li></ul></li><li class="main-nav__item main-nav__item_level-1 main-nav__item_has-child"><a class="main-nav__link main-nav__link_level-1" href="#sass-source-files">Исходные файлы Sass</a><ul class="main-nav__list main-nav__list_level-2"><li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#sass-source-files-grid">Сетка</a></li><li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#sass-source-files-responsive-classes">&quot;Отзывчивые&quot; классы на основе карты контрольных точек</a></li><li class="main-nav__item main-nav__item_level-2 main-nav__item_has-child"><a class="main-nav__link main-nav__link_level-2" href="#partials">Части</a><ul class="main-nav__list main-nav__list_level-3"><li class="main-nav__item main-nav__item_level-3"><a class="main-nav__link main-nav__link_level-3" href="#partials-alignment">Выравнивание</a></li><li class="main-nav__item main-nav__item_level-3"><a class="main-nav__link main-nav__link_level-3" href="#partials-direction">Направление расположения колонок в строке</a></li><li class="main-nav__item main-nav__item_level-3"><a class="main-nav__link main-nav__link_level-3" href="#partials-order">Упорядочивание колонок</a></li><li class="main-nav__item main-nav__item_level-3"><a class="main-nav__link main-nav__link_level-3" href="#partials-offset">Смещение колонок</a></li><li class="main-nav__item main-nav__item_level-3"><a class="main-nav__link main-nav__link_level-3" href="#partials-hide">Скрытие элементов</a></li><li class="main-nav__item main-nav__item_level-3"><a class="main-nav__link main-nav__link_level-3" href="#partials-display">Отображение элементов</a></li><li class="main-nav__item main-nav__item_level-3"><a class="main-nav__link main-nav__link_level-3" href="#partials-margins-reset">Обнуление внешних отступов у элементов строк и колонок</a></li></ul></li><li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#grid-basic-init">Базовая инициализация сетки</a></li><li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#compiling-sass-files">Компиляция исходных sass-файлов</a></li></ul></li><li class="main-nav__item main-nav__item_level-1 main-nav__item_has-child"><a class="main-nav__link main-nav__link_level-1" href="#reference-table">Справочная таблица по классам и миксинам</a><ul class="main-nav__list main-nav__list_level-2"><li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#ref-table-alignment">Выравнивание</a></li><li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#ref-table-direction">Направление расположения главной оси</a></li><li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#ref-table-offset">Смещение колонок</a></li><li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#ref-table-order">Порядок расположения колонок</a></li><li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#ref-table-reset">Сброс внешних отступов</a></li><li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#ref-table-hide">Скрытие элементов</a></li><li class="main-nav__item main-nav__item_level-2"><a class="main-nav__link main-nav__link_level-2" href="#ref-table-display">Отображение скрытых элементов</a></li></ul></li></ul></nav></div></body></html>
