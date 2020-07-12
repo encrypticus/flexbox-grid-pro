@@ -30,7 +30,7 @@ gulp.task('docs-pug', () => {
 
   return gulp.src(['src/pug/index.pug', 'src/pug/index.ru.pug'])
     .pipe(pug({
-      pretty: true,
+      pretty: false,
       locals: data
     }))
     .pipe(gulp.dest('docs'));
@@ -47,6 +47,11 @@ gulp.task('docs-sass', () => {
 gulp.task('docs-js', () => {
   return gulp.src('src/pug/components/burger/burger.js')
     .pipe(gulp.dest('docs'));
+});
+
+gulp.task('docs-favicons', () => {
+  return gulp.src('src/favicons/*')
+    .pipe(gulp.dest('docs/favicons/'));
 });
 
 gulp.task('browserSync', () => {
