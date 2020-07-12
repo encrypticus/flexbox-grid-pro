@@ -80,6 +80,7 @@ gulp.task('lint-sass', () => {
 gulp.task('watch', () => {
   gulp.watch(['grid/**/*.scss', 'src/**/*.scss', 'src/**/*.sass'], gulp.series(['development', 'production', 'docs-sass']));
   gulp.watch(['src/**/*.pug'], gulp.parallel('docs-pug'));
+  gulp.watch(['src/favicons/*'], gulp.parallel('docs-favicons'));
 });
 
 gulp.task('default', gulp.series(
@@ -87,6 +88,7 @@ gulp.task('default', gulp.series(
   'production',
   'docs-pug',
   'docs-sass',
+  'docs-favicons',
   'lint-sass',
   gulp.parallel('watch', 'browserSync')
 ));
